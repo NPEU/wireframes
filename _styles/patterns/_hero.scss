@@ -1,0 +1,56 @@
+.hero.hero {
+    position: relative;
+}
+
+/*
+.hero .hero-message {
+    margin-left: $body-padding;
+    margin-right: $body-padding;
+}
+*/
+
+@media only screen and (min-width:500px) {
+
+    .hero .hero-message {
+        position: relative;
+        z-index: 9999;
+        
+        margin-top: -20%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 80%;
+    }
+    
+}
+
+
+@media only screen and (min-width:850px) {
+
+    .hero .hero-message {
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 5rem;
+        transform: translateY(-50%);
+        z-index: 9999;
+        
+        width: 30%;
+    }
+    
+}
+
+/*
+@media only screen and (min-width:1000px) {
+
+    .hero-box.hero-box {
+        z-index: 9999;
+        position: relative;
+        
+        margin-left: $sz-xl;
+        margin-top: $sz-l;
+        margin-bottom: $sz-l;
+        width: 22em;
+    }
+    
+}*/

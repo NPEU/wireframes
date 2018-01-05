@@ -1,0 +1,31 @@
+# Site settings
+title: "NPEU Mockups"
+email: "andy.kirk@npeu.ox.ac.uk"
+description: "Testing things out"
+repository: "https://github.com/NPEU/mockups"
+baseurl: ""
+url: "https://lab.npeu.ox.ac.uk/mockup/"
+port: 4001
+
+# Build settings
+markdown: kramdown
+
+
+kramdown:
+  auto_ids:       true
+
+  
+  
+exclude: [
+    "_archive",
+    "bower.json", 
+    "bower_components",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js",
+    "local-grunt.bat",
+    "local-jekyll.bat",
+    "node_modules", 
+    "package.json",
+    "README.md"
+]
