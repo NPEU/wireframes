@@ -1,18 +1,24 @@
 .page-footer {
-    background-color: $fallback--base-ui-color;
-    padding: ($fallback--base-em-ratio * 1.5em) / 3;
-    font-size: 0.875em;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 0;
-}
 
-    .page-footer a[href] {
+    &#{&} {
+        background-color: $fallback--base-ui-color;
+        padding: ($fallback--base-em-ratio * 1.5em) / 3;
+        font-size: 0.875em;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    
+
+
+    a[href] {
         color: lighten($fallback--base-ui-color, 40%);
     }
     
-    .page-footer a[href]:hover,
-    .page-footer a[href]:active,
-    .page-footer a[href]:focus {
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
         color: lighten($fallback--base-ui-color, 20%);
     }
+
+}

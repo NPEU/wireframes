@@ -64,3 +64,13 @@ h1, h2, h3 {
 	//margin-left: $fallback--base-rem-space-unit;
 }
 
+
+
+@media only screen and (min-width:850px) {
+
+    .wireframe .hero [wf-box]::before
+    {
+        padding-left: 23%;
+    }
+    
+}

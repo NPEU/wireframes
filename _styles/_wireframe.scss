@@ -1,21 +1,61 @@
+$wf-fill--white: #fff;
+$wf-fill--light: #eee;
+$wf-fill--mid:   #ccc;
+$wf-fill--dark:  #666;
+
+$wf-text:        #333;
+$wf-text--light: #fff;
+
+$wf-wire:        #444;
+
 html.wireframe {
-   /*--wf-box-bg: #F7F6F1BB;*/
-   --wf-box-bg: #ddd;
-   --wf-wire: #333;
+   filter: grayscale(1);
 }
 
-.wireframe body {
-    filter: grayscale(1);
-}
 
-.wireframe [data-wf] {
-    outline: 1px solid var(--wf-wire);
+
+// Wireframe xross-box
+// http://meyerweb.com/eric/thoughts/2017/11/27/generating-wireframe-boxes-with-css-and-html5
+
+.wireframe [wf-box] {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: $wf-wire;
+
     position: relative;
     z-index: 1;
-    
+
     display: flow-root;
 }
 
+// Using SVG fir crosses instead of gradient:
+// (https://codepen.io/gunnarbittersmann/pen/PEYYNM)
+.wireframe [wf-box]::before
+{
+	content: attr(wf-box);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	//font: bold 2em Jubilat, Georgia, serif;
+	color: $wf-wire;
+	text-shadow:
+		0 0 0.25em $wf-fill--mid, 0 0 0.25em $wf-fill--mid,
+		0 0 0.25em $wf-fill--mid, 0 0 0.25em $wf-fill--mid,
+		0 0 0.25em $wf-fill--mid;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: $wf-fill--mid;
+	background-size: 100% 100%;
+	background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22none%22%3E%3Cg%20stroke-width%3D%221px%22%20stroke%3D%22#{$wf-wire}%22%20%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%20vector-effect%3D%22non-scaling-stroke%22%2F%3E%3Cline%20x1%3D%221%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%20vector-effect%3D%22non-scaling-stroke%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none"><g stroke-width="1px" stroke="$wf-wire"><line x1="0" y1="0" x2="1" y2="1" vector-effect="non-scaling-stroke"/><line x1="1" y1="0" x2="0" y2="1" vector-effect="non-scaling-stroke"/></g></svg> */
+}
+/*
 .wireframe [data-wf]::before {
     position: absolute;
     z-index: 999;
@@ -28,86 +68,192 @@ html.wireframe {
 
    background:
         linear-gradient(to top right,
-            transparent calc(50% - 1px), var(--wf-wire) calc(50% - 1px),
-            var(--wf-wire) calc(50% + 1px), transparent calc(50% + 1px)),
+            transparent calc(50% - 1px), $wf-wire calc(50% - 1px),
+            $wf-wire calc(50% + 1px), transparent calc(50% + 1px)),
         linear-gradient(to bottom right,
-            transparent calc(50% - 1px), var(--wf-wire) calc(50% - 1px),
-            var(--wf-wire) calc(50% + 1px), transparent calc(50% + 1px)),
-        var(--wf-box-bg);
-
-    /*
-   background:
-        radial-gradient(ellipse at center,
-            rgba(255,255,255,1) 10%,rgba(255,255,255,0) 10%),
-        linear-gradient(to top right,
-            transparent calc(50% - 1px), var(--wf-wire) calc(50% - 1px),
-            var(--wf-wire) calc(50% + 1px), transparent calc(50% + 1px)),
-        linear-gradient(to bottom right,
-            transparent calc(50% - 1px), var(--wf-wire) calc(50% - 1px),
-            var(--wf-wire) calc(50% + 1px), transparent calc(50% + 1px)),
-        var(--wf-box-bg);
-
-    background-size: 9em 9em, auto, auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    */
+            transparent calc(50% - 1px), $wf-wire calc(50% - 1px),
+            $wf-wire calc(50% + 1px), transparent calc(50% + 1px)),
+        $wf-fill--mid;
 
 
     content: attr(data-wf);
     font: bold 2em Georgia, serif;
-    color: var(--wf-wire);
+    color: $wf-wire;
 
     text-shadow:
-        1px 1px 0 var(--wf-box-bg),
-        -1px 1px 0 var(--wf-box-bg),
-        1px -1px 0 var(--wf-box-bg),
-        -1px -1px 0 var(--wf-box-bg),
-        1px 0 0 var(--wf-box-bg),
-        -1px 0 0 var(--wf-box-bg),
-        2px 2px 0 var(--wf-box-bg),
-        -2px 2px 0 var(--wf-box-bg),
-        2px -2px 0 var(--wf-box-bg),
-        -2px -2px 0 var(--wf-box-bg),
-        2px 0 0 var(--wf-box-bg),
-        -2px 0 0 var(--wf-box-bg),
-        3px 3px 0 var(--wf-box-bg),
-        -3px 3px 0 var(--wf-box-bg),
-        3px -3px 0 var(--wf-box-bg),
-        -3px -3px 0 var(--wf-box-bg),
-        3px 0 0 var(--wf-box-bg),
-        -3px 0 0 var(--wf-box-bg),
-        4px 4px 0 var(--wf-box-bg),
-        -4px 4px 0 var(--wf-box-bg),
-        4px -4px 0 var(--wf-box-bg),
-        -4px -4px 0 var(--wf-box-bg),
-        4px 0 0 var(--wf-box-bg),
-        -4px 0 0 var(--wf-box-bg);
+        1px 1px 0 $wf-fill--mid,
+        -1px 1px 0 $wf-fill--mid,
+        1px -1px 0 $wf-fill--mid,
+        -1px -1px 0 $wf-fill--mid,
+        1px 0 0 $wf-fill--mid,
+        -1px 0 0 $wf-fill--mid,
+        2px 2px 0 $wf-fill--mid,
+        -2px 2px 0 $wf-fill--mid,
+        2px -2px 0 $wf-fill--mid,
+        -2px -2px 0 $wf-fill--mid,
+        2px 0 0 $wf-fill--mid,
+        -2px 0 0 $wf-fill--mid,
+        3px 3px 0 $wf-fill--mid,
+        -3px 3px 0 $wf-fill--mid,
+        3px -3px 0 $wf-fill--mid,
+        -3px -3px 0 $wf-fill--mid,
+        3px 0 0 $wf-fill--mid,
+        -3px 0 0 $wf-fill--mid,
+        4px 4px 0 $wf-fill--mid,
+        -4px 4px 0 $wf-fill--mid,
+        4px -4px 0 $wf-fill--mid,
+        -4px -4px 0 $wf-fill--mid,
+        4px 0 0 $wf-fill--mid,
+        -4px 0 0 $wf-fill--mid;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*
-.wireframe [data-wf]::after {
-    position: absolute;
-    top: calc(50% - 1.5em);
-    left: calc(50% - 1.5em);
-    content: "";
-    background: #fff;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-}*/
+*/
 
 
+.wireframe [wf-area] {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: $wf-wire;
 
-.wireframe [class^=wf-box] {
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--wf-wire);
+    a[href] {
+        color: inherit;
+    }
+
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
+        color: inherit;
+    }
 }
 
-.wireframe [class^=wf-box] h1 {
+.wireframe [wf-area*=white] {
+    background-color: $wf-fill--white;
+    color: $wf-text;
+}
+
+.wireframe [wf-area*=light] {
+    background-color: $wf-fill--light;
+    color: $wf-text;
+}
+
+.wireframe [wf-area*=mid] {
+    background-color: $wf-fill--mid;
+    color: $wf-text;
+}
+
+.wireframe [wf-area*=dark] {
+    background-color: $wf-fill--dark;
+    color: $wf-text--light;
+}
+
+
+.wireframe [wf-area*=padding] {
+
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        margin-bottom: -1px;
+        width: 100%;
+    }
+}
+
+.wireframe [wf-area*=small-padding] {
+    padding-left: $sz-s;
+    padding-right: $sz-s;
+    padding-top: $sz-s;
+
+    &:after {
+        margin-top: $sz-s;
+    }
+}
+
+.wireframe [wf-area*=medium-padding] {
+    padding-left: $sz-m;
+    padding-right: $sz-m;
+    padding-top: $sz-m;
+
+    &:after {
+        margin-top: $sz-m;
+    }
+}
+
+
+.wireframe [wf-area*=large-padding] {
+    padding-left: $sz-l;
+    padding-right: $sz-l;
+    padding-top: $sz-l;
+
+    &:after {
+        margin-top: $sz-l;
+    }
+}
+
+
+.wireframe [wf-bar-links] {
+
+
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    a[href] {
+        display: block;
+        border: 0;
+        margin: 0;
+        padding: $sz-xs $sz-s;
+    }
+
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
+        background-color: rgba(255,255,255,0.2);
+    }
+}
+
+.wireframe [wf-area*=white] [wf-bar-links] {
+
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+.wireframe [wf-bar-links=divided] > *:not(:first-child) {
+    position: relative;
+}
+
+.wireframe [wf-bar-links=divided] > *:not(:first-child):before {
+    content: "";
+    display: block;
+    height: 1em;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wireframe [wf-heading*=large] {
     font-size: 1.625em;
     line-height: 1.1;
     border-bottom: 1px solid;
@@ -116,35 +262,10 @@ html.wireframe {
 
 
 
-.wireframe [class^=wf-box][class*=white] {
-    background-color: #fff;    
-}
 
-
-.wireframe [class^=wf-box][class*=medium-padding] {
-    padding-left: $sz-m;
-    padding-right: $sz-m;
-    padding-top: $sz-m;
-    
-    &:after {
-        content: "";
-        display: block;
-        margin-bottom: $sz-m;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-.wireframe [class^=wf-button] {
-     display: inline-block;
+.wireframe a[href][wf-button],
+.wireframe button[wf-button] {
+    display: inline-block;
     /* AK. IE9 needs this. */
     overflow: visible;
     /* S: Internet Explorer 11-, N: Show the overflow in Edge, Firefox, and IE. */
@@ -182,14 +303,19 @@ html.wireframe {
     /* S: IE10 */
     touch-action: manipulation;
 }
-    .wireframe [class^=wf-button]:hover,
-    .wireframe [class^=wf-button]:active,
-    .wireframe [class^=wf-button]:focus {
+    .wireframe a[href][wf-button]:hover,
+    .wireframe a[href][wf-button]:active,
+    .wireframe a[href][wf-button]:focus,
+    .wireframe button[wf-button]:hover,
+    .wireframe button[wf-button]:active,
+    .wireframe button[wf-button]:focus {
         box-shadow: 0 0 0 2px #b38cd9 inset;
-        outline: 0; 
+        outline: 0;
 
         border-color: rgba(0, 0, 0, 0.2);
         border-style: solid;
         border-width: 1px;
         //margin: 0;
+        
+        color: #fff;
     }
