@@ -2053,33 +2053,15 @@ _:-o-prefocus, :root .icon {
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
 
 
-    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specifity.
-    This allows any applicable Start-CSS declarations to be overidden.
+    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specificity.
+    This allows any applicable Start-CSS declarations to be overridden.
     E.g. `.{pattern} .{pattern}__child` would `a[href]`, but just `.{pattern}` wouldn't, so we use
-    `.{pattern}.{pattren}`
+    `.{pattern}.{pattern}`
 
 |-------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------|
     Fall-Back Over Panel Pattern v2.0.0
 |-------------------------------------------------------------------------------------------------*/
-/*
-    THE WAY THIS WORKS
-
-    In browsers that support transform, the over-panel is moved 100% up, thus hiding off the top of
-    the page. When :target-ted, the transform is set back to 0 and the transition provides the
-    sliding effect.
-    However, Opera Mini and IE9 don't support transform (but do support Media Queries) so it breaks.
-    In order to provide a functional fallback, I've set the initial clip state to 0 so that it's
-    hidden. The :target-ted state sets the clip to be enormous (thus visible).
-    This, though, breaks the slide-up effect as the clip is set back to 0 before the transition
-    takes places, hiding it immediately.
-    To get round this I've also transitioned the clip (on the 'closed' state only) and set a delay
-    so that the clip isn't change until after the slide transition has been completed.
-    Since neither of these browser support transitions either, the clip delay is ignored.
-
-    The same principle applies to the fade effect.
-
-*/
 /* -- Basic/fallback layout --------------------------------------------------------------------- */
 /*
         1. Helps compatibiliy with Nav-Bar. No down-sides I can see. May have to revise if some
@@ -2091,13 +2073,18 @@ _:-o-prefocus, :root .icon {
 }
 
 /*
-            This is a bit of a hack, but it's a way of letting JS know that this CSS has loaded.
-            It doesn't work for Opera Mini, but I'm happy to provide this browser only with the
-            unenhanced version.
-        */
-.over-panel::before {
-  content: 'CSS Loaded';
-  display: none;
+		This is a bit of a hack, but it's a way of letting JS know that this CSS has loaded.
+		It doesn't work for Opera Mini, but I'm happy to provide this browser only with the
+		unenhanced version.
+        UPDATE: Due to problem with FOBP, now checking for existence of class in styesheet earlier
+        on, so this isn't needed:
+	*/
+/*.over-panel::before {
+		content: 'CSS Loaded';
+        display: none;
+	}*/
+.js-over-panel {
+  border: 0;
 }
 
 .over-panel-control {
@@ -2131,7 +2118,7 @@ _:-o-prefocus, :root .icon {
   /*
 			1. Make sure the over-panel is on top.
 		*/
-  .js-over-panel.over-panel {
+  .js-over-panel .over-panel {
     position: absolute;
     /* [1] */
     left: 0;
@@ -2170,7 +2157,7 @@ _:-o-prefocus, :root .icon {
     /* [1] */
   }
   /* Slide effect: */
-  .js-over-panel.over-panel--slide .over-panel__contents {
+  .js-over-panel .over-panel--slide .over-panel__contents {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
@@ -2195,7 +2182,7 @@ _:-o-prefocus, :root .icon {
     transition: transform ease 0.8s;
   }
   /* Fade effect: */
-  .js-over-panel.over-panel--fade .over-panel__contents {
+  .js-over-panel .over-panel--fade .over-panel__contents {
     opacity: 0;
   }
   .js-over-panel_is-animating.over-panel--fade .over-panel__contents {
@@ -2268,7 +2255,7 @@ _:-o-prefocus, :root .icon {
         */
   /* Hide the open control: */
   /*
-            Taking this out for now is leaving it visible doesn't seem to hurt (though accessiblity?)
+            Taking this out for now is leaving it visible doesn't seem to hurt (though accessibility?)
             but hiding it can cause other elements to jump around due to flexbox.
             Maybe use visibility, not sure.
         */
@@ -2335,10 +2322,12 @@ _:-o-prefocus, :root .icon {
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
 
 
-    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specifity.
-    This allows any applicable Start-CSS declarations to be overidden.
+    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specificity.
+    This allows any applicable Start-CSS declarations to be overridden.
     E.g. `.{pattern} .{pattern}__child` would `a[href]`, but just `.{pattern}` wouldn't, so we use
-    `.{pattern}.{pattren}`
+    `.{pattern}.{pattern}`
+
+
 
 |-------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------|
@@ -2350,7 +2339,7 @@ _:-o-prefocus, :root .icon {
         1. Helps to position above subsequent elements so subnavs sit on top.
     */
 .nav-bar.nav-bar {
-  background-color: #0077AD;
+  background-color: #fff;
   position: relative;
   z-index: 9999;
   /* [1] */
@@ -2360,10 +2349,15 @@ _:-o-prefocus, :root .icon {
 		This is a bit of a hack, but it's a way of letting JS know that this CSS has loaded.
 		It doesn't work for Opera Mini, but I'm happy to provide this browser only with the
 		unenhanced version.
+        UPDATE: Due to problem with FOBP, now checking for existence of class in styesheet earlier
+        on, so this isn't needed:
 	*/
-.nav-bar::before {
-  content: 'CSS Loaded';
-  display: none;
+/*.nav-bar::before {
+		content: 'CSS Loaded';
+        display: none;
+	}*/
+.js-nav-bar {
+  border: 0;
 }
 
 /* -------------------------------------------------------------------------------------------*/
@@ -2402,8 +2396,8 @@ _:-o-prefocus, :root .icon {
         This requirement becomes apparent when using a Title and an button between the title and
         the nav items.
         We also need things positioned correctly in older browsers. A bunch of scattered
-        declarations help acheive this. I may need to re-think it if it turns out not to be very
-        robust, but I was hoping to avoud the need for extra containers.
+        declarations help achieve this. I may need to re-think it if it turns out not to be very
+        robust, but I was hoping to avoid the need for extra containers.
     */
 @supports (-webkit-flex-wrap: wrap) or (flex-wrap: wrap) {
   .nav-bar .nav-bar__main {
@@ -2415,9 +2409,9 @@ _:-o-prefocus, :root .icon {
 }
 
 /*
-        1. Related to Note A, we specificially want the title fill the avaialble space.
+        1. Related to Note A, we specifically want the title fill the available space.
         2. But in older browsers we just want it pushed left.
-        3. Helps compatibiliy with Over-Panel. No down-sides I can see. May have to revise if some
+        3. Helps compatibility with Over-Panel. No down-sides I can see. May have to revise if some
            become apparent.
 
         -. For IE 9 and FF 21-.
@@ -2427,7 +2421,7 @@ _:-o-prefocus, :root .icon {
   /* [1] */
   flex: 1 0 auto;
   /* [1] */
-  background: #0077AD;
+  background: #fff;
   white-space: nowrap;
   position: relative;
   /* [1] */
@@ -2510,14 +2504,14 @@ _:-o-prefocus, :root .icon {
 /* -------------------------------------------------------------------------------------------*/
 /* -- .nav-bar__main ------------------------------------------------------------------------*/
 /*
-        1. Duplicating parent background-color here. There HAS to be a colour here for the pattern
+        1. Duplicating parent background-color here. There HAS to be a color here for the pattern
            to work, the parent background-color is there to allow things to be NOT BROKEN on
            browsers that don't support HTML semantic elements.
 
         2. Prevent any overflow and possible contain floats.
     */
 .nav-bar .nav-bar__main {
-  background-color: #0077AD;
+  background-color: #fff;
   /* 1 */
   overflow: hidden;
   /* 2 */
@@ -2565,7 +2559,7 @@ _:-o-prefocus, :root .icon {
 .nav-bar .subnav {
   padding: 0;
   margin-left: 1.125em;
-  background-color: #003147;
+  background-color: #fff;
 }
 
 .nav-bar .subnav__items {
@@ -2587,6 +2581,10 @@ _:-o-prefocus, :root .icon {
 .nav-bar .subnav__item {
   margin: 0;
   float: left;
+}
+
+.nav-bar .subnav__items--stacked .subnav__item {
+  float: none;
 }
 
 .nav-bar .subnav__item::before {
@@ -2643,17 +2641,17 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
 }
 
 .nav-bar .nav-bar__link {
-  color: #fff;
-  background-color: #0077AD;
+  color: #333;
+  background-color: #fff;
 }
 
 .nav-bar .subnav__heading {
-  color: #fff;
+  color: #333;
 }
 
 .nav-bar .subnav__link {
-  color: #fff;
-  background-color: #003147;
+  color: #333;
+  background-color: #fff;
 }
 
 /*
@@ -2664,20 +2662,20 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
 .nav-bar .nav-bar__link:hover,
 .nav-bar .nav-bar__link:active,
 .nav-bar .nav-bar__link[aria-expanded="true"] {
-  color: #fff;
-  background-color: #004666;
+  color: #333;
+  background-color: #dbdbdb;
 }
 
 .nav-bar .nav-bar__link:focus {
-  color: #fff;
-  background-color: #005e89;
+  color: #333;
+  background-color: #ededed;
 }
 
 .nav-bar .subnav__link:hover,
 .nav-bar .subnav__link:focus,
 .nav-bar .subnav__link:active {
-  color: #fff;
-  background-color: #00547a;
+  color: #333;
+  background-color: white;
 }
 
 .nav-bar .subnav__control {
@@ -2689,7 +2687,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
 /* ********************************************************************************************** */
 /* -- Enhanced layout --------------------------------------------------------------------------- */
 /*
-    This layout can only be used if JS is there to supprt the toggling of hidden submenus.
+    This layout can only be used if JS is there to support the toggling of hidden submenus.
     (CSS only attempts weren't good enough)
     So, scoping these styles to the 'js-nav-bar' class.
 */
@@ -2698,7 +2696,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
             1. Flex is only really needed for 'additional' to fill up the space.
                I don't think this would actually do any harm...
         */
-  .js-nav-bar.nav-bar {
+  .js-nav-bar .nav-bar {
     position: relative;
     z-index: 1000;
     display: -webkit-flex;
@@ -2707,10 +2705,10 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
     /* 1 */
   }
   /*
-			This psuedo element helps to cover any subnavs to stop them being visible in the main
+			This pseudo element helps to cover any subnavs to stop them being visible in the main
 			nav-bar.
 		*/
-  .js-nav-bar.nav-bar::before {
+  .js-nav-bar .nav-bar::before {
     content: "";
     display: block;
     position: absolute;
@@ -2719,12 +2717,12 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
     top: 0;
     bottom: 0;
     z-index: -1;
-    background-color: #0077AD;
+    background-color: #fff;
   }
   /*
             Child items are floated, so clear those.
         */
-  .js-nav-bar.nav-bar::after {
+  .js-nav-bar .nav-bar::after {
     content: " ";
     display: table;
     clear: both;
@@ -2734,7 +2732,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
                make sure any subnavs are properly obscured, otherwise it looks weird.
                However, this makes 'additional' collapse to it's content.
                In the case of search form, this means the form is smaller than it could be.
-               It's still useable, but ...
+               It's still usable, but ...
 
             2. ... flex makes this better ...
         */
@@ -2755,23 +2753,6 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
       /* 1 */
     }
   }
-  /*
-            Set flex-grow for immediate children to help with things like top-bar combinations
-            (search form won't grow otherwise).
-        */
-  /****
-        .nav-bar > * {
-            -webkit-flex: 1 0 auto;
-                -ms-flex: 1 0 auto;
-             *       flex: 1 0 auto;
-        }
-
-        .nav-bar .nav-bar__title {
-            -webkit-flex: 0 0 auto;
-                -ms-flex: 0 0 auto;
-                    flex: 0 0 auto;
-        }
-****/
   /*
             Related to Note A. Reset the positioning.
         */
@@ -2814,7 +2795,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
     border-right-width: 0;
   }
   /*
-            Prevent anything wrapping (fixed height is cruicial to making this work),
+            Prevent anything wrapping (fixed height is crucial to making this work),
             and make things float
         */
   .js-nav-bar .nav-bar__title,
@@ -2824,6 +2805,9 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
   .js-nav-bar .subnav__heading {
     white-space: nowrap;
     float: left;
+  }
+  .js-nav-bar .subnav__items--stacked .subnav__link {
+    float: none;
   }
   /*
             Set-up slide toggling for subnavs:
@@ -2888,7 +2872,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
                (See http://joren.co/flex-grow-9999-hack/)
         */
   .js-nav-bar .nav-bar__additional {
-    background-color: #0077AD;
+    background-color: #fff;
     float: right;
     /* - this causes problems on Firefox on Mac. Investigate before reinstating.
             -webkit-flex: 9999 0 auto;
@@ -2903,7 +2887,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
   }
   /*
             This will probably be better off in utility classes, but that introduces more
-            dependancies.
+            dependencies.
             An alternative could be:
             ```
             .nav-bar .nav-bar__additional--push-end > * {
@@ -2937,11 +2921,211 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
 
 
-    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specifity.
-    This allows any applicable Start-CSS declarations to be overidden.
+    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specificity.
+    This allows any applicable Start-CSS declarations to be overridden.
     E.g. `.{pattern} .{pattern}__child` would `a[href]`, but just `.{pattern}` wouldn't, so we use
-    `.{pattern}.{pattren}`
+    `.{pattern}.{pattern}`
 
+
+
+|-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------|
+    Fall-Back Dropdown Pattern v1.0.0
+|-------------------------------------------------------------------------------------------------*/
+/* -- Basic/fallback layout --------------------------------------------------------------------- */
+/* -- .dropdown -------------------------------------------------------------------------------*/
+/*
+        1. Helps to position above subsequent elements so subnavs sit on top.
+    */
+/*.dropdown.dropdown {
+        background-color: $fallback--dropdown--background-color;
+        position: relative;
+        z-index: $fallback--dropdown-z-index; /* [1] *
+
+        @if $fallback--dropdown--font-size != $fallback--base-font-size {
+            font-size: $fallback--dropdown--font-size;
+        }
+    }*/
+/*
+		This is a bit of a hack, but it's a way of letting JS know that this CSS has loaded.
+		It doesn't work for Opera Mini, but I'm happy to provide this browser only with the
+		unenhanced version.
+        UPDATE: Due to problem with FOBP, now checking for existence of class in styesheet earlier
+        on, so this isn't needed:
+	*/
+/*.nav-bar::before {
+		content: 'CSS Loaded';
+        display: none;
+	}*/
+.js-dropdown {
+  border: 0;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/* -- .dropdown__area ------------------------------------------------------------------------*/
+/*
+        1. Duplicating parent background-color here. There HAS to be a color here for the pattern
+           to work, the parent background-color is there to allow things to be NOT BROKEN on
+           browsers that don't support HTML semantic elements.
+
+        2. Prevent any overflow and possible contain floats.
+    */
+.dropdown .dropdown__area {
+  background-color: #fff;
+  /* 1 */
+  color: #333;
+  overflow: hidden;
+  /* 2 */
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/* -- .dropdown__button ----------------------------------------------------------------------*/
+/*
+		1. These override button styles defined as part of StartCSS. I may consider making these
+		   customisable via more variables.
+	*/
+.dropdown .dropdown__button {
+  display: block;
+  margin: 0;
+  padding-left: 0.5625em;
+  padding-right: 0.5625em;
+  padding-bottom: 0;
+  /* 1 */
+  padding-top: 0;
+  /* 1 */
+  border: 0;
+  border-radius: 0;
+  line-height: 2.25em;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  /* 1 */
+}
+
+.dropdown .dropdown__button:hover,
+.dropdown .dropdown__button:active,
+.dropdown .dropdown__button:focus {
+  border: 0;
+}
+
+.dropdown__button--centered {
+  text-align: center;
+}
+
+/*
+        Fix for Opera Mini vertical centering:
+        (affects Opera 12.10-16 as well)
+    */
+_:-o-prefocus, body:last-child .dropdown .dropdown__button {
+  line-height: 2.25em !important;
+}
+
+.dropdown .dropdown__button {
+  color: #333;
+  background-color: #fff;
+}
+
+/*
+        Provide interaction effects for dropdown links that ARE links:
+        (this excludes submenu heading links - note that submenu links should never also be
+        submenu heading links)
+    */
+.dropdown .dropdown__button:hover,
+.dropdown .dropdown__button:active,
+.dropdown .dropdown__button[aria-expanded="true"] {
+  color: #333;
+  background-color: #dbdbdb;
+}
+
+.dropdown .dropdown__button:focus {
+  color: #333;
+  background-color: #ededed;
+}
+
+.dropdown .dropdown__button {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------*/
+/* ********************************************************************************************** */
+/* -- Enhanced layout --------------------------------------------------------------------------- */
+/*
+    This layout can only be used if JS is there to support the toggling of hidden submenus.
+    (CSS only attempts weren't good enough)
+    So, scoping these styles to the 'js-dropdown' class.
+*/
+@media only screen and (min-width: 33em) {
+  /*
+            1. Flex is only really needed for 'additional' to fill up the space.
+               I don't think this would actually do any harm...
+        */
+  /*.js-dropdown.dropdown {
+            position: relative;
+            z-index: 1000; // @var
+
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; /* 1 *
+        }*/
+  /*
+            1. Floating left to allow 'additional' to appear on the same line, but width 100% to
+               make sure any subnavs are properly obscured, otherwise it looks weird.
+               However, this makes 'additional' collapse to it's content.
+               In the case of search form, this means the form is smaller than it could be.
+               It's still usable, but ...
+
+            2. ... flex makes this better ...
+        */
+  .js-dropdown .dropdown__area {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity ease 0.8s, visibility 0s 0.8s ease;
+    -moz-transition: opacity ease 0.8s, visibility 0s 0.8s ease;
+    -o-transition: opacity ease 0.8s, visibility 0s 0.8s ease;
+    transition: opacity ease 0.8s, visibility 0s 0.8s ease;
+  }
+  .js-dropdown .dropdown__button {
+    display: block;
+  }
+  .js-dropdown .dropdown__button .icon--is-open,
+  .js-dropdown .dropdown__button[aria-expanded="true"] .icon--is-closed {
+    display: none;
+  }
+  .js-dropdown .dropdown__button .icon--is-closed,
+  .js-dropdown .dropdown__button[aria-expanded="true"] .icon--is-open {
+    display: inline;
+  }
+  .js-dropdown .dropdown__button[aria-expanded="true"] ~ .dropdown__area {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity ease 0.8s;
+    -moz-transition: opacity ease 0.8s;
+    -o-transition: opacity ease 0.8s;
+    transition: opacity ease 0.8s;
+  }
+}
+
+/* -----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------|
+    Fall-Back Start-CSS Settings v1.0.0
+
+    Fall-Back is designed for use with the basic
+    [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
+    
+    This determines a browser support base of:
+    
+    IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
+    Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
+    
+    
+    Any double-classing (e.g. `.class.class`) is deliberate and intended to increase specificity.
+    This allows any applicable Start-CSS declarations to be overridden.
+    E.g. `.{pattern} .{pattern}__child` would `a[href]`, but just `.{pattern}` wouldn't, so we use
+    `.{pattern}.{pattern}`
+    
 |-------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------|
     Fall-Back Search Form Pattern v2.0.0
@@ -3530,7 +3714,7 @@ body {
 /* ---------------------------------------------------------------------------------------------- */
 /* --| PATTERNS |-------------------------------------------------------------------------------- */
 /*
-
+    Can't remember what SCL stands for :-(
 */
 .scl--pushed-apart {
   display: -webkit-flex;
@@ -3545,12 +3729,15 @@ body {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.scl--pushed-apart--first, .scl--pushed-apart--first {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  /*
+    Don't know why:?
+    &--first,
+    &--first {
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+    }
+    */
 }
 
 .hero.hero {
@@ -3750,20 +3937,21 @@ html.wireframe {
     align-items: center;
 }
 */
-.wireframe [wf-area] {
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: #444;
-}
-
 .wireframe [wf-area] a[href] {
   color: inherit;
+  background-color: inherit;
 }
 
 .wireframe [wf-area] a[href]:hover,
 .wireframe [wf-area] a[href]:active,
 .wireframe [wf-area] a[href]:focus {
   color: inherit;
+}
+
+.wireframe [wf-area*=outline] {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #444;
 }
 
 .wireframe [wf-area*=white] {
@@ -3845,7 +4033,6 @@ html.wireframe {
   display: block;
   border: 0;
   margin: 0;
-  padding: 0.6rem 1.2rem;
 }
 
 .wireframe [wf-bar-links] a[href]:hover,
@@ -3854,17 +4041,21 @@ html.wireframe {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.wireframe [wf-bar-links*=small-padding] a[href] {
+  padding: 0.6rem 1.2rem;
+}
+
 .wireframe [wf-area*=white] [wf-bar-links] a[href]:hover,
 .wireframe [wf-area*=white] [wf-bar-links] a[href]:active,
 .wireframe [wf-area*=white] [wf-bar-links] a[href]:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.wireframe [wf-bar-links=divided] > *:not(:first-child) {
+.wireframe [wf-bar-links*=divided] > *:not(:first-child) {
   position: relative;
 }
 
-.wireframe [wf-bar-links=divided] > *:not(:first-child):before {
+.wireframe [wf-bar-links*=divided] > *:not(:first-child):before {
   content: "";
   display: block;
   height: 1em;
@@ -3874,6 +4065,10 @@ html.wireframe {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.wireframe [wf-bar-links*=small-text] {
+  font-size: 0.85em;
 }
 
 .wireframe [wf-heading*=large] {
@@ -3940,7 +4135,7 @@ html.wireframe {
 
 /* ---------------------------------------------------------------------------------------------- */
 /* --| SHAME |----------------------------------------------------------------------------------- */
-body {
+html, body {
   background-color: #eee;
 }
 

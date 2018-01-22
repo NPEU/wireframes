@@ -88,11 +88,23 @@ $fallback--over-panel__contents--padding: 0;
 @import "../bower_components/Fall-Back-Over-Panel/_over-panel";
 
 
+$fallback--nav-bar--background-color:       #fff;
+$fallback--nav-bar__link--color:            #333;
+$fallback--nav-bar__link--background-color: $fallback--nav-bar--background-color;
 
-//$fallback--sub-nav--bg-color:      darken($fallback--base-ui-color, 10%);
-//$fallback--nav-bar--margin-bottom: 24px;
+$fallback--sub-nav--background-color:       $fallback--nav-bar--background-color;
+$fallback--sub-nav__link--color:            $fallback--nav-bar__link--color;
+$fallback--sub-nav__link--background-color: $fallback--nav-bar--background-color;
+
 @import "../bower_components/Fall-Back-Nav-Bar/_nav-bar";
 
+
+$fallback--dropdown--background-color:         $fallback--nav-bar--background-color;
+$fallback--dropdown--text-color:               $fallback--nav-bar__link--color;
+$fallback--dropdown__button--color:            $fallback--nav-bar__link--color;
+$fallback--dropdown__button--background-color: $fallback--nav-bar__link--background-color;
+
+@import "../bower_components/Fall-Back-Dropdown/_dropdown";
 
 //$fallback--search-form--breakpoint--enhanced: 50em;
 @import "../bower_components/Fall-Back-Search-Form/_search-form";

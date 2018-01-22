@@ -6,25 +6,25 @@ layout: structure
 
         <nav class="scl--pushed-apart">
             <div class="scl--pushed-apart--first">
-                <ul wf-bar-links="divided">
+                <ul wf-bar-links="divided+small-padding">
                     <li>
-                        <a href=""><span>Randomisation</span></a>
+                        <a href="'randomisation"><span>Randomisation</span></a>
                     </li>
                     <li>
-                        <a href=""><span>Staff area</span></a>
+                        <a href="#staff-area"><span>Staff area</span></a>
                     </li>
                 </ul>
             </div>
             <div class="scl--pushed-apart--last">
-                <ul wf-bar-links="divided">
+                <ul wf-bar-links="divided+small-padding">
                     <li>
-                        <a href=""><span>News</span></a>
+                        <a href="#news"><span>News</span></a>
                     </li>
                     <li>
-                        <a href=""><span>Publications</span></a>
+                        <a href="#publications"><span>Publications</span></a>
                     </li>
                     <li>
-                        <a href=""><span>Contact</span></a>
+                        <a href="#contact"><span>Contact</span></a>
                     </li>
                     <li>
                         <a href=""><span>
@@ -57,26 +57,89 @@ layout: structure
                 </div>
             <div class="scl--pushed-apart--last">
 
-                <ul wf-bar-links>
-                    <li>
-                        <a href=""><span>About Us</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Research</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Trials</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>SHEER</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Participant Involvement</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>People</span></a>
-                    </li>
-                </ul>
+
+                <div class="nav-bar" wf-area="white">
+
+                    <nav class="nav-bar__main">
+
+                        <ul class="nav-bar__items" wf-bar-links="small-text">
+
+                            <li class="nav-bar__item  dropdown">
+
+                                <a href="#about-us" class="nav-bar__link">About Us</a>
+                                <button id="about-us-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="About Us sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-triangle-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-triangle-up"></use></svg></button>
+
+                                <div class="dropdown__area" id="about-us-sub-menu-toggle--target">
+                                    <ul class="subnav__items  subnav__items--stacked">
+                                        <li class="subnav__item"><a href="#working-in-npeu" class="subnav__link" data-js="dropdown__focus-start">Working on the NPEU</a></li>
+                                        <li class="subnav__item"><a href="#jobs" class="subnav__link">Jobs</a></li>
+                                        <li class="subnav__item"><a href="#postgraduate-studies" class="subnav__link">Postgraduate Studies</a></li>
+                                        <li class="subnav__item"><a href="#seminars" class="subnav__link">Seminars</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-bar__item  dropdown">
+
+                                <a href="#" class="nav-bar__link">Research</a>
+                                <button id="research-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="Research sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-triangle-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-triangle-up"></use></svg></button>
+
+                                <div class="dropdown__area" id="research-sub-menu-toggle--target">
+                                    <ul class="subnav__items  subnav__items--stacked">
+                                        <li class="subnav__item"><a href="#research-theme" class="subnav__link" data-js="dropdown__focus-start">Research Theme</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-bar__item  dropdown">
+
+                                <a href="#trials" class="nav-bar__link">Trials</a>
+                                <button id="trials-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="Trials sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-triangle-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-triangle-up"></use></svg></button>
+
+                                <div class="dropdown__area" id="trials-sub-menu-toggle--target">
+                                    <ul class="subnav__items  subnav__items--stacked">
+                                        <li class="subnav__item"><a href="#trials-portfolio" class="subnav__link" data-js="dropdown__focus-start">Trials Portfolio</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-bar__item  dropdown">
+
+                                <a href="#sheer" class="nav-bar__link">SHEER</a>
+                                <button id="sheer-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="SHEER sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-triangle-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-triangle-up"></use></svg></button>
+
+                                <div class="dropdown__area" id="sheer-sub-menu-toggle--target">
+                                    <ul class="subnav__items  subnav__items--stacked">
+                                        <li class="subnav__item"><a href="#sheer-internal" class="subnav__link" data-js="dropdown__focus-start">SHEER internal</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-bar__item"><a href="#public-involvement" class="nav-bar__link">Public Involvement</a></li>
+
+                            <li class="nav-bar__item  dropdown">
+
+                                <a href="#people" class="nav-bar__link">People</a>
+                                <button id="people-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="People sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-triangle-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-triangle-up"></use></svg></button>
+
+                                <div class="dropdown__area" id="people-sub-menu-toggle--target">
+                                    <ul class="subnav__items  subnav__items--stacked">
+                                        <li class="subnav__item"><a href="#profile" class="subnav__link" data-js="dropdown__focus-start">Profile</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+
+                        </ul>
+
+                    </nav>
+
+                </div>
 
             </div>
 
@@ -90,7 +153,7 @@ layout: structure
 
     </section>
 
-    <footer class="page-footer" wf-area="dark">
+    <footer class="page-footer" wf-area="dark+outline">
 
     <div>Footer</div>
 

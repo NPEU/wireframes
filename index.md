@@ -10,7 +10,7 @@ title: NPEU Home
 
     </div>
 
-    <div class="hero-message" wf-area="white+medium-padding">
+    <div class="hero-message" wf-area="white+medium-padding+outline">
     
         <h1 wf-heading="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
         <p>
@@ -23,7 +23,7 @@ title: NPEU Home
 
 </div>
 
-<div wf-area="light+medium-padding">
+<div wf-area="light+medium-padding+outline">
     <h2>
         Participant involvement
     </h2>

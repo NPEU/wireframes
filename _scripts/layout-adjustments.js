@@ -21,8 +21,6 @@
         }
     }
 
-
-
     ready(adjustJustifyContent.run);
     window.onresize = adjustJustifyContent.run;
 })();

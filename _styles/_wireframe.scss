@@ -114,12 +114,11 @@ html.wireframe {
 
 
 .wireframe [wf-area] {
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: $wf-wire;
+   
 
     a[href] {
         color: inherit;
+        background-color: inherit;
     }
 
     a[href]:hover,
@@ -127,6 +126,13 @@ html.wireframe {
     a[href]:focus {
         color: inherit;
     }
+}
+
+
+.wireframe [wf-area*=outline] {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: $wf-wire;
 }
 
 .wireframe [wf-area*=white] {
@@ -218,13 +224,18 @@ html.wireframe {
         display: block;
         border: 0;
         margin: 0;
-        padding: $sz-xs $sz-s;
     }
 
     a[href]:hover,
     a[href]:active,
     a[href]:focus {
         background-color: rgba(255,255,255,0.2);
+    }
+}
+
+.wireframe [wf-bar-links*=small-padding] {
+    a[href] {
+        padding: $sz-xs $sz-s;
     }
 }
 
@@ -237,11 +248,11 @@ html.wireframe {
     }
 }
 
-.wireframe [wf-bar-links=divided] > *:not(:first-child) {
+.wireframe [wf-bar-links*=divided] > *:not(:first-child) {
     position: relative;
 }
 
-.wireframe [wf-bar-links=divided] > *:not(:first-child):before {
+.wireframe [wf-bar-links*=divided] > *:not(:first-child):before {
     content: "";
     display: block;
     height: 1em;
@@ -252,6 +263,11 @@ html.wireframe {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.wireframe [wf-bar-links*=small-text] {
+    font-size: 0.85em;
+}
+
 
 .wireframe [wf-heading*=large] {
     font-size: 1.625em;
