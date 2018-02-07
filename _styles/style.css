@@ -2110,7 +2110,7 @@ _:-o-prefocus, :root .icon {
 /* -----------------------------------------------------------------------------------------------*/
 /* ********************************************************************************************** */
 /* -- Enhanced layout --------------------------------------------------------------------------- */
-@media only screen and (max-width: 32.9375em) {
+@media only screen and (max-width: 53.9375em) {
   /*
             1. Helps compatibiliy with Nav-Bar. No down-sides I can see. May have to revise if some
                become apparent.
@@ -2310,6 +2310,7 @@ _:-o-prefocus, :root .icon {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
+/**/
 /*-------------------------------------------------------------------------------------------------|
     Fall-Back Start-CSS Settings v1.0.0
 
@@ -2691,7 +2692,7 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
     (CSS only attempts weren't good enough)
     So, scoping these styles to the 'js-nav-bar' class.
 */
-@media only screen and (min-width: 33em) {
+@media only screen and (min-width: 54em) {
   /*
             1. Flex is only really needed for 'additional' to fill up the space.
                I don't think this would actually do any harm...
@@ -2909,6 +2910,11 @@ _:-o-prefocus, body:last-child .nav-bar .subnav__heading {
 }
 
 /* -----------------------------------------------------------------------------------------------*/
+.js-nav-bar .nav-bar__items {
+  font-size: 0.85em;
+}
+
+/**/
 /*-------------------------------------------------------------------------------------------------|
     Fall-Back Start-CSS Settings v1.0.0
 
@@ -3056,7 +3062,7 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
     (CSS only attempts weren't good enough)
     So, scoping these styles to the 'js-dropdown' class.
 */
-@media only screen and (min-width: 33em) {
+@media only screen and (min-width: 54em) {
   /*
             1. Flex is only really needed for 'additional' to fill up the space.
                I don't think this would actually do any harm...
@@ -3254,13 +3260,13 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 /* -----------------------------------------------------------------------------------------------*/
 /* ********************************************************************************************** */
 /* -- Enhanced layout --------------------------------------------------------------------------- */
-@media only screen and (max-width: 32.9375em) {
+@media only screen and (max-width: 53.9375em) {
   .search-form .search-form__collapse {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 33em) {
+@media only screen and (min-width: 54em) {
   /*
             1. Reinstate all flexbox for enhanced view as no wrapping needs to occure
             (FF8-27 issue describbed above)
@@ -3753,7 +3759,7 @@ body {
 @media only screen and (min-width: 500px) {
   .hero .hero-message {
     position: relative;
-    z-index: 9999;
+    z-index: 1;
     margin-top: -20%;
     margin-left: auto;
     margin-right: auto;
@@ -3768,7 +3774,7 @@ body {
     top: 50%;
     left: 5rem;
     transform: translateY(-50%);
-    z-index: 9999;
+    z-index: 1;
     width: 40%;
   }
 }
@@ -4187,6 +4193,24 @@ h1, h2, h3 {
   .wireframe .hero [wf-box]::before {
     padding-left: 23%;
   }
+}
+
+/*
+@media only screen and (max-width:54em) {
+    .banner .scl--pushed-apart--last { 
+        width: 100%;
+        margin-top: $sz-m;
+    }
+}
+*/
+@media only screen and (max-width: 54em) {
+  .subnav__items--stacked li {
+    padding-left: 2.4rem;
+  }
+}
+
+.js-over-panel_is-open .over-panel__overlay {
+  z-index: 2;
 }
 
 /* ---------------------------------------------------------------------------------------------- */

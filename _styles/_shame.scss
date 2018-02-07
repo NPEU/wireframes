@@ -73,3 +73,21 @@ h1, h2, h3 {
     }
     
 }
+/*
+@media only screen and (max-width:54em) {
+    .banner .scl--pushed-apart--last { 
+        width: 100%;
+        margin-top: $sz-m;
+    }
+}
+*/
+@media only screen and (max-width:54em) {
+    .subnav__items--stacked li { 
+        padding-left: $sz-m;
+    }
+}
+
+.js-over-panel_is-open .over-panel__overlay {
+    z-index: 2;
+}
+
