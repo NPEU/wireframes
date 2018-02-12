@@ -117,7 +117,7 @@ gulp.task('concat_js', () =>
     gulp.src([
         './_scripts/cookie-notice-settings.js',
         './_scripts/layout-adjustments.js',
-        //'./bower_components/Fall-Back-Nav-Bar/nav-bar.js',
+        './bower_components/Fall-Back-Nav-Bar/nav-bar.js',
         './bower_components/Fall-Back-Dropdown/dropdown.js',
         './bower_components/Fall-Back-Over-Panel/over-panel.js',
         './bower_components/Fall-Back-Cookie-Notice/cookie-notice.js',

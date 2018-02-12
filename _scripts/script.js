@@ -47,6 +47,436 @@ var cookie_html                   =
     window.onresize = adjustJustifyContent.run;
 })();
 /*!
+    Fall-Back Nav-Bar v2.0.0
+    https://github.com/Fall-Back/Nav-Bar
+    Copyright (c) 2017, Andy Kirk
+    Released under the MIT license https://git.io/vwTVl
+*/
+(function() {
+    
+    var nav_bar_js_classname = 'js-nav-bar'; 
+
+    var check_for_css = function(selector) {
+        var rules;
+        var haveRule = false;
+        if (typeof document.styleSheets != "undefined") {// is this supported
+            var cssSheets = document.styleSheets;
+            outerloop:
+            for (var i = 0; i < cssSheets.length; i++) {
+                // using IE or FireFox/Standards Compliant
+                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                for (var j = 0; j < rules.length; j++) {
+                    if (rules[j].selectorText == selector) {
+                        haveRule = true;
+                        break outerloop;
+                    }
+                }
+            }
+        }
+        return haveRule;
+    }
+    
+    var ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
+	var navbar = {
+
+        init: function() {
+            /*var nav_bar = document.querySelector('.nav-bar');
+            
+            // Note that `getComputedStyle` on pseudo elements doesn't work in Opera Mini, but in
+            // this case I'm happy to serve only the un-enhanced version to Opera Mini.
+            var css_is_loaded = (
+                window.getComputedStyle(nav_bar, ':before')
+                .getPropertyValue('content')
+                .replace(/(\"|\')/g, '')
+                == 'CSS Loaded'
+            );*/
+
+            if (css_is_loaded) {
+                // Add the JS class names ...
+                /*if (nav_bar.classList) {
+                    nav_bar.classList.add(nav_bar_js_classname);
+                } else {
+                    nav_bar.className += ' ' + nav_bar_js_classname;
+                }*/
+                // ... and button actions:*/
+                // CSS all good, add button actions:
+                var buttons = document.querySelectorAll('[data-js="nav-bar__button"]');
+                Array.prototype.forEach.call(buttons, function(button, i) {
+                    var button_id = button.getAttribute('id');
+
+                    button.setAttribute('aria-expanded', 'false');
+
+                    // Main button:
+                    button.addEventListener('click', function() {
+                        // Switch the `aria-expanded` attribute:
+                        var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+
+                        // Close any open submenu:
+                        var expanded_buttons = document.querySelectorAll('[data-js="nav-bar__button"][aria-expanded="true"]');
+                        Array.prototype.forEach.call(expanded_buttons, function(expanded_button, i) {
+                            expanded_button.setAttribute('aria-expanded', 'false');
+                        });
+
+                        // Set the attribute:
+                        this.setAttribute('aria-expanded', !expanded);
+
+                        // Set the focus to the first link if submenu newly opened:
+                        if (!expanded) {
+                            var first_link = document.querySelector('#' + button_id + '--target [data-js="nav-bar__focus-start"]');
+                            if (first_link) {
+                                first_link.focus();
+                            }
+                        }
+                    });
+
+                });
+            }
+        }
+	}
+
+    var css_is_loaded = check_for_css('.' + nav_bar_js_classname);
+    
+    if (css_is_loaded) {
+        // Add the JS class name ...
+        
+        var hmtl_el = document.querySelector('html');
+        
+        if (hmtl_el.classList) {
+            hmtl_el.classList.add(nav_bar_js_classname);
+        } else {
+            hmtl_el.className += ' ' + nav_bar_js_classname;
+        }
+    }
+
+	ready(navbar.init);
+})();
+
+/*!
+    Fall-Back Dropdown v1.0.0
+    https://github.com/Fall-Back/Dropdown
+    Copyright (c) 2017, Andy Kirk
+    Released under the MIT license https://git.io/vwTVl
+*/
+(function() {
+    
+    var dropdown_js_classname = 'js-dropdown'; 
+
+    var check_for_css = function(selector) {
+        var rules;
+        var haveRule = false;
+        if (typeof document.styleSheets != "undefined") {// is this supported
+            var cssSheets = document.styleSheets;
+            outerloop:
+            for (var i = 0; i < cssSheets.length; i++) {
+                // using IE or FireFox/Standards Compliant
+                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                for (var j = 0; j < rules.length; j++) {
+                    if (rules[j].selectorText == selector) {
+                        haveRule = true;
+                        break outerloop;
+                    }
+                }
+            }
+        }
+        return haveRule;
+    }
+    
+    var ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
+	var dropdown = {
+
+        init: function() {
+            var dropdowns = document.querySelectorAll('.dropdown');
+            /*var dropdown_js_classname = 'js-dropdown';
+            // Note that `getComputedStyle` on pseudo elements doesn't work in Opera Mini, but in
+            // this case I'm happy to serve only the un-enhanced version to Opera Mini.
+            var css_is_loaded = (
+                window.getComputedStyle(dropdown, ':before')
+                .getPropertyValue('content')
+                .replace(/(\"|\')/g, '')
+                == 'CSS Loaded'
+            );*/
+
+            if (css_is_loaded) {
+                Array.prototype.forEach.call(dropdowns, function(dropdown, i) {
+                    // Add the JS class names ...
+                    if (dropdown.classList) {
+                        dropdown.classList.add(dropdown_js_classname);
+                    } else {
+                        dropdown.className += ' ' + dropdown_js_classname;
+                    }
+                    // ... and button actions:
+                    var buttons = document.querySelectorAll('[data-js="dropdown__button"]');
+                    Array.prototype.forEach.call(buttons, function(button, i) {
+                        var button_id = button.getAttribute('id');
+
+                        button.setAttribute('aria-expanded', 'false');
+
+                        // Main button:
+                        button.addEventListener('click', function() {
+                            // Switch the `aria-expanded` attribute:
+                            var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+
+                            // Close any open dropdown:
+                            var expanded_buttons = document.querySelectorAll('[data-js="dropdown__button"][aria-expanded="true"]');
+                            Array.prototype.forEach.call(expanded_buttons, function(expanded_button, i) {
+                                expanded_button.setAttribute('aria-expanded', 'false');
+                            });
+
+                            // Set the attribute:
+                            this.setAttribute('aria-expanded', !expanded);
+
+                            // Set the focus to the first link if submenu newly opened:
+                            if (!expanded) {
+                                var first_link = document.querySelector('#' + button_id + '--target [data-js="dropdown__focus-start"]');
+                                if (first_link) {
+                                    first_link.focus();
+                                }
+                            }
+                        });
+                    });
+                });
+            }
+        }
+	}
+    
+    var css_is_loaded = check_for_css('.' + dropdown_js_classname);
+    
+    if (css_is_loaded) {
+        // Add the JS class name ...
+        
+        var hmtl_el = document.querySelector('html');
+        
+        if (hmtl_el.classList) {
+            hmtl_el.classList.add(dropdown_js_classname);
+        } else {
+            hmtl_el.className += ' ' + dropdown_js_classname;
+        }
+    }
+
+	ready(dropdown.init);
+})();
+
+/*!
+    Fall-Back Over-Panel v2.0.0
+    https://github.com/Fall-Back/Over-Panel
+    Copyright (c) 2017, Andy Kirk
+    Released under the MIT license https://git.io/vwTVl
+*/
+(function() {
+
+    var over_panel_js_classname           = 'js-over-panel';
+    var over_panel_control_js_classname   = 'js-over-panel-control';
+    var over_panel_is_open_classname      = 'js-over-panel_is-open';
+    var over_panel_is_animating_classname = 'js-over-panel_is-animating';
+
+    var check_for_css = function(selector) {
+        var rules;
+        var haveRule = false;
+        if (typeof document.styleSheets != "undefined") {// is this supported
+            var cssSheets = document.styleSheets;
+            outerloop:
+            for (var i = 0; i < cssSheets.length; i++) {
+                // using IE or FireFox/Standards Compliant
+                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                for (var j = 0; j < rules.length; j++) {
+                    if (rules[j].selectorText == selector) {
+                        haveRule = true;
+                        break outerloop;
+                    }
+                }
+            }
+        }
+        return haveRule;
+    }
+    
+    var ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
+
+    /* From Modernizr */
+    var whichTransitionEvent = function() {
+        var t;
+        var el = document.createElement('fakeelement');
+        var transitions = {
+          'transition':'transitionend',
+          'OTransition':'oTransitionEnd',
+          'MozTransition':'transitionend',
+          'WebkitTransition':'webkitTransitionEnd'
+        }
+
+        for(t in transitions){
+            if( el.style[t] !== undefined ){
+                return transitions[t];
+            }
+        }
+    }
+
+	var over_panel = {
+
+        init: function() {
+            var over_panels = document.querySelectorAll('[data-js="over-panel"]');
+            /*var over_panel_js_classname           = 'js-over-panel';
+            var over_panel_control_js_classname   = 'js-over-panel-control';
+            var over_panel_is_open_classname      = 'js-over-panel_is-open';
+            var over_panel_is_animating_classname = 'js-over-panel_is-animating';*/
+
+            var transitionEvent = whichTransitionEvent();
+
+            // Note that `getComputedStyle` on psuedo elements doesn't work in Opera Mini, but in
+            // this case I'm happy to serve only the unenhanced version to Opera Mini.
+            /*var css_is_loaded = (
+                window.getComputedStyle(over_panels[0], ':before')
+                .getPropertyValue('content')
+                .replace(/(\"|\')/g, '')
+                == 'CSS Loaded'
+            );*/
+
+            if (css_is_loaded) {
+                Array.prototype.forEach.call(over_panels, function(over_panel, i) {
+
+
+                    // Find corresponding controls:
+                    var over_panel_id = over_panel.getAttribute('id');
+                    var over_panel_control = document.querySelector('[aria-controls="' + over_panel_id + '"]');
+                    var over_panel_overlay = over_panel.querySelector('[data-js="over-panel__overlay"]');
+
+                    // Check we've got a corresponding control. If not we can't proceed so skip:
+                    if (!over_panel_control) {
+                        return;
+                    }
+
+                    // Add the JS class names ...
+                    // ... to the panel: ...
+                    if (over_panel.classList) {
+                        over_panel.classList.add(over_panel_js_classname);
+                    } else {
+                        over_panel.className += ' ' + over_panel_js_classname;
+                    }
+                    // ... and the control:
+                    if (over_panel_control.classList) {
+                        over_panel_control.classList.add(over_panel_control_js_classname);
+                    } else {
+                        over_panel_control.className += ' ' + over_panel_control_js_classname;
+                    }
+
+                    // Main toggle button:
+                    over_panel_control.addEventListener('click', function() {
+
+                        if (over_panel.classList) {
+                            over_panel.classList.add(over_panel_is_animating_classname);
+                        } else {
+                            over_panel.className += ' ' + over_panel_is_animating_classname;
+                        }
+
+                        // Invert the `aria-expanded` attribute:
+                        var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                        
+                        // Close any open panels:
+                        var expanded_buttons = document.querySelectorAll('[data-js="overpanel__control"][aria-expanded="true"]');
+                        Array.prototype.forEach.call(expanded_buttons, function(expanded_button, i) {
+                            //expanded_button.setAttribute('aria-expanded', 'false');
+                            expanded_button.click();
+                        });
+
+                        // Set the attribute:
+                        this.setAttribute('aria-expanded', !expanded);
+
+                        // Toggle the `is_open` class:
+                        if (!expanded) {
+                            if (over_panel.classList) {
+                                over_panel.classList.add(over_panel_is_open_classname);
+                            } else {
+                                over_panel.className += ' ' + over_panel_is_open_classname;
+                            }
+                        } else {
+                            if (over_panel.classList) {
+                                over_panel.classList.remove(over_panel_is_open_classname);
+                            } else {
+                                over_panel.className = over_panel.className.replace(new RegExp('(^|\\b)' + over_panel_is_open_classname.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                            }
+                        }
+                    });
+
+					// Overlay click action:
+					over_panel_overlay.addEventListener('click', function() {
+						over_panel_control.click()
+					});
+
+                    // Remove `animating` class at transition end.
+                    transitionEvent && over_panel.addEventListener(transitionEvent, function() {
+                        if (over_panel.classList) {
+                            over_panel.classList.remove(over_panel_is_animating_classname);
+                        } else {
+                            console.log('Animation ended');
+                            over_panel.className = over_panel.className.replace(new RegExp('(^|\\b)' + over_panel_is_animating_classname.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                        }
+                    });
+
+                    // Focus trap inspired by:
+					// http://heydonworks.com/practical_aria_examples/progressive-hamburger.html
+                    var over_panel_contents = over_panel.querySelector('[data-js="over-panel__contents"]');
+                    var focusables          = over_panel_contents.querySelectorAll('a, button, input, select, textarea');
+                    var first_focusable     = focusables[0];
+                    var last_focusable      = focusables[focusables.length - 1];
+
+                    // At end of navigation block, return focus to navigation menu button
+                    last_focusable.addEventListener('keydown', function(e) {
+                        if (over_panel_control.getAttribute('aria-expanded') == 'true' && e.keyCode === 9 && !e.shiftKey) {
+							e.preventDefault();
+							over_panel_control.focus();
+                        }
+                    });
+
+                    // At start of navigation block, refocus close button on SHIFT+TAB
+                    over_panel_control.addEventListener('keydown', function(e) {
+                        if (over_panel_control.getAttribute('aria-expanded') == 'true' && e.keyCode === 9 && e.shiftKey) {
+                            e.preventDefault();
+                            last_focusable.focus();
+                        }
+                    });
+                });
+            }
+        }
+	}
+    
+    
+    var css_is_loaded = check_for_css('.' + over_panel_js_classname);
+    
+    if (css_is_loaded) {
+        // Add the JS class name ...
+        
+        var hmtl_el = document.querySelector('html');
+        
+        if (hmtl_el.classList) {
+            hmtl_el.classList.add(over_panel_js_classname);
+        } else {
+            hmtl_el.className += ' ' + over_panel_js_classname;
+        }
+    }
+
+	ready(over_panel.init);
+})();
+
+/*!
     Fall-Back Cookie Notice v1.1.0
     https://github.com/Fall-Back/Cookie-Notice
     Copyright (c) 2017, Andy Kirk

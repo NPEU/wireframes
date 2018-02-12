@@ -83,9 +83,12 @@ $body-padding: $sz-m;
 
 /* ---------------------------------------------------------------------------------------------- */
 /* --| FALL-BACK PATTERNS |---------------------------------------------------------------------- */
-
+$fallback--over-panel__contents--offset-top: $sz-m;
 $fallback--over-panel__contents--padding: 0;
 @import "../bower_components/Fall-Back-Over-Panel/_over-panel";
+
+
+
 
 
 /**/

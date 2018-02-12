@@ -86,8 +86,30 @@ h1, h2, h3 {
         padding-left: $sz-m;
     }
 }
-
+/*
 .js-over-panel_is-open .over-panel__overlay {
     z-index: 2;
 }
+*/
+.layer {
+    position: relative;
+    z-index: 0;
+}
 
+
+.layer--above-content {
+    z-index: 600;
+}
+
+.layer--overlay {
+    z-index: 800;
+}
+
+.layer--above-overlay {
+    z-index: 900;
+}
+
+// Make wireframe outline visible:
+.page-header {
+    margin-bottom: 2px;
+}

@@ -23,6 +23,7 @@ exclude: [
     "Gemfile",
     "Gemfile.lock",
     "Gruntfile.js",
+    "_favicon.js",
     "local-grunt.bat",
     "local-jekyll.bat",
     "node_modules", 
