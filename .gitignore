@@ -1,11 +1,14 @@
 bower_components/
 
+
+package-lock.json
+
+
 Gemfile.lock
 _site
 
 .sass-cache/
 *.css.map
-
 
 
 # Logs
