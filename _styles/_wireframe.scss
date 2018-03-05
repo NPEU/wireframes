@@ -112,8 +112,7 @@ html.wireframe {
 }
 */
 
-
-.wireframe [wf-area] {
+.wireframe [wf-links] {
    
 
     a[href] {
@@ -126,6 +125,22 @@ html.wireframe {
     a[href]:focus {
         color: inherit;
     }
+}
+
+
+.wireframe [wf-area] {
+   
+
+    /*a[href] {
+        color: inherit;
+        background-color: inherit;
+    }
+
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
+        color: inherit;
+    }*/
 }
 
 
@@ -155,7 +170,7 @@ html.wireframe {
     color: $wf-text--light;
 }
 
-
+/*
 .wireframe [wf-area*=padding] {
 
     &:after {
@@ -165,37 +180,44 @@ html.wireframe {
         margin-bottom: -1px;
         width: 100%;
     }
-}
+}*/
 
 .wireframe [wf-area*=small-padding] {
-    padding-left: $sz-s;
+    padding: $sz-s;
+    /*padding-left: $sz-s;
     padding-right: $sz-s;
     padding-top: $sz-s;
 
     &:after {
         margin-top: $sz-s;
     }
+    */
 }
 
 .wireframe [wf-area*=medium-padding] {
-    padding-left: $sz-m;
+    padding: $sz-m;
+    
+    /*padding-left: $sz-m;
     padding-right: $sz-m;
     padding-top: $sz-m;
 
     &:after {
         margin-top: $sz-m;
-    }
+    }*/
 }
 
 
 .wireframe [wf-area*=large-padding] {
-    padding-left: $sz-l;
+    padding: $sz-l;   
+    
+    /*padding-left: $sz-l;
     padding-right: $sz-l;
     padding-top: $sz-l;
 
     &:after {
         margin-top: $sz-l;
     }
+    */
 }
 
 
@@ -279,7 +301,6 @@ html.wireframe {
 
 
 
-.wireframe a[href][wf-button],
 .wireframe button[wf-button] {
     display: inline-block;
     /* AK. IE9 needs this. */
@@ -319,9 +340,6 @@ html.wireframe {
     /* S: IE10 */
     touch-action: manipulation;
 }
-    .wireframe a[href][wf-button]:hover,
-    .wireframe a[href][wf-button]:active,
-    .wireframe a[href][wf-button]:focus,
     .wireframe button[wf-button]:hover,
     .wireframe button[wf-button]:active,
     .wireframe button[wf-button]:focus {
@@ -334,4 +352,58 @@ html.wireframe {
         //margin: 0;
         
         color: #fff;
+    }
+    
+.wireframe a[href][wf-cta] {
+    display: inline-block;
+
+    color: #663399;
+    background-color: #ffffff;
+    
+    font-size: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    min-height: 3rem;
+    line-height: 2.4rem;
+    margin: 0.3rem 0;
+    text-transform: none;
+
+    cursor: pointer;
+
+    border-color: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    
+    padding-top: 0.3rem;
+    padding-top: -moz-calc(0);
+    padding-top: calc(0.3rem - 1px);
+    padding-bottom: 0.3rem;
+    padding-bottom: -moz-calc(0);
+    padding-bottom: calc(0.3rem - 1px);
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    vertical-align: middle;
+
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+    .wireframe a[href][wf-cta]:hover,
+    .wireframe a[href][wf-cta]:active,
+    .wireframe a[href][wf-cta]:focus {
+        box-shadow: 0 0 0 2px #bbbbbb inset;
+        outline: 0;
+
+        border-color: rgba(0, 0, 0, 0.4);
+        border-style: solid;
+        border-width: 2px;
+        //margin: 0;
+        
+        //color: #fff;
+        background-color: #eeeeee;
+    }
+    
+    .wireframe a[href] svg {
+        vertical-align: text-top;
     }

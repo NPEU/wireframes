@@ -44,8 +44,6 @@ h1, h2, h3 {
 }
 
 
-
-
 .v-center {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -112,4 +110,15 @@ h1, h2, h3 {
 // Make wireframe outline visible:
 .page-header {
     margin-bottom: 2px;
+}
+
+
+
+.feature-image {
+    padding: 0 5%;
+}
+
+
+.text-content :last-child {
+    margin-bottom: 0;
 }

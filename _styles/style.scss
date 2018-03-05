@@ -25,6 +25,7 @@ $max-main-line-length: 0;
 $measure: 64rem;
 
 @import '../bower_components/Fall-Back-Start-CSS/_start.scss';
+@import '../bower_components/Fall-Back-Start-CSS/_start-classes.scss';
 
 @import '../bower_components/Fall-Back-Base/_icons.scss';
 
@@ -55,12 +56,6 @@ $body-padding: $sz-m;
 //@import "../bower_components/Fall-Back-Base/_fallback-base";
 
 
-// Inuit:
-//@import "bower_components/inuit-functions/tools.functions";
-//@import "bower_components/inuit-tools-widths/tools.widths";
-//@import "bower_components/inuit-mixins/tools.mixins";
-//@import "bower_components/inuit-responsive-tools/tools.responsive.scss";
-
 @mixin bottom-space-fix () {
 
 	padding-bottom: 0 !important;
@@ -68,9 +63,9 @@ $body-padding: $sz-m;
 	&::after {
 		content: "";
 		display: block;
-		margin-bottom: $fallback--base-rem-space-unit;
+		margin-top: $fallback--base-rem-space-unit;
 		height: 1px;
-		margin-top: -1px;
+		margin-bottom: -1px;
 	}
 
 }
@@ -92,13 +87,14 @@ $fallback--over-panel__contents--padding: 0;
 
 
 /**/
-$fallback--nav-bar--background-color:       #fff;
-$fallback--nav-bar__link--color:            #333;
-$fallback--nav-bar__link--background-color: $fallback--nav-bar--background-color;
+$fallback--nav-bar--background-color:            #fff;
+$fallback--nav-bar__link--color:                 #333;
+$fallback--nav-bar__link--background-color:      $fallback--nav-bar--background-color;
 
-$fallback--sub-nav--background-color:       $fallback--nav-bar--background-color;
-$fallback--sub-nav__link--color:            $fallback--nav-bar__link--color;
-$fallback--sub-nav__link--background-color: $fallback--nav-bar--background-color;
+$fallback--sub-nav--background-color:            $fallback--nav-bar--background-color;
+$fallback--sub-nav__link--color:                 $fallback--nav-bar__link--color;
+$fallback--sub-nav__link--background-color:      $fallback--nav-bar--background-color;
+$fallback--sub-nav__link--background-color--alt: darken($fallback--nav-bar--background-color, 14%);
 
 @import "../bower_components/Fall-Back-Nav-Bar/_nav-bar";
 
@@ -146,10 +142,24 @@ $fallback-svg--link-bg-color-alt: #fff;
 //$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
 @import "../bower_components/NPEU-layout-patterns/scss/_scl--pushed-apart.scss";
 
+@import "../bower_components/NPEU-layout-patterns/scss/_scl--n-up.scss";
+
+
+$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
+@import "../bower_components/NPEU-layout-patterns/scss/_gallery-grid.scss";
+
 
 
 //$card--base-color: lighten($fallback--base-ui-color, 60%);
-//@import "patterns/_card.scss";
+$card-body--padding: $fallback--base-rem-space-unit;
+
+// Pull-over settings - kep for reference:
+//$card-body--margin-left: $fallback--base-rem-space-unit;
+//$card-body--margin-right: $fallback--base-rem-space-unit;
+//$card-body--pull-over: -$fallback--base-rem-space-unit;
+
+
+@import "patterns/_card.scss";
 
 
 //@import "_full-width.scss";
@@ -162,17 +172,14 @@ $fallback-svg--link-bg-color-alt: #fff;
 //$panel--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_panel.scss";
 
-/* ---------------------------------------------------------------------------------------------- */
-
+/* ---------------------------------------------------------------------------------------------- *
 
 //@import "_themes_config";
 //@import "_themes";
 
-
-
 /* --| WIREFRAME--------------------------------------------------------------------------------- */
 // Just testing this out, may not keep. Or probably develop into it's own project.
-@import "_wireframe";
+@import "_wireframe.scss";
 
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -180,6 +187,6 @@ $fallback-svg--link-bg-color-alt: #fff;
 
 /* --| SHAME |----------------------------------------------------------------------------------- */
 
-@import "_shame";
+@import "_shame.scss";
 
 /* ---------------------------------------------------------------------------------------------- */
