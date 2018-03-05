@@ -5070,8 +5070,12 @@ h1, h2, h3 {
   margin-bottom: 2px;
 }
 
-.feature-image {
-  padding: 0 5%;
+.feature-image:first-child {
+  padding: 0 5% 0 calc(5% - 2.4rem);
+}
+
+.feature-image:nth-child(2) {
+  padding: 0 calc(5% - 2.4rem) 0 5%;
 }
 
 .text-content :last-child {

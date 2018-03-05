@@ -114,8 +114,12 @@ h1, h2, h3 {
 
 
 
-.feature-image {
-    padding: 0 5%;
+.feature-image:first-child {
+    padding: 0 5% 0 calc(5% - #{$fallback--base-rem-space-unit});
+}
+
+.feature-image:nth-child(2) {
+    padding: 0 calc(5% - #{$fallback--base-rem-space-unit}) 0 5%;
 }
 
 
