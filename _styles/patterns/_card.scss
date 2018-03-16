@@ -164,19 +164,20 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
             margin-right: $card-body--margin-right;
             margin-top: $card-body--margin-top;
             margin-bottom: $card-body--margin-bottom;
-            padding: $card-body--padding $card-body--padding 0 $card-body--padding;
+            padding: $card-body--padding;
+            //padding: $card-body--padding $card-body--padding 0 $card-body--padding;
 
             -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
                     flex: 1 0 auto;
 	
-            &::after {
+            /*&::after {
                 content: "";
                 display: block;
                 margin-top: $card-body--padding;
                 margin-bottom: -1px;
                 height: 1px;
-            }
+            }*/
         }
 
         .card .card__image + .card__body--pull-over {

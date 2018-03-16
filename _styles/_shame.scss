@@ -69,18 +69,18 @@ h1, h2, h3 {
     {
         padding-left: 23%;
     }
-    
+
 }
 /*
 @media only screen and (max-width:54em) {
-    .banner .scl--pushed-apart--last { 
+    .banner .scl--pushed-apart--last {
         width: 100%;
         margin-top: $sz-m;
     }
 }
 */
 @media only screen and (max-width:54em) {
-    .subnav__items--stacked li { 
+    .subnav__items--stacked li {
         padding-left: $sz-m;
     }
 }
@@ -122,7 +122,11 @@ h1, h2, h3 {
     padding: 0 calc(5% - #{$fallback--base-rem-space-unit}) 0 5%;
 }
 
-
+/*
 .text-content :last-child {
+    margin-bottom: 0;
+}
+*/
+html :last-child {
     margin-bottom: 0;
 }
