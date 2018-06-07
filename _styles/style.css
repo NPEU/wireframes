@@ -4524,6 +4524,18 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
     margin-right: $body-padding;
 }
 */
+.hero .proportional-container {
+  background-image: url("/img/Bigstock_167982824 - flip.jpg");
+  background-size: cover;
+  /* background-position-y: -5em; */
+}
+
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+  .hero .proportional-container {
+    background-position-y: -5em;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .hero .hero-message {
     position: relative;
