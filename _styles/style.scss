@@ -46,6 +46,7 @@ $measure: 64rem;
 //@import "bower_components/inuit-responsive-settings/_settings.responsive.scss";
 
 
+
 /* ---------------------------------------------------------------------------------------------- */
 /* --| TOKENS |---------------------------------------------------------------------------------- */
 $body-padding: $sz-m;
@@ -159,6 +160,7 @@ $card-body--padding: $fallback--base-rem-space-unit;
 //$card-body--pull-over: -$fallback--base-rem-space-unit;
 
 
+@import "patterns/_brochure.scss";
 @import "patterns/_card.scss";
 
 

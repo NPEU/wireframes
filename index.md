@@ -101,8 +101,8 @@ title: NPEU Home
     </div>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="scl--n-up  scl--2-up">
-        <div class="text-content">
+    <section class="scl--n-upX  scl--2-upX  brochure">
+        <div class="text-content  brochure__body">
             <h2>
                 Our research
             </h2>
@@ -114,7 +114,7 @@ title: NPEU Home
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
             </p>
         </div>
-        <div class="feature-image">
+        <div class="feature-image  brochure__image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
@@ -122,13 +122,13 @@ title: NPEU Home
     </section>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="scl--n-up  scl--2-up">
-        <div class="feature-image">
+    <section class="scl--n-upX  scl--2-upX  brochure">
+        <div class="feature-image  brochure__image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
         </div>
-        <div class="text-content">
+        <div class="text-content  brochure__body">
             <h2>
                 Participant involvement
             </h2>
