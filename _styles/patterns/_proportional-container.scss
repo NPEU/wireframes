@@ -44,6 +44,7 @@ $proportions: (
             height: 100%;
             object-fit: cover;
             top: 0;
+            left: 0;
             transform: none;
         }
     }
@@ -52,5 +53,13 @@ $proportions: (
 @each $ratio, $percent in $proportions {
   .proportional-container--#{$ratio}::before {
         padding-top: $percent;
+    }
+}
+
+@media (min-width: 45em) {
+    @each $ratio, $percent in $proportions {
+        .proportional-container--#{$ratio}--wide::before {
+            padding-top: $percent;
+        }
     }
 }

@@ -46,7 +46,7 @@ $panel--padding: 2rem !default;
 	// overrides, but should allow for branched cascades too.
 	// Handle override default versus specified in theme.
 
-	// Wierdly, SASS throws an error at this
+	// Weirdly, SASS throws an error at this
 	// "Error: Base-level rules cannot contain the parent-selector-referencing character '&'."
 	// There's no '&' being used, so not sure what's going on.
 	// Using nested option as a workaround.

@@ -29,19 +29,19 @@ title: NPEU Home
         <div class="gallery-grid__item">
         
 
-                <div class="card">
-                    <div class="card__image">
+                <div class="c-card">
+                    <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="card__body  card__body--pull-over">
-                        <h2 class="card__title">Trials</h2>
+                    <div class="c-card__body  c-card__body--pull-over">
+                        <h2 class="c-card__title">Trials</h2>
                         <p>
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                         </p> 
                     </div>
-                    <div class="card__footer">
+                    <div class="c-card__footer">
                         <p>
                             <a href="#" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                         </p>
@@ -53,19 +53,19 @@ title: NPEU Home
         <div class="gallery-grid__item">
         
 
-                <div class="card">
-                    <div class="card__image">
+                <div class="c-card">
+                    <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="card__body  card__body--pull-over">
-                        <h2 class="card__title">PRU-MHC</h2>
+                    <div class="c-card__body  c-card__body--pull-over">
+                        <h2 class="c-card__title">PRU-MHC</h2>
                         <p>
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                         </p>                       
                     </div>
-                    <div class="card__footer">
+                    <div class="c-card__footer">
                         <p>
                             <a href="#" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                         </p>
@@ -77,19 +77,19 @@ title: NPEU Home
         <div class="gallery-grid__item">
 
 
-                <div class="card">
-                    <div class="card__image">
+                <div class="c-card">
+                    <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="card__body  card__body--pull-over">
-                        <h2 class="card__title">SHEER</h2>
+                    <div class="c-card__body  c-card__body--pull-over">
+                        <h2 class="c-card__title">SHEER</h2>
                         <p>
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                         </p>
                     </div>
-                    <div class="card__footer">
+                    <div class="c-card__footer">
                         <p>
                             <a href="#" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                         </p>
@@ -101,8 +101,8 @@ title: NPEU Home
     </div>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="scl--n-upX  scl--2-upX  brochure">
-        <div class="text-content  brochure__body">
+    <section class="c-brochure">
+        <div class="text-content  c-brochure__body">
             <h2>
                 Our research
             </h2>
@@ -114,7 +114,7 @@ title: NPEU Home
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
             </p>
         </div>
-        <div class="feature-image  brochure__image">
+        <div class="feature-image  c-brochure__image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
@@ -122,13 +122,13 @@ title: NPEU Home
     </section>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="scl--n-upX  scl--2-upX  brochure">
-        <div class="feature-image  brochure__image">
+    <section class="c-brochure">
+        <div class="feature-image  c-brochure__image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
         </div>
-        <div class="text-content  brochure__body">
+        <div class="text-content  c-brochure__body">
             <h2>
                 Participant involvement
             </h2>

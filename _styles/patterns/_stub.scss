@@ -5,9 +5,6 @@
     OK, but perhaps this would be better abstracted as a `fill-height` class or something?
 */
 
-$card-namespace: c- !default;
-$theme-namespace: t- !default;
-
 $card--base-color: #eee !default;
 
 // Card outer:
@@ -83,34 +80,17 @@ $card-button--background-color: $card--base-color !default;
 $card-button--background-color-alt: lighten($card--base-color, 20%) !default;
 $card-button--border-color: darken($card--base-color, 20%) !default;
 */
-/*
-.#{$card-namespace}card-wrap {
+.card-wrap {
 
 
 }
 
-    .#{$card-namespace}card-wrap .#{$card-namespace}card {
+    .card-wrap .card {
 
         //width: 100%;
     }
-*/
-    // Themes mixin:
-    @mixin card--themer (
-        $name: "",
-        $background-color: $card--base-color
-    ) {
-        // Set up theme name:
-        $theme-class: "";
-        @if $name != "" {
-            $theme-class: unquote('.')#{$theme-namespace}#{$name};
-        }
 
-        .#{$card-namespace}card--themed-content#{$theme-class} .#{$card-namespace}card__body::before {
-            background-color: $background-color;
-        }
-    }
-
-    .#{$card-namespace}card.#{$card-namespace}card {
+    .card.card {
 
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -119,11 +99,11 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
                 flex-direction: row;
-
+                
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-
+                
         -webkit-align-items: flex-end;
              -ms-flex-align: end;
                 align-items: flex-end;
@@ -160,33 +140,33 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
         overflow: hidden;
     }
 
-        .#{$card-namespace}card > * {
+        .card > * {
             -webkit-flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
                     flex: 0 0 auto;
-
+                    
             width: 100%;
         }
 
-        .#{$card-namespace}card .#{$card-namespace}card__image {
+        .card .card__image {
             position: relative;
             text-align: center;
         }
 
-            .#{$card-namespace}card .#{$card-namespace}card__image img {
+            .card .card__image img {
                 width: 100%;
             }
 
 
-            .#{$card-namespace}card .#{$card-namespace}card__image-link,
-            .#{$card-namespace}card .#{$card-namespace}card__image-link:hover {
+            .card .card__image-link,
+            .card .card__image-link:hover {
                 border-bottom: 0;
             }
 
 
 
 
-        .#{$card-namespace}card .#{$card-namespace}card__body {
+        .card .card__body {
             color: $card-body--text-color;
             background: $card-body--background-color;
 
@@ -200,9 +180,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
             -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
                     flex: 1 0 auto;
-
-            position: relative;
-
+	
             /*&::after {
                 content: "";
                 display: block;
@@ -212,30 +190,30 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
             }*/
         }
 
-        .#{$card-namespace}card .#{$card-namespace}card__image + .#{$card-namespace}card__body--pull-over {
+        .card .card__image + .card__body--pull-over {
             position: relative;
             z-index: 1;
             margin-top: $card-body--pull-over;
         }
 
 
-            .#{$card-namespace}card .#{$card-namespace}card__title {
+            .card .card__title {
                 font-size: $card-title--font-size;
             }
 
-
+    
             /*
             @if $card--link-color != false {
-                .#{$card-namespace}card .#{$card-namespace}card__body a {
+                .card .card__body a {
                     color: $card--link-color;
                     @if $card--link-has-border-bottom != false {
                         border-bottom: $card--link-border-bottom;
                     }
                 }
 
-                .#{$card-namespace}card .#{$card-namespace}card__body a:hover,
-                .#{$card-namespace}card .#{$card-namespace}card__body a:active,
-                .#{$card-namespace}card .#{$card-namespace}card__body a:focus {
+                .card .card__body a:hover,
+                .card .card__body a:active,
+                .card .card__body a:focus {
                     color: $card--link-color--alt;
                     @if $card--link-has-border-bottom != false {
                         border-bottom: $card--link-border-bottom--alt;
@@ -246,82 +224,32 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 
 
 
-        .#{$card-namespace}card .#{$card-namespace}card__footer {
+        .card .card__footer {
             margin-left: $card-body--margin-left;
             margin-right: $card-body--margin-right;
             margin-top: 0;
             margin-bottom: 0;
             padding: 0 $card-body--padding $card-body--padding $card-body--padding;
         }
-
-
-            .#{$card-namespace}card .#{$card-namespace}card__footer > * {
-                margin: 0;
+        
+        
+            .card .card__footer > * {
+                margin: 0;           
             }
 
-
-            .#{$card-namespace}card .#{$card-namespace}card__info {
-                font-size: 0.875em;
-
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-
-                -webkit-flex-direction: row;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
-
-                -webkit-flex-wrap: wrap;
-                    -ms-flex-wrap: wrap;
-                        flex-wrap: wrap;
-                        
-                margin-bottom: -($card-body--padding / 2);
-                margin-top: ($card-body--padding / 2);
-                border-top: 1px solid #999;
-                padding-top: calc((#{$card-body--padding / 2} - 1px);
-            }
-
-            .#{$card-namespace}card .#{$card-namespace}card__info > * {
-                flex: 1 0 auto;
-            }
-
-            .#{$card-namespace}card .#{$card-namespace}card__info :first-child {
-                padding-right: 1em;
-            }
-
-
-        .#{$card-namespace}card--allow-wide > .#{$card-namespace}card__body {
+            
+    
+        .card--allow-wide > .card__body {
             width: 70%;
         }
-
-        .#{$card-namespace}card--allow-wide > .#{$card-namespace}card__footer {
+        
+        .card--allow-wide > .card__footer {
             width: auto;
         }
-
-
-
-
-
-        .#{$card-namespace}card--themed-content .#{$card-namespace}card__body > * {
-            padding-left: 1rem;
-        }
-
-        .#{$card-namespace}card--themed-content .#{$card-namespace}card__body::before {
-            display: block;
-            content: "";
-            width: 0.5rem;
-            position: absolute;
-            top: 2.4rem;
-            bottom: 2.4rem;
-            left: 1.5rem;
-            background-color: #999;
-        }
-
-        
-
-
+    
+            
             /*
-            .#{$card-namespace}card a.#{$card-namespace}card__cta {
+            .card a.card__cta {
                 display: inline-block;
 
                 color: $card--text-color;
@@ -364,7 +292,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
                 }
             }
 
-            .#{$card-namespace}card button.#{$card-namespace}card__cta {
+            .card button.card__cta {
                 @include button(
                     $card-button--text-color,
                     $card-button--background-color,

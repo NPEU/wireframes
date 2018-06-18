@@ -1,4 +1,4 @@
-// This file acts as a bridge or converter between the theme values and the soeecifc patterns.
+// This file acts as a bridge or converter between the theme values and the specific patterns.
 // Note that all patterns that need to be themeable need to follow the same 'interface'.
 // See 'panel' pattern for initial example.
 @each $name, $theme in $themes {
@@ -9,7 +9,7 @@
 		$text-color: map-get($theme, text-color);
 	}
 	
-	@include panel-theme(
+	/*@include panel-theme(
 		(
 			name			 : #{$name},
 			background-color : lighten(map-get($theme, primary-color), 50%),
@@ -23,6 +23,12 @@
 			background-color : map-get($theme, primary-color),
 			text-color		 : #fff
 		)...
-	);
+	);*/
 
+    @include card--themer(
+		(
+			name			 : #{$name},
+			background-color : map-get($theme, primary-color),
+		)...
+	);
 }

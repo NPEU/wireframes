@@ -4291,7 +4291,9 @@ body {
 
 /* @TODO make breakpoint a variable */
 .gallery-grid--gutter--small {
-  padding: 1.2rem 1.2rem 0 0.6rem;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  margin-left: -0.6rem;
+  margin-right: -0.6rem;
 }
 
 .gallery-grid--gutter--small .gallery-grid__item {
@@ -4319,10 +4321,8 @@ body {
 }
 
 /*
-    The `height: 100%;` in the `.brochure` class below allows the brochure to fill it's container (if inside,
-    say, a list-grid). However, it doesn't work in Safari OSX/iOS.
-    Applying a `brochure-wrap` class to a list item to make those items flex-containers seems to work
-    OK, but perhaps this would be better abstracted as a `fill-height` class or something?
+    Note brochures should only appear in the main body and fill the width, so media queries are
+    ok here - we don't need to worry about other contexts and container-queries.
 */
 /*
 $brochure-cta--border-width: 1px !default;
@@ -4354,23 +4354,25 @@ $brochure-button--background-color: $brochure--base-color !default;
 $brochure-button--background-color-alt: lighten($brochure--base-color, 20%) !default;
 $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
 */
-/*.brochure-wrap {
+/*.c-brochure-wrap {
 
 
 }
 
-    .brochure-wrap .brochure {
+    .c-brochure-wrap .c-brochure {
 
         //width: 100%;
     }
 */
-.brochure.brochure {
+.c-brochure.c-brochure {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   color: #333;
   background: #eee;
@@ -4388,39 +4390,40 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
   overflow: hidden;
 }
 
-.brochure > * {
+.c-brochure > * {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  min-width: 50%;
-  width: calc((30em - 100%) * 1000);
-  max-width: 100%;
+  width: 100%;
+  /*min-width: 50%;
+            width: calc((45em - 100%) * 1000);
+            max-width: 100%;*/
 }
 
-.brochure .brochure__image {
+.c-brochure .c-brochure__image {
   position: relative;
   text-align: center;
 }
 
-.brochure .brochure__image img {
+.c-brochure .c-brochure__image img {
   width: 100%;
 }
 
-.brochure .brochure__image-link,
-.brochure .brochure__image-link:hover {
+.c-brochure .c-brochure__image-link,
+.c-brochure .c-brochure__image-link:hover {
   border-bottom: 0;
 }
 
-.brochure .brochure__body {
+.c-brochure .c-brochure__body {
   /*color: $brochure-body--text-color;
             background: $brochure-body--background-color;
 
             margin-left: $brochure-body--margin-left;
             margin-right: $brochure-body--margin-right;
             margin-top: $brochure-body--margin-top;
-            margin-bottom: $brochure-body--margin-bottom;
-            padding: $brochure-body--padding;
-            //padding: $brochure-body--padding $brochure-body--padding 0 $brochure-body--padding;
+            margin-bottom: $brochure-body--margin-bottom;*/
+  padding: 2.4rem;
+  /*//padding: $brochure-body--padding $brochure-body--padding 0 $brochure-body--padding;
 
             -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
@@ -4435,100 +4438,27 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
             }*/
 }
 
-/*.brochure .brochure__image + .brochure__body--pull-over {
-            position: relative;
-            z-index: 1;
-            margin-top: $brochure-body--pull-over;
-        }
+@media (min-width: 45em) {
+  .c-brochure--reversed .c-brochure__image {
+    order: -1;
+  }
+  .c-brochure > * {
+    width: 50%;
+  }
+  @supports (display: grid) {
+    .c-brochure.c-brochure {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .c-brochure > * {
+      width: auto;
+    }
+  }
+  .c-brochure .c-brochure__image {
+    max-height: none;
+  }
+}
 
-
-            .brochure .brochure__title {
-                font-size: $brochure-title--font-size;
-            }*/
-/*
-            @if $brochure--link-color != false {
-                .brochure .brochure__body a {
-                    color: $brochure--link-color;
-                    @if $brochure--link-has-border-bottom != false {
-                        border-bottom: $brochure--link-border-bottom;
-                    }
-                }
-
-                .brochure .brochure__body a:hover,
-                .brochure .brochure__body a:active,
-                .brochure .brochure__body a:focus {
-                    color: $brochure--link-color--alt;
-                    @if $brochure--link-has-border-bottom != false {
-                        border-bottom: $brochure--link-border-bottom--alt;
-                    }
-                }
-            }
-            */
-/*.brochure .brochure__footer {
-            margin-left: $brochure-body--margin-left;
-            margin-right: $brochure-body--margin-right;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding: 0 $brochure-body--padding $brochure-body--padding $brochure-body--padding;
-        }
-        
-        
-            .brochure .brochure__footer > * {
-                margin: 0;           
-            }*/
-/*
-            .brochure a.brochure__cta {
-                display: inline-block;
-
-                color: $brochure--text-color;
-                background-color: $brochure--background-color;
-
-                font-size: inherit;
-                font-family: inherit;
-                font-style: inherit;
-                font-weight: inherit;
-                min-height: 3rem;
-                line-height: 2.4rem;
-                margin: 0.3rem 0;
-                text-transform: none;
-
-                cursor: pointer;
-
-                border-color:  $brochure--border-color;
-                border-style:  $brochure-cta--border-style;
-                border-width:  $brochure-cta--border-width;
-                border-radius: $brochure-cta--border-radius;
-
-                padding-top: 0.3rem;
-                padding-top: -moz-calc(0);
-                padding-top: calc(0.3rem - 1px);
-                padding-bottom: 0.3rem;
-                padding-bottom: -moz-calc(0);
-                padding-bottom: calc(0.3rem - 1px);
-                padding-left: 0.6rem;
-                padding-right: 0.6rem;
-                vertical-align: middle;
-
-                -ms-touch-action: manipulation;
-                touch-action: manipulation;
-
-
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $brochure--text-color;
-                }
-            }
-
-            .brochure button.brochure__cta {
-                @include button(
-                    $brochure-button--text-color,
-                    $brochure-button--background-color,
-                    $brochure-button--background-color-alt,
-                    $brochure-button--border-color
-                );
-            }
-            */
 /*
     The `height: 100%;` in the `.card` class below allows the card to fill it's container (if inside,
     say, a list-grid). However, it doesn't work in Safari OSX/iOS.
@@ -4565,14 +4495,30 @@ $card-button--background-color: $card--base-color !default;
 $card-button--background-color-alt: lighten($card--base-color, 20%) !default;
 $card-button--border-color: darken($card--base-color, 20%) !default;
 */
-.card.card {
+/*
+.c-card-wrap {
+
+
+}
+
+    .c-card-wrap .c-card {
+
+        //width: 100%;
+    }
+*/
+.c-card.c-card {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   color: #333;
   background: #eee;
   padding: 0;
@@ -4589,27 +4535,28 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   overflow: hidden;
 }
 
-.card > * {
+.c-card > * {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  width: 100%;
 }
 
-.card .card__image {
+.c-card .c-card__image {
   position: relative;
   text-align: center;
 }
 
-.card .card__image img {
+.c-card .c-card__image img {
   width: 100%;
 }
 
-.card .card__image-link,
-.card .card__image-link:hover {
+.c-card .c-card__image-link,
+.c-card .c-card__image-link:hover {
   border-bottom: 0;
 }
 
-.card .card__body {
+.c-card .c-card__body {
   color: #333;
   background: #eee;
   margin-left: 0;
@@ -4620,6 +4567,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  position: relative;
   /*&::after {
                 content: "";
                 display: block;
@@ -4629,28 +4577,28 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
             }*/
 }
 
-.card .card__image + .card__body--pull-over {
+.c-card .c-card__image + .c-card__body--pull-over {
   position: relative;
   z-index: 1;
   margin-top: 0;
 }
 
-.card .card__title {
+.c-card .c-card__title {
   font-size: 3rem;
 }
 
 /*
             @if $card--link-color != false {
-                .card .card__body a {
+                .c-card .c-card__body a {
                     color: $card--link-color;
                     @if $card--link-has-border-bottom != false {
                         border-bottom: $card--link-border-bottom;
                     }
                 }
 
-                .card .card__body a:hover,
-                .card .card__body a:active,
-                .card .card__body a:focus {
+                .c-card .c-card__body a:hover,
+                .c-card .c-card__body a:active,
+                .c-card .c-card__body a:focus {
                     color: $card--link-color--alt;
                     @if $card--link-has-border-bottom != false {
                         border-bottom: $card--link-border-bottom--alt;
@@ -4658,7 +4606,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
                 }
             }
             */
-.card .card__footer {
+.c-card .c-card__footer {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -4666,12 +4614,60 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   padding: 0 2.4rem 2.4rem 2.4rem;
 }
 
-.card .card__footer > * {
+.c-card .c-card__footer > * {
   margin: 0;
 }
 
+.c-card .c-card__info {
+  font-size: 0.875em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: -1.2rem;
+  margin-top: 1.2rem;
+  border-top: 1px solid #999;
+  padding-top: calc((1.2rem - 1px));
+}
+
+.c-card .c-card__info > * {
+  flex: 1 0 auto;
+}
+
+.c-card .c-card__info :first-child {
+  padding-right: 1em;
+}
+
+.c-card--allow-wide > .c-card__body {
+  width: 70%;
+}
+
+.c-card--allow-wide > .c-card__footer {
+  width: auto;
+}
+
+.c-card--themed-content .c-card__body > * {
+  padding-left: 1rem;
+}
+
+.c-card--themed-content .c-card__body::before {
+  display: block;
+  content: "";
+  width: 0.5rem;
+  position: absolute;
+  top: 2.4rem;
+  bottom: 2.4rem;
+  left: 1.5rem;
+  background-color: #999;
+}
+
 /*
-            .card a.card__cta {
+            .c-card a.c-card__cta {
                 display: inline-block;
 
                 color: $card--text-color;
@@ -4714,7 +4710,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
                 }
             }
 
-            .card button.card__cta {
+            .c-card button.c-card__cta {
                 @include button(
                     $card-button--text-color,
                     $card-button--background-color,
@@ -4723,6 +4719,165 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
                 );
             }
             */
+/*
+    Note featurettes should only appear in the main body and fill the width, so media queries are
+    ok here - we don't need to worry about other contexts and container-queries.
+*/
+/*
+$featurette-cta--border-width: 1px !default;
+$featurette-cta--border-style: solid !default;
+$featurette-cta--border-radius: 3px !default;
+*/
+/*
+$featurette--link-color: false !default;
+$featurette--link-color--alt: false !default;
+$featurette--link-has-border-bottom: false !default;
+$featurette--link-border-bottom: false !default;
+$featurette--link-border-bottom--alt: false !default;
+
+// If we've specified a link color for the featurette, but not an alt state (e.g. hover)
+// then generate one
+@if $featurette--link-color != false and $featurette--link-color--alt == false {
+    $featurette--link-color--alt: darken($featurette--link-color, 10%) !default;;
+}
+
+// If we've specified a link color for the featurette, and we want bottom borders, generate the borders:
+@if $featurette--link-color != false and $featurette--link-has-border-bottom != false {
+    $featurette--link-border-bottom: 1px solid lighten($featurette--link-color, 20%) !default;
+    $featurette--link-border-bottom--alt: 2px solid lighten($featurette--link-color--alt, 30%) !default;
+}
+*/
+/*
+$featurette-button--text-color: #fff !default;
+$featurette-button--background-color: $featurette--base-color !default;
+$featurette-button--background-color-alt: lighten($featurette--base-color, 20%) !default;
+$featurette-button--border-color: darken($featurette--base-color, 20%) !default;
+*/
+/*.c-featurette-wrap {
+
+
+}
+
+    .c-featurette-wrap .c-featurette {
+
+        //width: 100%;
+    }
+*/
+.c-featurette.c-featurette {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #333;
+  background: #eee;
+  padding: 0;
+  outline: 1px solid #d5d5d5;
+  /*max-width: 20em;*/
+  /*margin-top: 0 auto;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;*/
+  /*
+            If the 'pull' is > module body content height, it'll protrude below the container,
+            so hide it:
+        */
+  overflow: hidden;
+}
+
+.c-featurette > * {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.c-featurette .c-featurette__image {
+  position: relative;
+  text-align: center;
+  max-width: 17em;
+  order: -1;
+}
+
+.c-featurette .c-featurette__image img {
+  width: 100%;
+}
+
+.c-featurette .c-featurette__image-link,
+.c-featurette .c-featurette__image-link:hover {
+  border-bottom: 0;
+}
+
+.c-featurette .c-featurette__body {
+  /*color: $featurette-body--text-color;
+            background: $featurette-body--background-color;
+
+            margin-left: $featurette-body--margin-left;
+            margin-right: $featurette-body--margin-right;
+            margin-top: $featurette-body--margin-top;
+            margin-bottom: $featurette-body--margin-bottom;*/
+  padding: 2.4rem;
+  /*//padding: $featurette-body--padding $featurette-body--padding 0 $featurette-body--padding;
+
+            -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
+                    */
+  /*&::after {
+                content: "";
+                display: block;
+                margin-top: $featurette-body--padding;
+                margin-bottom: -1px;
+                height: 1px;
+            }*/
+}
+
+@media (min-width: 45em) {
+  .c-featurette.c-featurette {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .c-featurette__image {
+    width: auto;
+    max-width: none;
+  }
+  .c-featurette__body,
+  .c-featurette__body--50 {
+    max-width: 50%;
+  }
+  .c-featurette__body--60 {
+    max-width: 60%;
+  }
+  .c-featurette__body--70 {
+    max-width: 70%;
+  }
+  .c-featurette__body--80 {
+    max-width: 80%;
+  }
+  .c-featurette__body--90 {
+    max-width: 90%;
+  }
+}
+
+.c-featurette__body > blockquote {
+  margin-left: 0;
+}
+
+.c-featurette.t-featurette--dark {
+  background-color: #555;
+  color: #fff;
+}
+
 .hero.hero {
   position: relative;
 }
@@ -4774,13 +4929,13 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
     .hero-box.hero-box {
         z-index: 9999;
         position: relative;
-        
+
         margin-left: $sz-xl;
         margin-top: $sz-l;
         margin-bottom: $sz-l;
         width: 22em;
     }
-    
+
 }*/
 .proportional-container {
   position: relative;
@@ -4816,6 +4971,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
     height: 100%;
     object-fit: cover;
     top: 0;
+    left: 0;
     transform: none;
   }
 }
@@ -4840,10 +4996,81 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   padding-top: 56.25%;
 }
 
-/* ---------------------------------------------------------------------------------------------- *
+@media (min-width: 45em) {
+  .proportional-container--1-1--wide::before {
+    padding-top: 100%;
+  }
+  .proportional-container--2-1--wide::before {
+    padding-top: 50%;
+  }
+  .proportional-container--3-1--wide::before {
+    padding-top: 33%;
+  }
+  .proportional-container--4-3--wide::before {
+    padding-top: 75%;
+  }
+  .proportional-container--16-9--wide::before {
+    padding-top: 56.25%;
+  }
+}
 
-//@import "_themes_config";
-//@import "_themes";
+/* ---------------------------------------------------------------------------------------------- */
+/*@include panel-theme(
+		(
+			name			 : white,
+			background-color : lighten(map-get($theme, primary-color), 50%),
+			text-color		 : $text-color
+		)...
+	);
+	
+	@include panel-theme(
+		(
+			name			 : white--dark,
+			background-color : map-get($theme, primary-color),
+			text-color		 : #fff
+		)...
+	);*/
+.c-card--themed-content.t-white .c-card__body::before {
+  background-color: #ffffff;
+}
+
+/*@include panel-theme(
+		(
+			name			 : anode,
+			background-color : lighten(map-get($theme, primary-color), 50%),
+			text-color		 : $text-color
+		)...
+	);
+	
+	@include panel-theme(
+		(
+			name			 : anode--dark,
+			background-color : map-get($theme, primary-color),
+			text-color		 : #fff
+		)...
+	);*/
+.c-card--themed-content.t-anode .c-card__body::before {
+  background-color: #933961;
+}
+
+/*@include panel-theme(
+		(
+			name			 : minidex,
+			background-color : lighten(map-get($theme, primary-color), 50%),
+			text-color		 : $text-color
+		)...
+	);
+	
+	@include panel-theme(
+		(
+			name			 : minidex--dark,
+			background-color : map-get($theme, primary-color),
+			text-color		 : #fff
+		)...
+	);*/
+.c-card--themed-content.t-minidex .c-card__body::before {
+  background-color: #0077AD;
+}
 
 /* --| WIREFRAME--------------------------------------------------------------------------------- */
 html.wireframe {
@@ -4857,6 +5084,7 @@ html.wireframe {
   position: relative;
   z-index: 1;
   display: flow-root;
+  height: 100%;
 }
 
 .wireframe [wf-box]::before {
@@ -5201,7 +5429,7 @@ html, body {
 }
 
 .page-wrap {
-  max-width: 95rem;
+  max-width: 113rem;
   border-left: 1px solid #333;
   border-right: 1px solid #333;
   margin: 0 auto;
@@ -5306,6 +5534,14 @@ h1, h2, h3 {
 */
 html :last-child {
   margin-bottom: 0;
+}
+
+.small-padding {
+  padding: 1.2rem;
+}
+
+.medium-padding {
+  padding: 2.4rem;
 }
 
 /* ---------------------------------------------------------------------------------------------- */

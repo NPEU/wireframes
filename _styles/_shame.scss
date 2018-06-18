@@ -6,7 +6,7 @@ html, body {
 }
 
 .page-wrap {
-    max-width: 95rem;
+    max-width: 113rem;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
     margin: 0 auto;
@@ -129,4 +129,13 @@ h1, h2, h3 {
 */
 html :last-child {
     margin-bottom: 0;
+}
+
+
+.small-padding {
+    padding: $sz-s;
+}
+
+.medium-padding {
+    padding: $sz-m;
 }

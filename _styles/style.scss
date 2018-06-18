@@ -162,7 +162,8 @@ $card-body--padding: $fallback--base-rem-space-unit;
 
 @import "patterns/_brochure.scss";
 @import "patterns/_card.scss";
-
+@import "patterns/_featurette.scss";
+@include featurette--themer("featurette--dark", #555, #fff);
 
 //@import "_full-width.scss";
 @import "patterns/_hero.scss";
@@ -174,10 +175,10 @@ $card-body--padding: $fallback--base-rem-space-unit;
 //$panel--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_panel.scss";
 
-/* ---------------------------------------------------------------------------------------------- *
+/* ---------------------------------------------------------------------------------------------- */
 
-//@import "_themes_config";
-//@import "_themes";
+@import "_themes_config";
+@import "_themes";
 
 /* --| WIREFRAME--------------------------------------------------------------------------------- */
 // Just testing this out, may not keep. Or probably develop into it's own project.

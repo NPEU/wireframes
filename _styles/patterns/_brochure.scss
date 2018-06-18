@@ -1,9 +1,10 @@
 /*
-    The `height: 100%;` in the `.brochure` class below allows the brochure to fill it's container (if inside,
-    say, a list-grid). However, it doesn't work in Safari OSX/iOS.
-    Applying a `brochure-wrap` class to a list item to make those items flex-containers seems to work
-    OK, but perhaps this would be better abstracted as a `fill-height` class or something?
+    Note brochures should only appear in the main body and fill the width, so media queries are
+    ok here - we don't need to worry about other contexts and container-queries.
 */
+
+$brochure-namespace: c- !default;
+$theme-namespace: t- !default;
 
 $brochure--base-color: #eee !default;
 
@@ -19,7 +20,7 @@ $brochure--border-radius: 0  !default;
 $brochure--border-color:  darken($brochure--background-color, 10%) !default;
 
 
-$brochure-breakpoint: 30em !default;
+$brochure-breakpoint: 45em !default;
 $brochure-pull: 5rem !default;
 
 
@@ -40,7 +41,7 @@ $brochure-cta--border-width: 1px !default;
 $brochure-cta--border-style: solid !default;
 $brochure-cta--border-radius: 3px !default;
 */
-$brochure-body--padding: 2rem !default;
+$brochure-body--padding: 2.4rem !default;
 $brochure-body--margin-left:   0 !default;
 $brochure-body--margin-right:  0 !default;
 $brochure-body--margin-top:    0 !default;
@@ -53,7 +54,6 @@ $brochure-body--pull-over: 0 !default;
 $brochure-title--font-size: 3rem !default;
 
 
-$module-breakpoint: 30em;
 
 // brochure text links:
 /*
@@ -82,17 +82,17 @@ $brochure-button--background-color: $brochure--base-color !default;
 $brochure-button--background-color-alt: lighten($brochure--base-color, 20%) !default;
 $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
 */
-/*.brochure-wrap {
+/*.#{$brochure-namespace}brochure-wrap {
 
 
 }
 
-    .brochure-wrap .brochure {
+    .#{$brochure-namespace}brochure-wrap .#{$brochure-namespace}brochure {
 
         //width: 100%;
     }
 */
-    .brochure.brochure {
+    .#{$brochure-namespace}brochure.#{$brochure-namespace}brochure {
 
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -102,7 +102,9 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
             -ms-flex-direction: row;
                 flex-direction: row;
                 
-        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
 
         //height: 100%;
         //width: 100%;
@@ -136,44 +138,48 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
         overflow: hidden;
     }
 
-        .brochure > * {
+        .#{$brochure-namespace}brochure > * {
             -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
                     flex: 1 0 auto;
                     
-            min-width: 50%;
-            width: calc((#{$module-breakpoint} - 100%) * 1000);
-            max-width: 100%;
+            width: 100%;
+            /*min-width: 50%;
+            width: calc((#{$brochure-breakpoint} - 100%) * 1000);
+            max-width: 100%;*/
         }
+        
+        
 
-        .brochure .brochure__image {
+        .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__image {
             position: relative;
             text-align: center;
+            //max-height: 10em;
         }
 
-            .brochure .brochure__image img {
+            .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__image img {
                 width: 100%;
             }
 
 
-            .brochure .brochure__image-link,
-            .brochure .brochure__image-link:hover {
+            .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__image-link,
+            .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__image-link:hover {
                 border-bottom: 0;
             }
 
 
 
 
-        .brochure .brochure__body {
+        .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__body {
             /*color: $brochure-body--text-color;
             background: $brochure-body--background-color;
 
             margin-left: $brochure-body--margin-left;
             margin-right: $brochure-body--margin-right;
             margin-top: $brochure-body--margin-top;
-            margin-bottom: $brochure-body--margin-bottom;
+            margin-bottom: $brochure-body--margin-bottom;*/
             padding: $brochure-body--padding;
-            //padding: $brochure-body--padding $brochure-body--padding 0 $brochure-body--padding;
+            /*//padding: $brochure-body--padding $brochure-body--padding 0 $brochure-body--padding;
 
             -webkit-flex: 1 0 auto;
                 -ms-flex: 1 0 auto;
@@ -189,102 +195,30 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
             }*/
         }
 
-        /*.brochure .brochure__image + .brochure__body--pull-over {
-            position: relative;
-            z-index: 1;
-            margin-top: $brochure-body--pull-over;
-        }
-
-
-            .brochure .brochure__title {
-                font-size: $brochure-title--font-size;
-            }*/
-
-            /*
-            @if $brochure--link-color != false {
-                .brochure .brochure__body a {
-                    color: $brochure--link-color;
-                    @if $brochure--link-has-border-bottom != false {
-                        border-bottom: $brochure--link-border-bottom;
-                    }
-                }
-
-                .brochure .brochure__body a:hover,
-                .brochure .brochure__body a:active,
-                .brochure .brochure__body a:focus {
-                    color: $brochure--link-color--alt;
-                    @if $brochure--link-has-border-bottom != false {
-                        border-bottom: $brochure--link-border-bottom--alt;
-                    }
-                }
-            }
-            */
-
-
-
-        /*.brochure .brochure__footer {
-            margin-left: $brochure-body--margin-left;
-            margin-right: $brochure-body--margin-right;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding: 0 $brochure-body--padding $brochure-body--padding $brochure-body--padding;
-        }
         
         
-            .brochure .brochure__footer > * {
-                margin: 0;           
-            }*/
-
-            /*
-            .brochure a.brochure__cta {
-                display: inline-block;
-
-                color: $brochure--text-color;
-                background-color: $brochure--background-color;
-
-                font-size: inherit;
-                font-family: inherit;
-                font-style: inherit;
-                font-weight: inherit;
-                min-height: 3rem;
-                line-height: 2.4rem;
-                margin: 0.3rem 0;
-                text-transform: none;
-
-                cursor: pointer;
-
-                border-color:  $brochure--border-color;
-                border-style:  $brochure-cta--border-style;
-                border-width:  $brochure-cta--border-width;
-                border-radius: $brochure-cta--border-radius;
-
-                padding-top: 0.3rem;
-                padding-top: -moz-calc(0);
-                padding-top: calc(0.3rem - 1px);
-                padding-bottom: 0.3rem;
-                padding-bottom: -moz-calc(0);
-                padding-bottom: calc(0.3rem - 1px);
-                padding-left: 0.6rem;
-                padding-right: 0.6rem;
-                vertical-align: middle;
-
-                -ms-touch-action: manipulation;
-                touch-action: manipulation;
-
-
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $brochure--text-color;
+        
+        @media (min-width: #{$brochure-breakpoint}) {
+            .#{$brochure-namespace}brochure--reversed .#{$brochure-namespace}brochure__image {
+                order: -1;
+            }
+        
+            .#{$brochure-namespace}brochure > * {
+                width: 50%;
+            }
+            
+            @supports (display: grid) {
+                .#{$brochure-namespace}brochure.#{$brochure-namespace}brochure {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                }
+                
+                .#{$brochure-namespace}brochure > * {
+                    width: auto;
                 }
             }
-
-            .brochure button.brochure__cta {
-                @include button(
-                    $brochure-button--text-color,
-                    $brochure-button--background-color,
-                    $brochure-button--background-color-alt,
-                    $brochure-button--border-color
-                );
+            
+            .#{$brochure-namespace}brochure .#{$brochure-namespace}brochure__image {
+                max-height: none;
             }
-            */
+        }
