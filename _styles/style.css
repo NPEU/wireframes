@@ -4291,9 +4291,7 @@ body {
 
 /* @TODO make breakpoint a variable */
 .gallery-grid--gutter--small {
-  padding: 1.2rem 1.2rem 0 1.2rem;
-  margin-left: -0.6rem;
-  margin-right: -0.6rem;
+  padding: 1.2rem 1.2rem 0 0.6rem;
 }
 
 .gallery-grid--gutter--small .gallery-grid__item {
@@ -4889,7 +4887,7 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 }
 */
 .hero .proportional-container {
-  background-image: url("../img/Bigstock_167982824 - flip.jpg");
+  background-image: url("../img/hero-image-1.png");
   background-size: cover;
   /* background-position-y: -5em; */
 }
@@ -4904,7 +4902,7 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
   .hero .hero-message {
     position: relative;
     z-index: 1;
-    margin-top: -20%;
+    margin-top: -15%;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
