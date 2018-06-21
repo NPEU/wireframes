@@ -19,13 +19,14 @@ $fallback--breakpoint--enhanced: 54em;
 //$namespace: 'main ';
 
 
-@import '../bower_components/Fall-Back-Start-CSS/_settings.scss';
+//@import '../bower_components/Fall-Back-Start-CSS/_settings.scss';
+@import '../bower_components/Fall-Back-Start-CSS/dist/scss/_start__settings.scss';
 
 $max-main-line-length: 0;
 $measure: 64rem;
 
-@import '../bower_components/Fall-Back-Start-CSS/_start.scss';
-@import '../bower_components/Fall-Back-Start-CSS/_start-classes.scss';
+@import '../bower_components/Fall-Back-Start-CSS/dist/scss/_start.scss';
+@import '../bower_components/Fall-Back-Start-CSS/dist/scss/_start-classes.scss';
 
 @import '../bower_components/Fall-Back-Base/_icons.scss';
 
@@ -141,13 +142,14 @@ $fallback-svg--link-bg-color-alt: #fff;
 //@import "patterns/__all";
 
 //$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
-@import "../bower_components/NPEU-layout-patterns/scss/_scl--pushed-apart.scss";
+@import "../bower_components/NPEU-layout-patterns/dev/scss/_ff-widths.scss";
+@import "../bower_components/NPEU-layout-patterns/dev/scss/_scl--pushed-apart.scss";
 
-@import "../bower_components/NPEU-layout-patterns/scss/_scl--n-up.scss";
+@import "../bower_components/NPEU-layout-patterns/dev/scss/_scl--n-up.scss";
 
 
-$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
-@import "../bower_components/NPEU-layout-patterns/scss/_gallery-grid.scss";
+//$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
+//@import "../bower_components/NPEU-layout-patterns/dev/scss/_gallery-grid.scss";
 
 
 
@@ -170,6 +172,9 @@ $card-body--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_page-header.scss";
 //@import "patterns/_page-footer.scss";
 @import "patterns/_proportional-container.scss";
+
+$col-to-row-spacing-unit: $fallback--base-rem-space-unit;
+@import "layout-patterns/_col-to-row.scss";
 
 
 //$panel--padding: $fallback--base-rem-space-unit;

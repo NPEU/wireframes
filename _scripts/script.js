@@ -46,6 +46,28 @@ var cookie_html                   =
     ready(adjustJustifyContent.run);
     window.onresize = adjustJustifyContent.run;
 })();
+/*
+*/
+(function() {
+    var ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
+	var navbar = {
+
+        init: function() {
+            var hero_img = document.querySelector('#index');
+                
+        }
+	}
+
+	ready(navbar.init);
+})();
+
 /*!
     Fall-Back Nav-Bar v2.0.0
     https://github.com/Fall-Back/Nav-Bar
@@ -57,14 +79,24 @@ var cookie_html                   =
     var nav_bar_js_classname = 'js-nav-bar'; 
 
     var check_for_css = function(selector) {
+        
         var rules;
         var haveRule = false;
         if (typeof document.styleSheets != "undefined") {// is this supported
             var cssSheets = document.styleSheets;
+            var domain_regex  = RegExp('^' + document.location.origin);
             outerloop:
             for (var i = 0; i < cssSheets.length; i++) {
-                // using IE or FireFox/Standards Compliant
-                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                var sheet = cssSheets[i];
+                
+                // Some browsers don't allow checking of rules if not on the same domain (CORS), so
+                // checking for that here:
+                if (sheet.href !== null && domain_regex.exec(sheet.href) === null) {
+                    continue;
+                }
+                
+                // Check for IE or standards:
+                rules = (typeof sheet.cssRules != "undefined") ? sheet.cssRules : sheet.rules;
                 for (var j = 0; j < rules.length; j++) {
                     if (rules[j].selectorText == selector) {
                         haveRule = true;
@@ -141,11 +173,11 @@ var cookie_html                   =
         }
 	}
 
+    // This is _here_ to mitigate a Flash of Basic Styled Navbar:
     var css_is_loaded = check_for_css('.' + nav_bar_js_classname);
     
     if (css_is_loaded) {
         // Add the JS class name ...
-        
         var hmtl_el = document.querySelector('html');
         
         if (hmtl_el.classList) {
@@ -165,18 +197,28 @@ var cookie_html                   =
     Released under the MIT license https://git.io/vwTVl
 */
 (function() {
-    
-    var dropdown_js_classname = 'js-dropdown'; 
+
+    var dropdown_js_classname = 'js-dropdown';
 
     var check_for_css = function(selector) {
+
         var rules;
         var haveRule = false;
         if (typeof document.styleSheets != "undefined") {// is this supported
             var cssSheets = document.styleSheets;
+            var domain_regex  = RegExp('^' + document.location.origin);
             outerloop:
             for (var i = 0; i < cssSheets.length; i++) {
-                // using IE or FireFox/Standards Compliant
-                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                var sheet = cssSheets[i];
+
+                // Some browsers don't allow checking of rules if not on the same domain (CORS), so
+                // checking for that here:
+                if (sheet.href !== null && domain_regex.exec(sheet.href) === null) {
+                    continue;
+                }
+
+                // Check for IE or standards:
+                rules = (typeof sheet.cssRules != "undefined") ? sheet.cssRules : sheet.rules;
                 for (var j = 0; j < rules.length; j++) {
                     if (rules[j].selectorText == selector) {
                         haveRule = true;
@@ -252,14 +294,14 @@ var cookie_html                   =
             }
         }
 	}
-    
+
+    // This is _here_ to mitigate a Flash of Basic Styled Dropdown:
     var css_is_loaded = check_for_css('.' + dropdown_js_classname);
-    
+
     if (css_is_loaded) {
         // Add the JS class name ...
-        
         var hmtl_el = document.querySelector('html');
-        
+
         if (hmtl_el.classList) {
             hmtl_el.classList.add(dropdown_js_classname);
         } else {
@@ -284,14 +326,24 @@ var cookie_html                   =
     var over_panel_is_animating_classname = 'js-over-panel_is-animating';
 
     var check_for_css = function(selector) {
+        
         var rules;
         var haveRule = false;
         if (typeof document.styleSheets != "undefined") {// is this supported
             var cssSheets = document.styleSheets;
+            var domain_regex  = RegExp('^' + document.location.origin);
             outerloop:
             for (var i = 0; i < cssSheets.length; i++) {
-                // using IE or FireFox/Standards Compliant
-                rules = (typeof cssSheets[i].cssRules != "undefined") ? cssSheets[i].cssRules : cssSheets[i].rules;
+                var sheet = cssSheets[i];
+                
+                // Some browsers don't allow checking of rules if not on the same domain (CORS), so
+                // checking for that here:
+                if (sheet.href !== null && domain_regex.exec(sheet.href) === null) {
+                    continue;
+                }
+                
+                // Check for IE or standards:
+                rules = (typeof sheet.cssRules != "undefined") ? sheet.cssRules : sheet.rules;
                 for (var j = 0; j < rules.length; j++) {
                     if (rules[j].selectorText == selector) {
                         haveRule = true;
@@ -302,7 +354,7 @@ var cookie_html                   =
         }
         return haveRule;
     }
-    
+
     var ready = function(fn) {
         if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
             fn();
@@ -333,24 +385,37 @@ var cookie_html                   =
 	var over_panel = {
 
         init: function() {
-            var over_panels = document.querySelectorAll('[data-js="over-panel"]');
-            /*var over_panel_js_classname           = 'js-over-panel';
-            var over_panel_control_js_classname   = 'js-over-panel-control';
-            var over_panel_is_open_classname      = 'js-over-panel_is-open';
-            var over_panel_is_animating_classname = 'js-over-panel_is-animating';*/
-
-            var transitionEvent = whichTransitionEvent();
-
-            // Note that `getComputedStyle` on psuedo elements doesn't work in Opera Mini, but in
-            // this case I'm happy to serve only the unenhanced version to Opera Mini.
-            /*var css_is_loaded = (
-                window.getComputedStyle(over_panels[0], ':before')
-                .getPropertyValue('content')
-                .replace(/(\"|\')/g, '')
-                == 'CSS Loaded'
-            );*/
 
             if (css_is_loaded) {
+                // Add the JS class name ...
+                /*
+                var hmtl_el = document.querySelector('html');
+
+                if (hmtl_el.classList) {
+                    hmtl_el.classList.add(over_panel_js_classname);
+                } else {
+                    hmtl_el.className += ' ' + over_panel_js_classname;
+                }
+                */
+
+                var over_panels = document.querySelectorAll('[data-js="over-panel"]');
+                /*var over_panel_js_classname           = 'js-over-panel';
+                var over_panel_control_js_classname   = 'js-over-panel-control';
+                var over_panel_is_open_classname      = 'js-over-panel_is-open';
+                var over_panel_is_animating_classname = 'js-over-panel_is-animating';*/
+
+                var transitionEvent = whichTransitionEvent();
+
+                // Note that `getComputedStyle` on psuedo elements doesn't work in Opera Mini, but in
+                // this case I'm happy to serve only the unenhanced version to Opera Mini.
+                /*var css_is_loaded = (
+                    window.getComputedStyle(over_panels[0], ':before')
+                    .getPropertyValue('content')
+                    .replace(/(\"|\')/g, '')
+                    == 'CSS Loaded'
+                );*/
+
+
                 Array.prototype.forEach.call(over_panels, function(over_panel, i) {
 
 
@@ -389,7 +454,7 @@ var cookie_html                   =
 
                         // Invert the `aria-expanded` attribute:
                         var expanded = this.getAttribute('aria-expanded') === 'true' || false;
-                        
+
                         // Close any open panels:
                         var expanded_buttons = document.querySelectorAll('[data-js="overpanel__control"][aria-expanded="true"]');
                         Array.prototype.forEach.call(expanded_buttons, function(expanded_button, i) {
@@ -457,13 +522,12 @@ var cookie_html                   =
             }
         }
 	}
-    
-    
+
+    // This is _here_ to mitigate a Flash of Basic Styled OverPanel:
     var css_is_loaded = check_for_css('.' + over_panel_js_classname);
     
     if (css_is_loaded) {
         // Add the JS class name ...
-        
         var hmtl_el = document.querySelector('html');
         
         if (hmtl_el.classList) {

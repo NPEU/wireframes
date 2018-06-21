@@ -6,7 +6,7 @@ title: NPEU Home
 
     <div wf-box="Static or rotating images" class="hero-image">
 
-        <div class="proportional-container  proportional-container--16-9"></div>
+        <div class="proportional-container  proportional-container--16-9 show-imageX"></div>
 
     </div>
 
