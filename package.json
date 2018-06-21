@@ -16,5 +16,6 @@
     "gulp-watch": "^4.3.11",
     "pump": "^2.0.1",
     "run-sequence": "^2.2.0"
-  }
+  },
+  "dependencies": {}
 }
