@@ -9,13 +9,13 @@
         }
     }
 
-	var navbar = {
+	var wireframe = {
 
         init: function() {
             var hero_img = document.querySelector('#index');
-                
+            // Add class toggle.
         }
 	}
 
-	ready(navbar.init);
+	ready(wireframe);
 })();

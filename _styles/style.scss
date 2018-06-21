@@ -165,6 +165,9 @@ $card-body--padding: $fallback--base-rem-space-unit;
 
 @import "patterns/_brochure.scss";
 @import "patterns/_card.scss";
+
+// Probably need card variants, esp max-widths.
+
 @import "patterns/_featurette.scss";
 @include featurette--themer("featurette--dark", #555, #fff);
 
