@@ -6,12 +6,12 @@ title: NPEU Home
 
     <div wf-box="Static or rotating images" class="hero-image">
 
-        <div class="proportional-container  proportional-container--16-9 show-imageX"></div>
+        <div class="proportional-container  proportional-container--16-9   js-toggle-image-1"></div>
 
     </div>
 
     <div class="hero-message" wf-area="white+medium-padding+outline">
-    
+
         <h1 wf-heading="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur.
@@ -24,10 +24,10 @@ title: NPEU Home
 </div>
 
 <div wf-area="white+outline">
-    
+
     <div class="gallery-grid  gallery-grid--gutter--medium  gallery-grid--basis-15">
         <div class="gallery-grid__item">
-        
+
 
                 <div class="c-card">
                     <div class="c-card__image">
@@ -39,7 +39,7 @@ title: NPEU Home
                         <h2 class="c-card__title">Trials</h2>
                         <p>
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
-                        </p> 
+                        </p>
                     </div>
                     <div class="c-card__footer">
                         <p>
@@ -48,10 +48,10 @@ title: NPEU Home
                     </div>
                 </div>
 
-            
+
         </div>
         <div class="gallery-grid__item">
-        
+
 
                 <div class="c-card">
                     <div class="c-card__image">
@@ -63,7 +63,7 @@ title: NPEU Home
                         <h2 class="c-card__title">PRU-MHC</h2>
                         <p>
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>                       
+                        </p>
                     </div>
                     <div class="c-card__footer">
                         <p>
@@ -72,7 +72,7 @@ title: NPEU Home
                     </div>
                 </div>
 
-            
+
         </div>
         <div class="gallery-grid__item">
 
@@ -96,7 +96,7 @@ title: NPEU Home
                     </div>
                 </div>
 
-    
+
         </div>
     </div>
 </div>
