@@ -2246,8 +2246,7 @@ p.subtitle {
   margin-bottom: 2.4rem;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-    Fall-Back Icons v1.0.0
+/*------------------------------------------------------------------------------------------------*    Fall-Back Icons v1.0.0
     
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
@@ -3590,8 +3589,7 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -3674,8 +3672,7 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Clarification for self:
     Since this pattern is intented for use on logos, and since logos are an integral part of
     branding, this pattern is not ONLY intended as a CSS fallback.
@@ -3755,7 +3752,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   /* [1] */
 }
 
@@ -3975,10 +3972,8 @@ body {
   border-width: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-\*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-    Import Fall-Back vars:
+/*------------------------------------------------------------------------------------------------*\*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*    Import Fall-Back vars:
 
     Slightly hacky way of allowing the main UI colour of this pattern to be:
      - base-ui colour (if set)
@@ -4461,13 +4456,6 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  /*-webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-
-        -webkit-align-items: flex-end;
-             -ms-flex-align: end;
-                align-items: flex-end;*/
   height: 100%;
   color: #333;
   background: #eee;
@@ -4543,7 +4531,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   position: relative;
-  max-width: 100%;
+  width: 100%;
 }
 
 /*.c-card .c-card__image + .c-card__body--pull-over {
@@ -4580,7 +4568,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 2.4rem;
-  padding-left: 2.4rem;
+  width: 100%;
 }
 
 .c-card .c-card__footer > * {
@@ -4589,27 +4577,10 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 
 .c-card .c-card__info {
   font-size: 0.875em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-bottom: -1.2rem;
-  margin-top: 1.2rem;
+  margin-top: -1.2rem;
   border-top: 1px solid #999;
   padding-top: calc((1.2rem - 1px));
-}
-
-.c-card .c-card__info > * {
-  flex: 1 0 auto;
-}
-
-.c-card .c-card__info :first-child {
-  padding-right: 1em;
 }
 
 .c-card--allow-wide .c-card__body {
@@ -4618,6 +4589,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 
 .c-card--allow-wide .c-card__footer {
   width: auto;
+  padding-left: 2.4rem;
 }
 
 .c-card--themed-content .c-card__body > * {
@@ -4629,65 +4601,12 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   content: "";
   width: 0.5rem;
   position: absolute;
-  top: 2.4rem;
-  bottom: 2.4rem;
-  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  left: -1rem;
   background-color: #999;
 }
 
-/*
-            .c-card a.c-card__cta {
-                display: inline-block;
-
-                color: $card--text-color;
-                background-color: $card--background-color;
-
-                font-size: inherit;
-                font-family: inherit;
-                font-style: inherit;
-                font-weight: inherit;
-                min-height: 3rem;
-                line-height: 2.4rem;
-                margin: 0.3rem 0;
-                text-transform: none;
-
-                cursor: pointer;
-
-                border-color:  $card--border-color;
-                border-style:  $card-cta--border-style;
-                border-width:  $card-cta--border-width;
-                border-radius: $card-cta--border-radius;
-
-                padding-top: 0.3rem;
-                padding-top: -moz-calc(0);
-                padding-top: calc(0.3rem - 1px);
-                padding-bottom: 0.3rem;
-                padding-bottom: -moz-calc(0);
-                padding-bottom: calc(0.3rem - 1px);
-                padding-left: 0.6rem;
-                padding-right: 0.6rem;
-                vertical-align: middle;
-
-                -ms-touch-action: manipulation;
-                touch-action: manipulation;
-
-
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $card--text-color;
-                }
-            }
-
-            .c-card button.c-card__cta {
-                @include button(
-                    $card-button--text-color,
-                    $card-button--background-color,
-                    $card-button--background-color-alt,
-                    $card-button--border-color
-                );
-            }
-            */
 /*
     Note featurettes should only appear in the main body and fill the width, so media queries are
     ok here - we don't need to worry about other contexts and container-queries.
@@ -4969,6 +4888,55 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
   .proportional-container--16-9--wide::before {
     padding-top: 56.25%;
   }
+}
+
+/*
+    Text alignment.
+    
+    @To Do: allow for responsive variations.
+*/
+.u-text-align--left {
+  text-align: left;
+}
+
+.u-text-align--center {
+  text-align: center;
+}
+
+.u-text-align--right {
+  text-align: right;
+}
+
+/*
+    Groups.
+
+    Attempts to improve where text wraps.
+
+*/
+.u-text-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.u-text-group > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.u-text-group > :not(:last-child)::after {
+  content: "\00a0";
+}
+
+.u-text-group--wide-space > :not(:last-child) {
+  padding-right: 1em;
 }
 
 /*

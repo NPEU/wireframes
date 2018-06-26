@@ -1,6 +1,6 @@
 ---
 layout: structure--basic
-title: NPEU Wireframe Patterns
+title: NPEU Wireframe Layout Patterns
 ---
 <h2 class="small-padding">Col to Row</h2>
 <div class="l-col-to-row">

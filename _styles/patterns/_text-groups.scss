@@ -1,0 +1,38 @@
+/*
+    Groups.
+
+    Attempts to improve where text wraps.
+
+*/
+
+$text-group-namespace: u- !default;
+
+.#{$text-align-namespace}text-group {
+   display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.#{$text-align-namespace}text-group > * {
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+}
+
+// Preserve white space when not-wrapped:
+.#{$text-align-namespace}text-group > :not(:last-child)::after {
+    content: "\00a0";
+}
+
+// Allow large space between distinct groups:
+.#{$text-align-namespace}text-group--wide-space > :not(:last-child) {
+    padding-right: 1em;
+}

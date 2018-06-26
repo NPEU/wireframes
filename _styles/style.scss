@@ -177,8 +177,16 @@ $card-body--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_page-footer.scss";
 @import "patterns/_proportional-container.scss";
 
+@import "patterns/_text-align.scss";
+@import "patterns/_text-groups.scss";
+
+
+
+
 $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 @import "layout-patterns/_col-to-row.scss";
+
+
 
 
 //$panel--padding: $fallback--base-rem-space-unit;
