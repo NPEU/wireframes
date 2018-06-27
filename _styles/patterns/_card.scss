@@ -10,6 +10,8 @@ $theme-namespace: t- !default;
 
 $card--base-color: #eee !default;
 
+$card-spacing-unit: 2rem !default;
+
 // Card outer:
 
 $card--text-color: #333 !default;
@@ -43,7 +45,7 @@ $card-cta--border-width: 1px !default;
 $card-cta--border-style: solid !default;
 $card-cta--border-radius: 3px !default;
 */
-$card-body--padding: 2rem !default;
+$card-body--padding: $card-spacing-unit !default;
 $card-body--margin-left:   0 !default;
 $card-body--margin-right:  0 !default;
 $card-body--margin-top:    0 !default;

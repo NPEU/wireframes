@@ -237,5 +237,23 @@ title: NPEU Wireframe Patterns
     </div>
 </div>
 
+<h2 class="small-padding">Event</h2>
+
+<div class="medium-padding" wf-area="light+outline">
+    <div class="c-event">
+        <h2 class="c-event__title">Event Title</h2>
+        <p class="c-event__speaker">
+            Event Speaker
+        </p>
+        <p class="c-event__speaker-role">
+            Event speaker role / job title
+        </p>
+        <p class="c-event__datetime">
+            Month: Day Date Start:time: – End:Time
+        </p>
+        <span class="c-event__action">+ Add to Calendar</span>
+    </div>
+</div>
+
 <hr>
 <hr>

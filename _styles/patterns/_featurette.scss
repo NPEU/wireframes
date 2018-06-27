@@ -8,6 +8,8 @@ $theme-namespace: t- !default;
 
 $featurette--base-color: #eee !default;
 
+$featurette-spacing-unit: 2rem !default;
+
 // featurette outer:
 
 $featurette--text-color: #333 !default;
@@ -21,7 +23,6 @@ $featurette--border-color:  darken($featurette--background-color, 10%) !default;
 
 
 $featurette-breakpoint: 45em !default;
-$featurette-pull: 5rem !default;
 
 
 // featurette body:
@@ -41,13 +42,12 @@ $featurette-cta--border-width: 1px !default;
 $featurette-cta--border-style: solid !default;
 $featurette-cta--border-radius: 3px !default;
 */
-$featurette-body--padding: 2.4rem !default;
+$featurette-body--padding:       $featurette-spacing-unit !default;
 $featurette-body--margin-left:   0 !default;
 $featurette-body--margin-right:  0 !default;
 $featurette-body--margin-top:    0 !default;
 $featurette-body--margin-bottom: 0 !default;
 
-$featurette-body--pull-over: 0 !default;
 
 
 // featurette title:
@@ -151,23 +151,7 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
             border-width:  $featurette--border-width;
             border-radius: $featurette--border-radius;
         }
-
-        /*max-width: 20em;*/
-        /*margin-top: 0 auto;
-        margin-bottom: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;*/
-
-        /*
-            If the 'pull' is > module body content height, it'll protrude below the container,
-            so hide it:
-        */
-        overflow: hidden;
     }
-
-
-
-
 
         .#{$featurette-namespace}featurette > * {
             -webkit-flex: 1 0 auto;
@@ -176,7 +160,6 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 
             width: 100%;
         }
-
 
 
         .#{$featurette-namespace}featurette .#{$featurette-namespace}featurette__image {
@@ -198,30 +181,8 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 
 
 
-
         .#{$featurette-namespace}featurette .#{$featurette-namespace}featurette__body {
-            /*color: $featurette-body--text-color;
-            background: $featurette-body--background-color;
-
-            margin-left: $featurette-body--margin-left;
-            margin-right: $featurette-body--margin-right;
-            margin-top: $featurette-body--margin-top;
-            margin-bottom: $featurette-body--margin-bottom;*/
             padding: $featurette-body--padding;
-            /*//padding: $featurette-body--padding $featurette-body--padding 0 $featurette-body--padding;
-
-            -webkit-flex: 1 0 auto;
-                -ms-flex: 1 0 auto;
-                    flex: 1 0 auto;
-                    */
-
-            /*&::after {
-                content: "";
-                display: block;
-                margin-top: $featurette-body--padding;
-                margin-bottom: -1px;
-                height: 1px;
-            }*/
         }
 
 

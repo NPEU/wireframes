@@ -78,9 +78,11 @@ var cookie_html                   =
         init: function() {
             var hero_img = document.querySelector('.js-toggle-image-1');
             // Add class toggle.
-            hero_img.addEventListener('click', function(){
-                toggleClass(this, 'show-image');
-            });
+            if (hero_img) {
+                hero_img.addEventListener('click', function(){
+                    toggleClass(this, 'show-image');
+                });
+            } 
             
         }
 	}

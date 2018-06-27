@@ -2246,7 +2246,8 @@ p.subtitle {
   margin-bottom: 2.4rem;
 }
 
-/*------------------------------------------------------------------------------------------------*    Fall-Back Icons v1.0.0
+/*------------------------------------------------------------------------------------------------*\
+    Fall-Back Icons v1.0.0
     
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
@@ -3589,7 +3590,8 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------*
+/*------------------------------------------------------------------------------------------------*\
+
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -3672,7 +3674,8 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*
+/*------------------------------------------------------------------------------------------------*\
+
     Clarification for self:
     Since this pattern is intented for use on logos, and since logos are an integral part of
     branding, this pattern is not ONLY intended as a CSS fallback.
@@ -3752,7 +3755,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   /* [1] */
 }
 
@@ -3972,8 +3975,10 @@ body {
   border-width: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*\*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*    Import Fall-Back vars:
+/*------------------------------------------------------------------------------------------------*\
+\*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*\
+    Import Fall-Back vars:
 
     Slightly hacky way of allowing the main UI colour of this pattern to be:
      - base-ui colour (if set)
@@ -4608,6 +4613,268 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 }
 
 /*
+    The `height: 100%;` in the `.event` class below allows the event to fill it's container (if inside,
+    say, a list-grid). However, it doesn't work in Safari OSX/iOS.
+    Applying a `event-wrap` class to a list item to make those items flex-containers seems to work
+    OK, but perhaps this would be better abstracted as a `fill-height` class or something?
+*/
+/*
+$event-cta--border-width: 1px !default;
+$event-cta--border-style: solid !default;
+$event-cta--border-radius: 3px !default;
+*/
+/*
+$event--link-color: false !default;
+$event--link-color--alt: false !default;
+$event--link-has-border-bottom: false !default;
+$event--link-border-bottom: false !default;
+$event--link-border-bottom--alt: false !default;
+
+// If we've specified a link color for the event, but not an alt state (e.g. hover)
+// then generate one
+@if $event--link-color != false and $event--link-color--alt == false {
+    $event--link-color--alt: darken($event--link-color, 10%) !default;;
+}
+
+// If we've specified a link color for the event, and we want bottom borders, generate the borders:
+@if $event--link-color != false and $event--link-has-border-bottom != false {
+    $event--link-border-bottom: 1px solid lighten($event--link-color, 20%) !default;
+    $event--link-border-bottom--alt: 2px solid lighten($event--link-color--alt, 30%) !default;
+}
+*/
+/*
+$event-button--text-color: #fff !default;
+$event-button--background-color: $event--base-color !default;
+$event-button--background-color-alt: lighten($event--base-color, 20%) !default;
+$event-button--border-color: darken($event--base-color, 20%) !default;
+*/
+/*
+.c-event-wrap {
+
+
+}
+
+    .c-event-wrap .c-event {
+
+        //width: 100%;
+    }
+*/
+.c-event.c-event {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%;
+  color: #333;
+  background: #fff;
+  padding: 2.4rem;
+  outline: 1px solid #0077AD;
+  /*max-width: 20em;*/
+  /*margin-top: 0 auto;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;*/
+  /*
+            If the 'pull' is > module body content height, it'll protrude below the container,
+            so hide it:
+        */
+  overflow: hidden;
+}
+
+.c-event > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.c-event .c-event__title {
+  border-bottom: 1px solid #999;
+}
+
+.c-event .c-event__speaker {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.c-event .c-event__speaker-role {
+  font-weight: normal;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #999;
+  padding-bottom: 2.4rem;
+  margin: 0;
+}
+
+.c-event .c-event__datetime {
+  width: auto;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 2.4rem 0 0 0;
+}
+
+.c-event .c-event__action {
+  width: auto;
+  margin: 2.4rem 0 0 auto;
+  padding-left: 2.4rem;
+}
+
+/*
+        .c-event .c-event__image {
+            position: relative;
+            text-align: center;
+        }
+
+            .c-event .c-event__image img {
+                width: 100%;
+            }
+
+
+            .c-event .c-event__image-link,
+            .c-event .c-event__image-link:hover {
+                border-bottom: 0;
+            }
+
+*/
+/*.c-event .c-event__main {
+            color: $event-body--text-color;
+            background: $event-body--background-color;
+
+            margin-left: $event-body--margin-left;
+            margin-right: $event-body--margin-right;
+            margin-top: $event-body--margin-top;
+            margin-bottom: $event-body--margin-bottom;
+            padding: $event-body--padding;
+
+            -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
+
+
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+
+            -webkit-align-items: flex-end;
+                 -ms-flex-align: end;
+                    align-items: flex-end;
+
+            -webkit-align-content: space-between;
+               -ms-flex-line-pack: justify;
+                    align-content: space-between;
+
+            -webkit-justify-content: flex-end;
+                      -ms-flex-pack: end;
+                    justify-content: flex-end;
+
+
+            position: relative;
+        }*/
+/*.c-event .c-event__body {
+                -webkit-flex: 1 0 auto;
+                    -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+
+                position: relative;
+
+                width: 100%;
+                //max-width: 100%;
+            }*/
+/*.c-event .c-event__image + .c-event__body--pull-over {
+                position: relative;
+                z-index: 1;
+                margin-top: $event-body--pull-over;
+            }*/
+.c-event .c-event__title {
+  font-size: 3rem;
+}
+
+/*
+                @if $event--link-color != false {
+                    .c-event .c-event__body a {
+                        color: $event--link-color;
+                        @if $event--link-has-border-bottom != false {
+                            border-bottom: $event--link-border-bottom;
+                        }
+                    }
+
+                    .c-event .c-event__body a:hover,
+                    .c-event .c-event__body a:active,
+                    .c-event .c-event__body a:focus {
+                        color: $event--link-color--alt;
+                        @if $event--link-has-border-bottom != false {
+                            border-bottom: $event--link-border-bottom--alt;
+                        }
+                    }
+                }
+                */
+/*.c-event .c-event__footer {
+                margin-left: $event-body--margin-left;
+                margin-right: $event-body--margin-right;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: $event-body--padding;
+                width: 100%;
+            }*/
+/*.c-event .c-event__footer > * {
+                    margin: 0;
+                }*/
+/*.c-event .c-event__info {
+                    font-size: 0.875em;
+
+                    margin-bottom: -($event-body--padding / 2);
+                    margin-top: -($event-body--padding / 2);
+                    border-top: 1px solid #999;
+                    padding-top: calc((1.2rem - 1px);
+                }*/
+/*.c-event--allow-wide .c-event__body {
+            width: 70%;
+        }*/
+/*.c-event--allow-wide .c-event__footer {
+            width: auto;
+            padding-left: $event-body--padding;
+        }*/
+/*
+
+        .c-event--themed-content .c-event__body > * {
+            padding-left: 1rem;
+        }
+
+        // Note that this themed bar should a visual representation of the category or group to
+        // to which this event belongs. If you're using this themed bar, make sure you also include
+        // the category/group information somewhere (e.g. in the footer info or as a kicker),
+        // Otherwise this information isn't accessible.
+        .c-event--themed-content .c-event__body::before {
+            display: block;
+            content: "";
+            width: 0.5rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -1rem;
+            background-color: #999;
+        }
+*/
+/*
     Note featurettes should only appear in the main body and fill the width, so media queries are
     ok here - we don't need to worry about other contexts and container-queries.
 */
@@ -4671,16 +4938,6 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
   background: #eee;
   padding: 0;
   outline: 1px solid #d5d5d5;
-  /*max-width: 20em;*/
-  /*margin-top: 0 auto;
-        margin-bottom: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;*/
-  /*
-            If the 'pull' is > module body content height, it'll protrude below the container,
-            so hide it:
-        */
-  overflow: hidden;
 }
 
 .c-featurette > * {
@@ -4707,27 +4964,7 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 }
 
 .c-featurette .c-featurette__body {
-  /*color: $featurette-body--text-color;
-            background: $featurette-body--background-color;
-
-            margin-left: $featurette-body--margin-left;
-            margin-right: $featurette-body--margin-right;
-            margin-top: $featurette-body--margin-top;
-            margin-bottom: $featurette-body--margin-bottom;*/
-  padding: 2.4rem;
-  /*//padding: $featurette-body--padding $featurette-body--padding 0 $featurette-body--padding;
-
-            -webkit-flex: 1 0 auto;
-                -ms-flex: 1 0 auto;
-                    flex: 1 0 auto;
-                    */
-  /*&::after {
-                content: "";
-                display: block;
-                margin-top: $featurette-body--padding;
-                margin-bottom: -1px;
-                height: 1px;
-            }*/
+  padding: 2rem;
 }
 
 @media (min-width: 45em) {
@@ -4776,23 +5013,28 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
     margin-right: $body-padding;
 }
 */
-@media only screen and (min-width: 500px) {
-  .hero .hero-message {
-    position: relative;
-    z-index: 1;
-    margin-top: -15%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-}
+/*
+@media only screen and (min-width:500px) {
 
-@media only screen and (min-width: 850px) {
+    .hero .hero-message {
+        position: relative;
+        z-index: 1;
+
+        margin-top: -15%;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 80%;
+    }
+
+}
+*/
+@media only screen and (min-width: 45em) {
   .hero .hero-message {
     position: absolute;
     margin: 0;
     top: 50%;
-    left: 5rem;
+    left: 4vw;
     transform: translateY(-50%);
     z-index: 1;
     width: 40%;
@@ -4813,83 +5055,6 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
     }
 
 }*/
-.proportional-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.proportional-container::before {
-  content: "";
-  display: block;
-  width: 100%;
-}
-
-.proportional-container__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-/* Make the image fill the width and be vertically centered: */
-/* (in portrait images this will leave gaps at the sides) */
-.proportional-container__image-cover {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* If `object-fit` is supported, use that and override vertical centering: */
-@supports (object-fit: cover) {
-  .proportional-container__image-cover {
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-.proportional-container--1-1::before {
-  padding-top: 100%;
-}
-
-.proportional-container--2-1::before {
-  padding-top: 50%;
-}
-
-.proportional-container--3-1::before {
-  padding-top: 33%;
-}
-
-.proportional-container--4-3::before {
-  padding-top: 75%;
-}
-
-.proportional-container--16-9::before {
-  padding-top: 56.25%;
-}
-
-@media (min-width: 45em) {
-  .proportional-container--1-1--wide::before {
-    padding-top: 100%;
-  }
-  .proportional-container--2-1--wide::before {
-    padding-top: 50%;
-  }
-  .proportional-container--3-1--wide::before {
-    padding-top: 33%;
-  }
-  .proportional-container--4-3--wide::before {
-    padding-top: 75%;
-  }
-  .proportional-container--16-9--wide::before {
-    padding-top: 56.25%;
-  }
-}
-
 /*
     Text alignment.
     
@@ -5048,6 +5213,83 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+}
+
+.proportional-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.proportional-container::before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.proportional-container__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Make the image fill the width and be vertically centered: */
+/* (in portrait images this will leave gaps at the sides) */
+.proportional-container__image-cover {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* If `object-fit` is supported, use that and override vertical centering: */
+@supports (object-fit: cover) {
+  .proportional-container__image-cover {
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.proportional-container--1-1::before {
+  padding-top: 100%;
+}
+
+.proportional-container--2-1::before {
+  padding-top: 50%;
+}
+
+.proportional-container--3-1::before {
+  padding-top: 33%;
+}
+
+.proportional-container--4-3::before {
+  padding-top: 75%;
+}
+
+.proportional-container--16-9::before {
+  padding-top: 56.25%;
+}
+
+@media (min-width: 45em) {
+  .proportional-container--1-1--wide::before {
+    padding-top: 100%;
+  }
+  .proportional-container--2-1--wide::before {
+    padding-top: 50%;
+  }
+  .proportional-container--3-1--wide::before {
+    padding-top: 33%;
+  }
+  .proportional-container--4-3--wide::before {
+    padding-top: 75%;
+  }
+  .proportional-container--16-9--wide::before {
+    padding-top: 56.25%;
+  }
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -5508,12 +5750,6 @@ h1, h2, h3 {
   justify-content: center;
 }
 
-@media only screen and (min-width: 850px) {
-  .wireframe .hero [wf-box]::before {
-    padding-left: 23%;
-  }
-}
-
 /*
 @media only screen and (max-width:54em) {
     .banner .scl--pushed-apart--last {
@@ -5583,13 +5819,25 @@ html :last-child {
 .hero .proportional-container.show-image {
   background-image: url("../img/hero-image-1.png");
   background-size: cover;
-  /* background-position-y: -5em; */
 }
 
-@media only screen and (min-width: 500px) and (max-width: 850px) {
-  .hero .proportional-container.show-image {
-    background-position-y: -5em;
-  }
-}
+/*
+@media only screen and (min-width:45em) {
 
+    .wireframe .hero [wf-box]::before
+    {
+        padding-left: 23%;
+    }
+
+}
+*/
+/*
+@media only screen and (min-width:500px) and (max-width:850px) {
+
+    .hero .proportional-container.show-image {
+        background-position-y: -5em;
+    }
+
+}
+*/
 /* ---------------------------------------------------------------------------------------------- */

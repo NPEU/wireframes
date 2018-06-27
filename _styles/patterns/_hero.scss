@@ -1,3 +1,8 @@
+
+
+
+$hero-breakpoint: 45em !default;
+
 .hero.hero {
     position: relative;
 }
@@ -8,7 +13,7 @@
     margin-right: $body-padding;
 }
 */
-
+/*
 @media only screen and (min-width:500px) {
 
     .hero .hero-message {
@@ -23,15 +28,15 @@
     }
 
 }
+*/
 
-
-@media only screen and (min-width:850px) {
+@media only screen and (min-width:#{$hero-breakpoint}) {
 
     .hero .hero-message {
         position: absolute;
         margin: 0;
         top: 50%;
-        left: 5rem;
+        left: 4vw;
         transform: translateY(-50%);
         z-index: 1;
 

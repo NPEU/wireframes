@@ -155,19 +155,26 @@ $fallback-svg--link-bg-color-alt: #fff;
 
 
 //$card--base-color: lighten($fallback--base-ui-color, 60%);
-$card-body--padding: $fallback--base-rem-space-unit;
+
 
 // Pull-over settings - kep for reference:
 //$card-body--margin-left: $fallback--base-rem-space-unit;
 //$card-body--margin-right: $fallback--base-rem-space-unit;
 //$card-body--pull-over: -$fallback--base-rem-space-unit;
 
-
+$brochure-spacing-unit: $fallback--base-rem-space-unit;
 @import "patterns/_brochure.scss";
+
+$card-spacing-unit: $fallback--base-rem-space-unit;
 @import "patterns/_card.scss";
 
-// Probably need card variants, esp max-widths.
+$event-spacing-unit: $fallback--base-rem-space-unit;
+$event--background-color: #fff;
+$event--border-color: $fallback--base-ui-color;
+@import "patterns/_event.scss";
 
+// Probably need card variants, esp max-widths.
+$featurett-spacing-unit: $fallback--base-rem-space-unit;
 @import "patterns/_featurette.scss";
 @include featurette--themer("featurette--dark", #555, #fff);
 
@@ -175,7 +182,7 @@ $card-body--padding: $fallback--base-rem-space-unit;
 @import "patterns/_hero.scss";
 //@import "patterns/_page-header.scss";
 //@import "patterns/_page-footer.scss";
-@import "patterns/_proportional-container.scss";
+
 
 @import "patterns/_text-align.scss";
 @import "patterns/_text-groups.scss";
@@ -187,7 +194,7 @@ $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 @import "layout-patterns/_col-to-row.scss";
 
 
-
+@import "layout-patterns/_proportional-container.scss";
 
 //$panel--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_panel.scss";

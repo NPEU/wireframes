@@ -8,6 +8,8 @@ $theme-namespace: t- !default;
 
 $brochure--base-color: #eee !default;
 
+$brochure-spacing-unit: 2rem !default;
+
 // brochure outer:
 
 $brochure--text-color: #333 !default;
@@ -21,7 +23,6 @@ $brochure--border-color:  darken($brochure--background-color, 10%) !default;
 
 
 $brochure-breakpoint: 45em !default;
-$brochure-pull: 5rem !default;
 
 
 // brochure body:
@@ -41,7 +42,7 @@ $brochure-cta--border-width: 1px !default;
 $brochure-cta--border-style: solid !default;
 $brochure-cta--border-radius: 3px !default;
 */
-$brochure-body--padding: 2.4rem !default;
+$brochure-body--padding:       $brochure-spacing-unit !default;
 $brochure-body--margin-left:   0 !default;
 $brochure-body--margin-right:  0 !default;
 $brochure-body--margin-top:    0 !default;
