@@ -85,6 +85,10 @@ $card-button--background-color: $card--base-color !default;
 $card-button--background-color-alt: lighten($card--base-color, 20%) !default;
 $card-button--border-color: darken($card--base-color, 20%) !default;
 */
+
+// Card info:
+$card-info--font-size: 1.4rem;
+
 /*
 .#{$card-namespace}card-wrap {
 
@@ -285,7 +289,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 
 
                 .#{$card-namespace}card .#{$card-namespace}card__info {
-                    font-size: 0.875em;
+                    font-size: $card-info--font-size;
 
                     margin-bottom: -($card-body--padding / 2);
                     margin-top: -($card-body--padding / 2);

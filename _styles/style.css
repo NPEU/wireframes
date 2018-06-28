@@ -4034,6 +4034,36 @@ body {
     https://www.sitepoint.com/responsive-css-patterns-without-media-queries/
 
 */
+.ff-width-100--10--25 {
+  max-width: 100%;
+  width: calc((10em - 100%) * 1000);
+  min-width: 25%;
+}
+
+.ff-width-100--10--33-333 {
+  max-width: 100%;
+  width: calc((10em - 100%) * 1000);
+  min-width: 33.333%;
+}
+
+.ff-width-100--10--50 {
+  max-width: 100%;
+  width: calc((10em - 100%) * 1000);
+  min-width: 50%;
+}
+
+.ff-width-100--10--66-666 {
+  max-width: 100%;
+  width: calc((10em - 100%) * 1000);
+  min-width: 66.666%;
+}
+
+.ff-width-100--10--75 {
+  max-width: 100%;
+  width: calc((10em - 100%) * 1000);
+  min-width: 75%;
+}
+
 .ff-width-100--20--25 {
   max-width: 100%;
   width: calc((20em - 100%) * 1000);
@@ -4325,7 +4355,6 @@ $brochure-button--border-color: darken($brochure--base-color, 20%) !default;
   color: #333;
   background: #eee;
   padding: 0;
-  outline: 1px solid #d5d5d5;
   /*max-width: 20em;*/
   /*margin-top: 0 auto;
         margin-bottom: 1.5rem;
@@ -4581,7 +4610,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 }
 
 .c-card .c-card__info {
-  font-size: 0.875em;
+  font-size: 1.4rem;
   margin-bottom: -1.2rem;
   margin-top: -1.2rem;
   border-top: 1px solid #999;
@@ -4701,6 +4730,8 @@ $event-button--border-color: darken($event--base-color, 20%) !default;
 
 .c-event .c-event__title {
   border-bottom: 1px solid #999;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .c-event .c-event__speaker {
@@ -4713,8 +4744,8 @@ $event-button--border-color: darken($event--base-color, 20%) !default;
   font-weight: normal;
   font-size: 1.4rem;
   border-bottom: 1px solid #999;
-  padding-bottom: 2.4rem;
-  margin: 0;
+  padding-bottom: 1.2rem;
+  margin-bottom: 0;
 }
 
 .c-event .c-event__datetime {
@@ -4964,7 +4995,7 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 }
 
 .c-featurette .c-featurette__body {
-  padding: 2rem;
+  padding: 2.4rem;
 }
 
 @media (min-width: 45em) {
@@ -5001,6 +5032,75 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
 .c-featurette.t-featurette--dark {
   background-color: #555;
   color: #fff;
+}
+
+/*
+
+
+*/
+/*$glimpse--link-color: false !default;
+$glimpse--link-has-border-bottom: false !default;
+$glimpse--link-color--alt: false !default;
+$glimpse--link-has-border-bottom: false !default;
+$glimpse--link-border-bottom: false !default;
+$glimpse--link-border-bottom--hover: false !default;*/
+.c-glimpse.c-glimpse {
+  position: relative;
+  max-width: 30em;
+  padding-left: 9.2rem;
+  min-height: 7.2rem;
+}
+
+.c-glimpse__heading {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.c-glimpse__heading a {
+  border-bottom: 0;
+}
+
+.c-glimpse__heading a:hover {
+  border-bottom: 0;
+}
+
+.c-glimpse__heading a:hover span {
+  border-bottom: 1px solid;
+}
+
+.c-glimpse__heading a:hover .c-glimpse__image {
+  outline: 2px solid;
+}
+
+.c-glimpse__image {
+  width: 7.2rem;
+  height: 7.2rem;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid currentColor;
+}
+
+.c-glimpse__image img {
+  vertical-align: middle;
+}
+
+@supports (object-fit: cover) {
+  .c-glimpse__image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-glimpse__content {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.c-glimpse__content * {
+  margin: 0;
 }
 
 .hero.hero {
@@ -5055,6 +5155,557 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
     }
 
 }*/
+/*
+    The `height: 100%;` in the `.pagination` class below allows the pagination to fill it's container (if inside,
+    say, a list-grid). However, it doesn't work in Safari OSX/iOS.
+    Applying a `pagination-wrap` class to a list item to make those items flex-containers seems to work
+    OK, but perhaps this would be better abstracted as a `fill-height` class or something?
+*/
+/*
+$pagination-body--text-color: $pagination--text-color !default;
+$pagination-body--background-color: $pagination--background-color !default;
+
+$pagination-title--text-color: $pagination--text-color !default;
+$pagination-title--background-color: $pagination--background-color !default;
+
+*/
+/*
+$pagination-cta--border-width: 1px !default;
+$pagination-cta--border-style: solid !default;
+$pagination-cta--border-radius: 3px !default;
+*/
+/*
+$pagination-button--text-color: #fff !default;
+$pagination-button--background-color: $pagination--base-color !default;
+$pagination-button--background-color-alt: lighten($pagination--base-color, 20%) !default;
+$pagination-button--border-color: darken($pagination--base-color, 20%) !default;
+*/
+/*
+.n-pagination-wrap {
+
+
+}
+
+    .n-pagination-wrap .n-pagination {
+
+        //width: 100%;
+    }
+*/
+.n-pagination.n-pagination {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*-webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;*/
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /*
+        -webkit-align-items: flex-end;
+             -ms-flex-align: end;
+                align-items: flex-end;
+*/
+  color: #333;
+  background: #fff;
+  padding: 0;
+  /*max-width: 20em;*/
+  /*margin-top: 0 auto;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;*/
+  /*
+            If the 'pull' is > module body content height, it'll protrude below the container,
+            so hide it:
+        */
+  overflow: hidden;
+}
+
+/*.n-pagination > * {
+            -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+
+            width: 100%;
+        }*/
+/*.n-pagination .n-pagination__title {
+            border-bottom: 1px solid #999;
+        }*/
+.n-pagination .n-pagination__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.n-pagination .n-pagination__item {
+  padding: 0;
+  margin: 0;
+}
+
+.n-pagination .n-pagination__item:not(:last-child) {
+  border-right-color: #d5d5d5;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.n-pagination .n-pagination__item--active span {
+  text-decoration: underline;
+}
+
+.n-pagination .n-pagination__link {
+  padding: 0.6rem 1.2rem;
+  margin: 0;
+  border: 0;
+  display: block;
+  /*display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+
+                    -webkit-justify-content: center;
+                              -ms-flex-pack: center;
+                            justify-content: center;
+
+                    -webkit-align-items: center;
+                         -ms-flex-align: center;
+                            align-items: center;*/
+}
+
+.n-pagination a.n-pagination__link:hover {
+  border: 0;
+  background: #ccc;
+}
+
+.n-pagination span.n-pagination__link {
+  color: gray;
+}
+
+/*
+        .n-pagination .n-pagination__image {
+            position: relative;
+            text-align: center;
+        }
+
+            .n-pagination .n-pagination__image img {
+                width: 100%;
+            }
+
+
+            .n-pagination .n-pagination__image-link,
+            .n-pagination .n-pagination__image-link:hover {
+                border-bottom: 0;
+            }
+
+*/
+/*.n-pagination .n-pagination__main {
+            color: $pagination-body--text-color;
+            background: $pagination-body--background-color;
+
+            margin-left: $pagination-body--margin-left;
+            margin-right: $pagination-body--margin-right;
+            margin-top: $pagination-body--margin-top;
+            margin-bottom: $pagination-body--margin-bottom;
+            padding: $pagination-body--padding;
+
+            -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
+
+
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+
+            -webkit-align-items: flex-end;
+                 -ms-flex-align: end;
+                    align-items: flex-end;
+
+            -webkit-align-content: space-between;
+               -ms-flex-line-pack: justify;
+                    align-content: space-between;
+
+            -webkit-justify-content: flex-end;
+                      -ms-flex-pack: end;
+                    justify-content: flex-end;
+
+
+            position: relative;
+        }*/
+/*.n-pagination .n-pagination__body {
+                -webkit-flex: 1 0 auto;
+                    -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+
+                position: relative;
+
+                width: 100%;
+                //max-width: 100%;
+            }*/
+/*.n-pagination .n-pagination__image + .n-pagination__body--pull-over {
+                position: relative;
+                z-index: 1;
+                margin-top: $pagination-body--pull-over;
+            }*/
+.n-pagination .n-pagination__title {
+  font-size: 3rem;
+}
+
+/*
+                @if $pagination--link-color != false {
+                    .n-pagination .n-pagination__body a {
+                        color: $pagination--link-color;
+                        @if $pagination--link-has-border-bottom != false {
+                            border-bottom: $pagination--link-border-bottom;
+                        }
+                    }
+
+                    .n-pagination .n-pagination__body a:hover,
+                    .n-pagination .n-pagination__body a:active,
+                    .n-pagination .n-pagination__body a:focus {
+                        color: $pagination--link-color--alt;
+                        @if $pagination--link-has-border-bottom != false {
+                            border-bottom: $pagination--link-border-bottom--alt;
+                        }
+                    }
+                }
+                */
+/*.n-pagination .n-pagination__footer {
+                margin-left: $pagination-body--margin-left;
+                margin-right: $pagination-body--margin-right;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: $pagination-body--padding;
+                width: 100%;
+            }*/
+/*.n-pagination .n-pagination__footer > * {
+                    margin: 0;
+                }*/
+/*.n-pagination .n-pagination__info {
+                    font-size: 0.875em;
+
+                    margin-bottom: -($pagination-body--padding / 2);
+                    margin-top: -($pagination-body--padding / 2);
+                    border-top: 1px solid #999;
+                    padding-top: calc((0 - 1px);
+                }*/
+/*.n-pagination--allow-wide .n-pagination__body {
+            width: 70%;
+        }*/
+/*.n-pagination--allow-wide .n-pagination__footer {
+            width: auto;
+            padding-left: $pagination-body--padding;
+        }*/
+/*
+
+        .n-pagination--themed-content .n-pagination__body > * {
+            padding-left: 1rem;
+        }
+
+        // Note that this themed bar should a visual representation of the category or group to
+        // to which this pagination belongs. If you're using this themed bar, make sure you also include
+        // the category/group information somewhere (e.g. in the footer info or as a kicker),
+        // Otherwise this information isn't accessible.
+        .n-pagination--themed-content .n-pagination__body::before {
+            display: block;
+            content: "";
+            width: 0.5rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -1rem;
+            background-color: #999;
+        }
+*/
+/*
+    The `height: 100%;` in the `.section-menu` class below allows the section-menu to fill it's container (if inside,
+    say, a list-grid). However, it doesn't work in Safari OSX/iOS.
+    Applying a `section-menu-wrap` class to a list item to make those items flex-containers seems to work
+    OK, but perhaps this would be better abstracted as a `fill-height` class or something?
+*/
+/*
+$section-menu-body--text-color: $section-menu--text-color !default;
+$section-menu-body--background-color: $section-menu--background-color !default;
+
+$section-menu-title--text-color: $section-menu--text-color !default;
+$section-menu-title--background-color: $section-menu--background-color !default;
+
+*/
+/*
+$section-menu-cta--border-width: 1px !default;
+$section-menu-cta--border-style: solid !default;
+$section-menu-cta--border-radius: 3px !default;
+*/
+/*
+$section-menu-button--text-color: #fff !default;
+$section-menu-button--background-color: $section-menu--base-color !default;
+$section-menu-button--background-color-alt: lighten($section-menu--base-color, 20%) !default;
+$section-menu-button--border-color: darken($section-menu--base-color, 20%) !default;
+*/
+/*
+.n-section-menu-wrap {
+
+
+}
+
+    .n-section-menu-wrap .n-section-menu {
+
+        //width: 100%;
+    }
+*/
+.n-section-menu.n-section-menu {
+  /*display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+
+        -webkit-justify-content: space-between;
+                  -ms-flex-pack: justify;
+                justify-content: space-between;
+
+        -webkit-align-items: flex-end;
+             -ms-flex-align: end;
+                align-items: flex-end;
+
+        height: 100%;
+        //width: 100%;*/
+  color: #333;
+  background: #fff;
+  padding: 2.4rem;
+  outline: 1px solid #e6e6e6;
+  /*max-width: 20em;*/
+  /*margin-top: 0 auto;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;*/
+  /*
+            If the 'pull' is > module body content height, it'll protrude below the container,
+            so hide it:
+        */
+  overflow: hidden;
+}
+
+/*.n-section-menu > * {
+            -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+
+            width: 100%;
+        }*/
+/*.n-section-menu .n-section-menu__title {
+            border-bottom: 1px solid #999;
+        }*/
+.n-section-menu .n-section-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.n-section-menu .n-section-menu__item {
+  padding: 0;
+  margin: 0;
+}
+
+.n-section-menu .n-section-menu__item:not(:last-child) {
+  border-bottom-color: #d5d5d5;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.n-section-menu .n-section-menu__item--active span {
+  text-decoration: underline;
+}
+
+.n-section-menu .n-section-menu__link {
+  padding: 0.6rem 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  /*display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+
+                    -webkit-justify-content: center;
+                              -ms-flex-pack: center;
+                            justify-content: center;
+
+                    -webkit-align-items: center;
+                         -ms-flex-align: center;
+                            align-items: center;*/
+}
+
+.n-section-menu .n-section-menu__link:hover {
+  border: 0;
+  background: #ccc;
+}
+
+/*
+        .n-section-menu .n-section-menu__image {
+            position: relative;
+            text-align: center;
+        }
+
+            .n-section-menu .n-section-menu__image img {
+                width: 100%;
+            }
+
+
+            .n-section-menu .n-section-menu__image-link,
+            .n-section-menu .n-section-menu__image-link:hover {
+                border-bottom: 0;
+            }
+
+*/
+/*.n-section-menu .n-section-menu__main {
+            color: $section-menu-body--text-color;
+            background: $section-menu-body--background-color;
+
+            margin-left: $section-menu-body--margin-left;
+            margin-right: $section-menu-body--margin-right;
+            margin-top: $section-menu-body--margin-top;
+            margin-bottom: $section-menu-body--margin-bottom;
+            padding: $section-menu-body--padding;
+
+            -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
+
+
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+
+            -webkit-align-items: flex-end;
+                 -ms-flex-align: end;
+                    align-items: flex-end;
+
+            -webkit-align-content: space-between;
+               -ms-flex-line-pack: justify;
+                    align-content: space-between;
+
+            -webkit-justify-content: flex-end;
+                      -ms-flex-pack: end;
+                    justify-content: flex-end;
+
+
+            position: relative;
+        }*/
+/*.n-section-menu .n-section-menu__body {
+                -webkit-flex: 1 0 auto;
+                    -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+
+                position: relative;
+
+                width: 100%;
+                //max-width: 100%;
+            }*/
+/*.n-section-menu .n-section-menu__image + .n-section-menu__body--pull-over {
+                position: relative;
+                z-index: 1;
+                margin-top: $section-menu-body--pull-over;
+            }*/
+.n-section-menu .n-section-menu__title {
+  font-size: 3rem;
+}
+
+/*
+                @if $section-menu--link-color != false {
+                    .n-section-menu .n-section-menu__body a {
+                        color: $section-menu--link-color;
+                        @if $section-menu--link-has-border-bottom != false {
+                            border-bottom: $section-menu--link-border-bottom;
+                        }
+                    }
+
+                    .n-section-menu .n-section-menu__body a:hover,
+                    .n-section-menu .n-section-menu__body a:active,
+                    .n-section-menu .n-section-menu__body a:focus {
+                        color: $section-menu--link-color--alt;
+                        @if $section-menu--link-has-border-bottom != false {
+                            border-bottom: $section-menu--link-border-bottom--alt;
+                        }
+                    }
+                }
+                */
+/*.n-section-menu .n-section-menu__footer {
+                margin-left: $section-menu-body--margin-left;
+                margin-right: $section-menu-body--margin-right;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: $section-menu-body--padding;
+                width: 100%;
+            }*/
+/*.n-section-menu .n-section-menu__footer > * {
+                    margin: 0;
+                }*/
+/*.n-section-menu .n-section-menu__info {
+                    font-size: 0.875em;
+
+                    margin-bottom: -($section-menu-body--padding / 2);
+                    margin-top: -($section-menu-body--padding / 2);
+                    border-top: 1px solid #999;
+                    padding-top: calc((1.2rem - 1px);
+                }*/
+/*.n-section-menu--allow-wide .n-section-menu__body {
+            width: 70%;
+        }*/
+/*.n-section-menu--allow-wide .n-section-menu__footer {
+            width: auto;
+            padding-left: $section-menu-body--padding;
+        }*/
+/*
+
+        .n-section-menu--themed-content .n-section-menu__body > * {
+            padding-left: 1rem;
+        }
+
+        // Note that this themed bar should a visual representation of the category or group to
+        // to which this section-menu belongs. If you're using this themed bar, make sure you also include
+        // the category/group information somewhere (e.g. in the footer info or as a kicker),
+        // Otherwise this information isn't accessible.
+        .n-section-menu--themed-content .n-section-menu__body::before {
+            display: block;
+            content: "";
+            width: 0.5rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -1rem;
+            background-color: #999;
+        }
+*/
 /*
     Text alignment.
     

@@ -217,15 +217,75 @@ title: NPEU Wireframe Patterns
     </section>
 </div>
 
+
+<h2 class="small-padding">Event</h2>
+
+<div class="medium-padding" wf-area="light+outline">
+    <div class="c-event">
+        <h3 class="c-event__title">Event Title</h3>
+        <p class="c-event__speaker">
+            Event Speaker
+        </p>
+        <p class="c-event__speaker-role">
+            Event speaker role / job title
+        </p>
+        <p class="c-event__datetime">
+            August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
+        </p>
+        <span class="c-event__action">+ Add to Calendar</span>
+    </div>
+</div>
+
+
+<h2 class="small-padding">Glimpse</h2>
+
+<div class="medium-padding" wf-area="light+outline">
+    <div class="c-glimpse">
+        <h3 class="c-glimpse__heading">
+            <a href="#">
+                <span>Headline</span>
+                <div class="c-glimpse__image">
+                    <div wf-box>
+                        <div class="proportional-container  proportional-container--1-1"></div>
+                    </div>
+                </div>
+            </a>
+        </h3>
+        <div class="c-glimpse__content">
+            <p>Just a glimpse at what's inside...</p>
+        </div>
+    </div>
+</div>
+
+<div class="medium-padding" wf-area="light+outline">
+    <div class="c-glimpse">
+        <h3 class="c-glimpse__heading">
+            <a href="#">
+                <span>Person Name</span>
+                <div class="c-glimpse__image">
+                    <img src="img/Placeholder_person.jpg" alt="" class="proportional-container__image-cover">
+                </div>
+            </a>
+        </h3>
+        <div class="c-glimpse__content">
+            <p>Job title</p>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+
 <h2 class="small-padding">Links list</h2>
 
 <p class="medium-padding">
     Note, there's nothing special about this pattern (no specific CSS). It may not actually be needed, but keep for now.
 </p>
 
-<div class="medium-padding" wf-area="light+outline">
-    <div class="links-list">
+<div class="medium-padding" wf-area="light+outline" style="max-width: 100%; width: calc((40em - 100%) * 1000); min-width: 33%;">
+    <div class="n-links-list">
         <h3>List title</h3>
+        
         <ul>
             <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
             <li><a href="#">Vivamus vitae elit vel mauris aliquam commodo a ut lorem</a></li>
@@ -237,21 +297,36 @@ title: NPEU Wireframe Patterns
     </div>
 </div>
 
-<h2 class="small-padding">Event</h2>
+<h2 class="small-padding">Section Menu</h2>
 
-<div class="medium-padding" wf-area="light+outline">
-    <div class="c-event">
-        <h2 class="c-event__title">Event Title</h2>
-        <p class="c-event__speaker">
-            Event Speaker
-        </p>
-        <p class="c-event__speaker-role">
-            Event speaker role / job title
-        </p>
-        <p class="c-event__datetime">
-            Month: Day Date Start:time: – End:Time
-        </p>
-        <span class="c-event__action">+ Add to Calendar</span>
+<div class="medium-padding" wf-area="light+outline" style="max-width: 100%; width: calc((40em - 100%) * 1000); min-width: 33%;">
+    <div class="n-section-menu">
+        <h3 class="n-section-menu__title">Section Menu</h3>
+        
+        <ul class="n-section-menu__list">
+            <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></a></li>
+            <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Vivamus vitae elit vel mauris aliquam commodo a ut lorem</span></a></li>
+            <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Maecenas velit leo, dictum a consectetur accumsan, ornare in tortor</span></a></li>
+            <li class="n-section-menu__item  n-section-menu__item--active"><a href="#main" class="n-section-menu__link"><span>Praesent in hendrerit lectus</span></a></li>
+            <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Maecenas consequat imperdiet massa egestas commodo</span></a></li>
+            <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Sed facilisis, risus sed accumsan tristique, nisi velit porttitor nibh, nec bibendum ex sapien eu lorem</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<h2 class="small-padding">Pagination</h2>
+
+<div class="medium-padding" wf-area="white+outline">
+    <div class="n-pagination">       
+        <ul class="n-pagination__list">
+            <li class="n-pagination__item"><span class="n-pagination__link"><span>First</span></span></li>
+            <li class="n-pagination__item"><span class="n-pagination__link"><span>Prev</span></span></li>
+            <li class="n-pagination__item  n-pagination__item--active"><span class="n-pagination__link"><span>1</span></span></li>
+            <li class="n-pagination__item"><a href="#" class="n-pagination__link"><span>2</span></a></li>
+            <li class="n-pagination__item"><a href="#" class="n-pagination__link"><span>3</span></a></li>
+            <li class="n-pagination__item"><a href="#" class="n-pagination__link"><span>Next</span></a></li>
+            <li class="n-pagination__item"><a href="#" class="n-pagination__link"><span>Last</span></a></li>
+        </ul>
     </div>
 </div>
 

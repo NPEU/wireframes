@@ -163,29 +163,53 @@ $fallback-svg--link-bg-color-alt: #fff;
 //$card-body--pull-over: -$fallback--base-rem-space-unit;
 
 $brochure-spacing-unit: $fallback--base-rem-space-unit;
-@import "patterns/_brochure.scss";
+$brochure--border-or-outline: false;
+@import "component-patterns/_brochure.scss";
 
 $card-spacing-unit: $fallback--base-rem-space-unit;
-@import "patterns/_card.scss";
+@import "component-patterns/_card.scss";
 
 $event-spacing-unit: $fallback--base-rem-space-unit;
 $event--background-color: #fff;
 $event--border-color: $fallback--base-ui-color;
-@import "patterns/_event.scss";
+@import "component-patterns/_event.scss";
 
 // Probably need card variants, esp max-widths.
-$featurett-spacing-unit: $fallback--base-rem-space-unit;
-@import "patterns/_featurette.scss";
+$featurette-spacing-unit: $fallback--base-rem-space-unit;
+@import "component-patterns/_featurette.scss";
 @include featurette--themer("featurette--dark", #555, #fff);
 
+
+$glimpse-spacing-unit: $fallback--base-rem-space-unit;
+@import "component-patterns/_glimpse.scss";
+
+
 //@import "_full-width.scss";
-@import "patterns/_hero.scss";
+@import "component-patterns/_hero.scss";
 //@import "patterns/_page-header.scss";
 //@import "patterns/_page-footer.scss";
 
 
-@import "patterns/_text-align.scss";
-@import "patterns/_text-groups.scss";
+
+
+
+$pagination-spacing-unit: $fallback--base-rem-space-unit;
+$pagination--link-color--alt: #ccc;
+$pagination--background-color: #fff;
+@import "navigation-patterns/_pagination.scss";
+
+
+$section-menu-spacing-unit: $fallback--base-rem-space-unit;
+$section-menu--link-color--alt: #ccc;
+$section-menu--background-color: #fff;
+@import "navigation-patterns/_section-menu.scss";
+
+
+
+
+
+@import "utility-patterns/_text-align.scss";
+@import "utility-patterns/_text-groups.scss";
 
 
 

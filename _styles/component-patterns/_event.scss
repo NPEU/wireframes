@@ -178,6 +178,8 @@ $event-button--border-color: darken($event--base-color, 20%) !default;
 
         .#{$event-namespace}event .#{$event-namespace}event__title {
             border-bottom: 1px solid #999;
+            padding-bottom: $event-spacing-unit / 2;
+            margin-bottom: $event-spacing-unit / 2;
         }
     
 
@@ -194,8 +196,8 @@ $event-button--border-color: darken($event--base-color, 20%) !default;
             font-size: 1.4rem;
             
             border-bottom: 1px solid #999;
-            padding-bottom: $event-spacing-unit;
-            margin: 0;
+            padding-bottom: $event-spacing-unit / 2;
+            margin-bottom: 0;
         }
         
         

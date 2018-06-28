@@ -25,74 +25,80 @@ title: NPEU Home
 
 <div wf-area="white+outline">
 
-    <div class="gallery-grid  gallery-grid--gutter--medium  gallery-grid--basis-15">
-        <div class="gallery-grid__item">
+    <div class="l-col-to-row  l-col-to-row--gutter--medium">
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
 
 
-                <div class="c-card">
+                <div class="c-card  c-card--allow-wide">
                     <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="c-card__body  c-card__body--pull-over">
-                        <h2 class="c-card__title">Trials</h2>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
-                        </p>
-                    </div>
-                    <div class="c-card__footer">
-                        <p>
-                            <a href="#" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-                        </p>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">Trials</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="#" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
         </div>
-        <div class="gallery-grid__item">
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
 
 
-                <div class="c-card">
+                <div class="c-card  c-card--allow-wide">
                     <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="c-card__body  c-card__body--pull-over">
-                        <h2 class="c-card__title">PRU-MHC</h2>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                    </div>
-                    <div class="c-card__footer">
-                        <p>
-                            <a href="#" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-                        </p>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">PRU-MHC</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="#" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
         </div>
-        <div class="gallery-grid__item">
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
 
 
-                <div class="c-card">
+                <div class="c-card  c-card--allow-wide">
                     <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
                         </div>
                     </div>
-                    <div class="c-card__body  c-card__body--pull-over">
-                        <h2 class="c-card__title">SHEER</h2>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
-                        </p>
-                    </div>
-                    <div class="c-card__footer">
-                        <p>
-                            <a href="#" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-                        </p>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">SHEER</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="#" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -140,5 +146,126 @@ title: NPEU Home
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
             </p>
         </div>
+    </section>
+</div>
+
+<div wf-area="white+medium-padding+outline">
+    <section>
+        <h2>Latest News</h2>
+
+
+        <div class="l-col-to-row">
+            <div class="l-col-to-row__item  ff-width-100--40--50">
+
+                <div class="c-card  c-card--themed-content">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">Featured Card Title</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="l-col-to-row__item  ff-width-100--40--50">
+
+
+                <div class="l-col-to-row">
+                    <div class="l-col-to-row__item  ff-width-100--30--50">
+
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">Card Title 1</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-col-to-row__item  ff-width-100--30--50">
+
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">Card Title 2</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="l-col-to-row">
+                    <div class="l-col-to-row__item  ff-width-100--20--50">
+
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">Card Title 3</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-col-to-row__item  ff-width-100--20--50">
+
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">Card Title 4</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
     </section>
 </div>

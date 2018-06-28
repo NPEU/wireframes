@@ -10,7 +10,7 @@ $brochure--base-color: #eee !default;
 
 $brochure-spacing-unit: 2rem !default;
 
-// brochure outer:
+// Brochure outer:
 
 $brochure--text-color: #333 !default;
 $brochure--background-color: $brochure--base-color !default;
@@ -25,7 +25,7 @@ $brochure--border-color:  darken($brochure--background-color, 10%) !default;
 $brochure-breakpoint: 45em !default;
 
 
-// brochure body:
+// Brochure body:
 
 $brochure-body--text-color: $brochure--text-color !default;
 $brochure-body--background-color: $brochure--background-color !default;
@@ -51,12 +51,12 @@ $brochure-body--margin-bottom: 0 !default;
 $brochure-body--pull-over: 0 !default;
 
 
-// brochure title:
+// Brochure title:
 $brochure-title--font-size: 3rem !default;
 
 
 
-// brochure text links:
+// Brochure text links:
 /*
 $brochure--link-color: false !default;
 $brochure--link-color--alt: false !default;
@@ -76,7 +76,7 @@ $brochure--link-border-bottom--alt: false !default;
     $brochure--link-border-bottom--alt: 2px solid lighten($brochure--link-color--alt, 30%) !default;
 }
 */
-// brochure buttons:
+// Brochure buttons:
 /*
 $brochure-button--text-color: #fff !default;
 $brochure-button--background-color: $brochure--base-color !default;
