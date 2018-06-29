@@ -1,7 +1,8 @@
-$wf-fill--white: #fff;
-$wf-fill--light: #eee;
-$wf-fill--mid:   #ccc;
-$wf-fill--dark:  #666;
+$wf-fill--white:   #fff;
+$wf-fill--light:   #eee;
+$wf-fill--mid:     #ccc;
+$wf-fill--dark:    #666;
+$wf-fill--darkest: #333;
 
 $wf-text:        #333;
 $wf-text--light: #fff;
@@ -172,6 +173,11 @@ html.wireframe {
     color: $wf-text--light;
 }
 
+.wireframe [wf-area*=darkest] {
+    background-color: $wf-fill--darkest;
+    color: $wf-text--light;
+}
+
 /*
 .wireframe [wf-area*=padding] {
 
@@ -272,11 +278,17 @@ html.wireframe {
     }
 }
 
-.wireframe [wf-bar-links*=divided] > *:not(:first-child) {
-    position: relative;
+
+.wireframe [wf-bar-links*=divided] {
+    overflow: hidden;
 }
 
-.wireframe [wf-bar-links*=divided] > *:not(:first-child):before {
+.wireframe [wf-bar-links*=divided] > li {
+    position: relative;
+    margin: 0 0 0 -3px;
+}
+
+.wireframe [wf-bar-links*=divided] > li:before {
     content: "";
     display: block;
     height: 1em;
@@ -287,6 +299,12 @@ html.wireframe {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.wireframe [wf-bar-links*=divided] a[href] {
+    margin: 0 2px;
+}
+
+
 
 .wireframe [wf-bar-links*=small-text] {
     font-size: 0.85em;

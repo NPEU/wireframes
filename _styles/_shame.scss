@@ -134,6 +134,26 @@ html :last-child {
 }
 
 
+
+.u-space-below {
+    margin-bottom: $sz-m;
+}
+
+
+.u-list--plain {
+    list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0.4rem 0;
+    }
+}
+
+.u-text-small {
+    font-size: 1.3rem;
+}
+
+
 .hero .proportional-container.show-image {
     //background-image: url('../img/Bigstock_167982824 - flip.jpg');
     background-image: url('../img/hero-image-1.png');
@@ -158,3 +178,136 @@ html :last-child {
 
 }
 */
+
+
+
+.primary-banner  {
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    
+    -webkit-justify-content: flex-start;
+              -ms-flex-pack: start;
+            justify-content: flex-start;
+            
+    -webkit-align-items: center;
+         -ms-flex-align: center;
+            align-items: center;
+}
+
+.primary-banner > :first-child {
+    flex: 1 1 1px;
+    padding-right: 1em;
+}
+
+.js-over-panel-control.over-panel-control {
+    display: inline-block;
+}
+
+
+.search-control {
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    line-height: 2.25em;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    color: #fff;
+    background-color: #0077AD;
+    position: relative;
+    z-index: 1;
+    padding: 0 .5625em;
+}
+
+@media screen and (max-width: 55em) {
+    .primary-banner > :last-child {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $fallback--breakpoint--enhanced) {
+    
+    .js-over-panel-control.over-panel-control,
+    .search-control {
+        display: none;
+    }
+}
+
+
+
+[id="parent-logos"] {
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    /*webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;*/
+    
+    -webkit-justify-content: space-evenly;
+              -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+            
+    -webkit-align-items: center;
+         -ms-flex-align: center;
+            align-items: center;
+}
+
+[id="parent-logos"] > * {
+    padding: 0.6rem;
+    flex: 0 1 auto;
+}
+
+[id="parent-logos"] a[href] {
+    max-width: 12em;
+}
+
+[id="important-ctas"] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /*-webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;*/
+
+    /*webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;*/
+    
+    -webkit-justify-content: center;
+              -ms-flex-pack: center;
+            justify-content: center;
+}
+
+[id=important-ctas][id="important-ctas"] a[href] {
+    background-color: #444;
+}
+
+.c-card[data-component="older-news"] h2 {
+    font-size: 2rem;
+    line-height: $sz-m;
+}
+
+.nav-bar__search button {
+    margin: 0;
+}

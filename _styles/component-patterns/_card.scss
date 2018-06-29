@@ -56,6 +56,7 @@ $card-body--pull-over: 0 !default;
 
 // Card title:
 $card-title--font-size: 3rem !default;
+$card-title--line-height: 1.2 !default;
 
 
 // Card text links:
@@ -247,7 +248,8 @@ $card-info--font-size: 1.4rem;
 
 
                 .#{$card-namespace}card .#{$card-namespace}card__title {
-                    font-size: $card-title--font-size;
+                    font-size:   $card-title--font-size;
+                    line-height: $card-title--line-height;
                 }
 
 

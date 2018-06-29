@@ -47,6 +47,9 @@ var cookie_html                   =
     window.onresize = adjustJustifyContent.run;
 })();
 /*
+
+
+
 */
 (function() {
     var ready = function(fn) {
@@ -56,7 +59,7 @@ var cookie_html                   =
             document.addEventListener('DOMContentLoaded', fn);
         }
     }
-    
+
     var toggleClass = function (el, className) {
         if (el.classList) {
           el.classList.toggle(className);
@@ -71,7 +74,7 @@ var cookie_html                   =
 
           el.className = classes.join(' ');
         }
-    }   
+    }
 
 	var wireframe = {
 
@@ -82,8 +85,15 @@ var cookie_html                   =
                 hero_img.addEventListener('click', function(){
                     toggleClass(this, 'show-image');
                 });
-            } 
-            
+            }
+
+            var important_ctas = document.querySelector('.js-hide');
+            // Add class toggle.
+            if (important_ctas) {
+                important_ctas.addEventListener('click', function(){
+                    important_ctas.style.display = 'none';
+                });
+            }
         }
 	}
 
@@ -283,7 +293,7 @@ var cookie_html                   =
                         dropdown.className += ' ' + dropdown_js_classname;
                     }
                     // ... and button actions:
-                    var buttons = document.querySelectorAll('[data-js="dropdown__button"]');
+                    var buttons = dropdown.querySelectorAll('[data-js="dropdown__button"]');
                     Array.prototype.forEach.call(buttons, function(button, i) {
                         var button_id = button.getAttribute('id');
 

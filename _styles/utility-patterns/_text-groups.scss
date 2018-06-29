@@ -8,7 +8,7 @@
 $text-group-namespace: u- !default;
 
 .#{$text-align-namespace}text-group {
-   display: -webkit-flex;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 
@@ -28,8 +28,8 @@ $text-group-namespace: u- !default;
 }
 
 // Preserve white space when not-wrapped:
-.#{$text-align-namespace}text-group > :not(:last-child)::after {
-    content: "\00a0";
+.#{$text-align-namespace}text-group > :not(:last-child) {
+    padding-right: 0.2em;
 }
 
 // Allow large space between distinct groups:

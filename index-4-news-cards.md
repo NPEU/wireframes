@@ -150,14 +150,14 @@ title: NPEU Home
 </div>
 
 <div wf-area="white+medium-padding+outline">
-    <section id="latest-news">
+    <section>
         <h2>Latest News</h2>
 
         <div class="l-col-to-row--flush-edge-gutters">
         <div class="l-col-to-row  l-col-to-row--gutter--medium">
             <div class="l-col-to-row__item  ff-width-100--40--50">
 
-                <div class="c-card  c-card--themed-content" data-component="featured-news">
+                <div class="c-card  c-card--themed-content">
                     <div class="c-card__image">
                         <div wf-box>
                             <div class="proportional-container  proportional-container--3-1"></div>
@@ -173,7 +173,7 @@ title: NPEU Home
                         <div class="c-card__footer">
                             <p class="c-card__info  u-text-group  u-text-group--wide-space">
                                 <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
-                                <span class="u-text-group"><span>Published in: </span><span>Category name</span></span>
+                                <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
                             </p>
                         </div>
                     </div>
@@ -186,34 +186,18 @@ title: NPEU Home
             <div class="l-col-to-row__item  ff-width-100--40--50">
             <div class="l-col-to-row--flush-edge-gutters">
 
-
-                <div class="c-card  c-card--themed-content  u-space-below" data-component="recent-news">
-                    <div class="c-card__main">
-                        <div class="c-card__body">
-                            <h2 class="c-card__title">Next most recent headline</h2>
-                        </div>
-                        <div class="c-card__footer">
-                            <p class="c-card__info  u-text-group  u-text-group--wide-space">
-                                <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
-                                <span class="u-text-group"><span>Published in: </span><span>Quite a long category name to test wrapping</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
                 <div class="l-col-to-row  l-col-to-row--gutter--medium">
                     <div class="l-col-to-row__item  ff-width-100--30--50">
 
-                        <div class="c-card  c-card--themed-content" data-component="older-news">
+                        <div class="c-card  c-card--themed-content">
                             <div class="c-card__main">
                                 <div class="c-card__body">
-                                    <h2 class="c-card__title">This headline is grabbing everyone's attention</h2>
+                                    <h2 class="c-card__title">Next most recent headline</h2>
                                 </div>
                                 <div class="c-card__footer">
                                     <p class="c-card__info  u-text-group  u-text-group--wide-space">
                                         <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
-                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name to test wrapping</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -223,7 +207,45 @@ title: NPEU Home
 
                     <div class="l-col-to-row__item  ff-width-100--30--50">
 
-                        <div class="c-card  c-card--themed-content" data-component="older-news">
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">This is another headline</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="l-col-to-row  l-col-to-row--gutter--medium">
+                    <div class="l-col-to-row__item  ff-width-100--20--50">
+
+                        <div class="c-card  c-card--themed-content">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">This headline is grabbing everyone's attention</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-col-to-row__item  ff-width-100--20--50">
+
+                        <div class="c-card  c-card--themed-content">
                             <div class="c-card__main">
                                 <div class="c-card__body">
                                     <h2 class="c-card__title">Final headline here</h2>
@@ -231,7 +253,7 @@ title: NPEU Home
                                 <div class="c-card__footer">
                                     <p class="c-card__info  u-text-group  u-text-group--wide-space">
                                         <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
-                                        <span class="u-text-group"><span>Published in: </span><span>Category name</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name category name to test wrapping</span></span>
                                     </p>
                                 </div>
                             </div>

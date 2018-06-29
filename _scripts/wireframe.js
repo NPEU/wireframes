@@ -1,4 +1,7 @@
 /*
+
+
+
 */
 (function() {
     var ready = function(fn) {
@@ -8,7 +11,7 @@
             document.addEventListener('DOMContentLoaded', fn);
         }
     }
-    
+
     var toggleClass = function (el, className) {
         if (el.classList) {
           el.classList.toggle(className);
@@ -23,7 +26,7 @@
 
           el.className = classes.join(' ');
         }
-    }   
+    }
 
 	var wireframe = {
 
@@ -34,8 +37,15 @@
                 hero_img.addEventListener('click', function(){
                     toggleClass(this, 'show-image');
                 });
-            } 
-            
+            }
+
+            var important_ctas = document.querySelector('.js-hide');
+            // Add class toggle.
+            if (important_ctas) {
+                important_ctas.addEventListener('click', function(){
+                    important_ctas.style.display = 'none';
+                });
+            }
         }
 	}
 
