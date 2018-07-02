@@ -83,6 +83,7 @@ $body-padding: $sz-m;
 /* --| FALL-BACK PATTERNS |---------------------------------------------------------------------- */
 $fallback--over-panel__contents--offset-top: $sz-m;
 $fallback--over-panel__contents--padding: 0;
+$fallback--over-panel__overlay--background-color: #000;
 @import "../bower_components/Fall-Back-Over-Panel/_over-panel";
 
 
@@ -156,8 +157,8 @@ $fallback-svg--link-bg-color-alt: #fff;
 @import "../bower_components/NPEU-layout-patterns/dev/scss/_scl--n-up.scss";
 
 
-//$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
-//@import "../bower_components/NPEU-layout-patterns/dev/scss/_gallery-grid.scss";
+$gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
+@import "../bower_components/NPEU-layout-patterns/dev/scss/_gallery-grid.scss";
 
 
 
@@ -200,7 +201,7 @@ $glimpse-spacing-unit: $fallback--base-rem-space-unit;
 @import "component-patterns/_hero.scss";
 
 @media only screen and (min-width:#{$hero-breakpoint}) {
-    .wireframe [wf-box]::before {
+    #hero [wf-box]::before {
         padding-left: 30%
     }
 }

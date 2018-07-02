@@ -154,10 +154,42 @@ html :last-child {
 }
 
 
-.hero .proportional-container.show-image {
+#hero .show-image {
     //background-image: url('../img/Bigstock_167982824 - flip.jpg');
     background-image: url('../img/hero-image-1.png');
     background-size: cover;
+    background-position: center;
+
+    & [wf-box]::before {
+        display: none;
+        content: "";
+    }
+}
+
+
+#our-research .show-image {
+    //background-image: url('../img/Bigstock_167982824 - flip.jpg');
+    background-image: url('../img/research-image-1.png');
+    background-size: cover;
+    background-position: center;
+    
+    & [wf-box]::before {
+        display: none;
+        content: "";
+    }
+}
+
+
+#participant-involvement .show-image {
+    //background-image: url('../img/Bigstock_167982824 - flip.jpg');
+    background-image: url('../img/ppi-image-1.png');
+    background-size: cover;
+    background-position: center;
+    
+    & [wf-box]::before {
+        display: none;
+        content: "";
+    }
 }
 /*
 @media only screen and (min-width:#{$hero-breakpoint}) {
@@ -230,7 +262,7 @@ html :last-child {
     padding: 0 .5625em;
 }
 
-@media screen and (max-width: 55em) {
+@media screen and (max-width: $fallback--breakpoint--enhanced) {
     .primary-banner > :last-child {
         width: 100%;
     }

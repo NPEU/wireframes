@@ -27,17 +27,18 @@ layout: structure
         <div class="js-hide" wf-area="darkest" wf-links id="important-ctas">
             <div wf-bar-links="small-padding">
                 <a href="#"><span>Trial Randomisation</span></a>
+                <a href="#close" style="position: absolute; right: 0;"><span><svg display="none" class="icon  feather"><use xlink:href="#icon-cross"></use></svg></span></a>
             </div>
         </div>
 
         <nav class="banner" wf-area="white+small-padding">
 
             <div class="primary-banner  u-space-belowX" id="primary-banner">
-                <div class="scl--pushed-apart--first  layer  layer--above-overlay">
+                <div class="scl--pushed-apart--first  layerX  layer--above-overlayX">
 
                     <div class="svg  svg--fixed-height  svg--fixed-height--banner-logo">
-                        <a href="" class="svg__link">
-                            <object type="image/svg+xml" data="img/unit-logos/npeu-logo.svg" height="100" class="svg__image" aria-hidden="true" tabindex="-1">
+                        <a href="/" class="svg__link">
+                            <object type="image/svg+xml" data="/img/unit-logos/npeu-logo.svg" height="100" class="svg__image" aria-hidden="true" tabindex="-1">
                                 <svg display="none">
                                     <image src="imgunit-/logos/npeu-logo.png" height="100" class="svg__fallback-image" alt="NPEU home"></image>
                                 </svg>
@@ -55,7 +56,7 @@ layout: structure
                             <text y="-10">Search</text>
                         </svg>
                     </button>
-                    <button class="over-panel-control" hidden aria-controls="sample-panel" aria-label="Main menu" aria-expanded="false" data-js="overpanel__control">
+                    <button class="over-panel-control" hidden aria-controls="menu-panel" aria-label="Main menu" aria-expanded="false" data-js="overpanel__control">
                         <svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-menu"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-cross"></use></svg>
                     </button>
                 </div>
@@ -76,7 +77,7 @@ layout: structure
             </div>
             <div class="">
 
-                <div class="over-panel  over-panel--fade" id="sample-panel" data-js="over-panel">
+                <div class="over-panel  over-panel--fade" id="menu-panel" data-js="over-panel">
                     <button class="over-panel__overlay" hidden aria-hidden="true" tabindex="-1" data-js="over-panel__overlay"></button>
                     <div class="over-panel__contents" data-js="over-panel__contents">
 
@@ -116,7 +117,7 @@ layout: structure
 
                                     <li class="nav-bar__item  dropdown">
 
-                                        <a href="#trials" class="nav-bar__link">Trials</a>
+                                        <a href="ctu" class="nav-bar__link">Trials</a>
                                         <button id="trials-sub-menu-toggle" class="dropdown__button" data-js="dropdown__button" hidden aria-label="Trials sub menu"><svg display="none" class="icon  icon--is-closed  feather"><use xlink:href="#icon-chevron-down"></use></svg><svg display="none" class="icon  icon--is-open  feather"><use xlink:href="#icon-chevron-up"></use></svg></button>
 
                                         <div class="dropdown__area" id="trials-sub-menu-toggle--target">
@@ -124,7 +125,7 @@ layout: structure
                                                 <li class="subnav__item"><a href="#frosttie" class="subnav__link" data-js="dropdown__focus-start">FROSTTIE</a></li>
                                                 <li class="subnav__item"><a href="#neoclear" class="subnav__link" data-js="dropdown__focus-start">NeoCLEAR</a></li>
                                                 <li class="subnav__item"><a href="#wheat" class="subnav__link" data-js="dropdown__focus-start">WHEAT </a></li>
-                                                <li class="subnav__item"><a href="#more-trials" class="subnav__link" data-js="dropdown__focus-start">More</a></li>
+                                                <li class="subnav__item"><a href="/trials" class="subnav__link" data-js="dropdown__focus-start">More</a></li>
                                             </ul>
                                         </div>
 
@@ -211,7 +212,7 @@ layout: structure
                         </div>
                         <div class="l-col-to-row__item  ff-width-100--20--50">
 
-                            <h2>Popular links</h2>
+                            <h2>Some links</h2>
 
                             <ul class="u-list--plain">
                                 <li><a href="#">About us</a></li>

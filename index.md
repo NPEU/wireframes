@@ -2,19 +2,19 @@
 layout: landing--npeu-home
 title: NPEU Home
 ---
-<div class="hero">
+<div class="hero" id="hero">
 
     <div wf-box="Static or rotating images" class="hero-image">
 
-        <div class="proportional-container  proportional-container--16-9   js-toggle-image-1"></div>
+        <div class="proportional-container  proportional-container--16-9  js-toggle-image"></div>
 
     </div>
 
     <div class="hero-message" wf-area="white+medium-padding+outline">
 
-        <h1 wf-heading="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+        <h1 wf-heading="large">Welcome to the NPEU</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur.
+            The NPEU is a multi-disciplinary research unit which was established at the University of Oxford in 1978.
         </p>
         <p>
             <a href="#" class="cta">About the NPEU <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
@@ -107,7 +107,7 @@ title: NPEU Home
     </div>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="c-brochure">
+    <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
             <h2>
                 Our research
@@ -119,8 +119,11 @@ title: NPEU Home
             <p>
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
             </p>
+            <p>
+                <a href="#" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+            </p>
         </div>
-        <div class="feature-image  c-brochure__image">
+        <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
@@ -128,8 +131,8 @@ title: NPEU Home
     </section>
 </div>
 <div wf-area="light+medium-padding+outline">
-    <section class="c-brochure">
-        <div class="feature-image  c-brochure__image">
+    <section class="c-brochure" id="participant-involvement">
+        <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
@@ -144,6 +147,9 @@ title: NPEU Home
             </p>
             <p>
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
+            </p>
+            <p>
+                <a href="#" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
         </div>
     </section>

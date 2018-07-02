@@ -13,9 +13,9 @@ $featurette-spacing-unit: 2rem !default;
 // featurette outer:
 
 $featurette--text-color: #333 !default;
-$featurette--background-color: $featurette--base-color !default;
+$featurette--background-color: #fff !default;
 
-$featurette--border-or-outline: 'outline' !default;
+$featurette--border-or-outline: false !default;
 $featurette--border-width:  1px !default;
 $featurette--border-style:  solid  !default;
 $featurette--border-radius: 0  !default;

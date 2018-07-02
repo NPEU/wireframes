@@ -31,7 +31,7 @@
 	var wireframe = {
 
         init: function() {
-            var hero_img = document.querySelector('.js-toggle-image-1');
+            var hero_img = document.querySelector('#hero .js-toggle-image');
             // Add class toggle.
             if (hero_img) {
                 hero_img.addEventListener('click', function(){
@@ -39,11 +39,27 @@
                 });
             }
 
-            var important_ctas = document.querySelector('.js-hide');
+            var important_ctas = document.querySelector('#important-ctas.js-hide');
             // Add class toggle.
             if (important_ctas) {
                 important_ctas.addEventListener('click', function(){
                     important_ctas.style.display = 'none';
+                });
+            }
+            
+            var research_img = document.querySelector('#our-research .js-toggle-image');
+            // Add class toggle.
+            if (research_img) {
+                research_img.addEventListener('click', function(){
+                    toggleClass(this, 'show-image');
+                });
+            }
+            
+            var ppi_img = document.querySelector('#participant-involvement .js-toggle-image');
+            // Add class toggle.
+            if (ppi_img) {
+                ppi_img.addEventListener('click', function(){
+                    toggleClass(this, 'show-image');
                 });
             }
         }

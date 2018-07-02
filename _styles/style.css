@@ -2590,7 +2590,7 @@ _:-o-prefocus, :root .icon {
     border: 0;
     text-decoration: none;
     visibility: hidden;
-    background: #fff;
+    background: #000;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
@@ -2610,7 +2610,7 @@ _:-o-prefocus, :root .icon {
   .js-over-panel-control .over-panel__overlay:focus {
     border: 0;
     text-decoration: none;
-    background: #fff;
+    background: #000;
   }
 }
 
@@ -4307,6 +4307,135 @@ body {
 /*
 
 */
+.gallery-grid {
+  /* MODIFIERS */
+  /* Widths */
+  /* @TODO make breakpoint a variable */
+  /* Gutters */
+  /* Alignment */
+}
+
+.gallery-grid.gallery-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery-grid .gallery-grid__item {
+  -webkit-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.gallery-grid.gallery-grid--basis-20 .gallery-grid__item {
+  -webkit-flex-basis: 20em;
+  -ms-flex-preferred-size: 20em;
+  flex-basis: 20em;
+  max-width: 20em;
+}
+
+.gallery-grid.gallery-grid--basis-15 .gallery-grid__item {
+  -webkit-flex-basis: 15em;
+  -ms-flex-preferred-size: 15em;
+  flex-basis: 15em;
+  max-width: 15em;
+}
+
+.gallery-grid.gallery-grid--basis-10 .gallery-grid__item {
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  max-width: 10em;
+}
+
+.gallery-grid.gallery-grid--gutter--small {
+  margin-left: -0.6rem;
+  margin-right: -0.6rem;
+}
+
+.gallery-grid.gallery-grid--gutter--small .gallery-grid__item {
+  padding: 0 0.6rem 1.2rem 0.6rem;
+}
+
+.gallery-grid.gallery-grid--gutter--medium {
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+}
+
+.gallery-grid.gallery-grid--gutter--medium .gallery-grid__item {
+  padding: 0 1.2rem 2.4rem 1.2rem;
+}
+
+.gallery-grid.gallery-grid--gutter--large {
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
+}
+
+.gallery-grid.gallery-grid--gutter--large .gallery-grid__item {
+  padding: 0 2.4rem 4.8rem 2.4rem;
+}
+
+.gallery-grid.gallery-grid--align-center {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* GRID */
+@supports (display: grid) {
+  .gallery-grid {
+    /* Gutters */
+  }
+  .gallery-grid.gallery-grid {
+    display: grid;
+  }
+  .gallery-grid.gallery-grid--basis-20 {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  }
+  .gallery-grid.gallery-grid--basis-15 {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+  .gallery-grid.gallery-grid--basis-10 {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+  .gallery-grid.gallery-grid--gutter--small {
+    margin: 0;
+    grid-gap: 1.2rem;
+  }
+  .gallery-grid.gallery-grid--gutter--small .gallery-grid__item {
+    padding: 0;
+  }
+  .gallery-grid.gallery-grid--gutter--medium {
+    margin: 0;
+    grid-gap: 2.4rem;
+  }
+  .gallery-grid.gallery-grid--gutter--medium .gallery-grid__item {
+    padding: 0;
+  }
+  .gallery-grid.gallery-grid--gutter--large {
+    margin: 0;
+    grid-gap: 4.8rem;
+  }
+  .gallery-grid.gallery-grid--gutter--large .gallery-grid__item {
+    padding: 0;
+  }
+}
+
+/*
+
+*/
 .c-badge {
   display: block;
   /*
@@ -5055,9 +5184,8 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
   -ms-flex-pack: center;
   justify-content: center;
   color: #333;
-  background: #eee;
+  background: #fff;
   padding: 0;
-  outline: 1px solid #d5d5d5;
 }
 
 .c-featurette > * {
@@ -5245,7 +5373,7 @@ $glimpse--link-border-bottom--hover: false !default;*/
 
 }*/
 @media only screen and (min-width: 47em) {
-  .wireframe [wf-box]::before {
+  #hero [wf-box]::before {
     padding-left: 30%;
   }
 }
@@ -6088,6 +6216,15 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   left: 0;
   bottom: 0;
   right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* Make the image fill the width and be vertically centered: */
@@ -6104,6 +6241,17 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   .proportional-container__image-cover {
     height: 100%;
     object-fit: cover;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* If `object-fit` is supported, use that and override vertical centering: */
+@supports (object-fit: contain) {
+  .proportional-container__image-contain {
+    height: 100%;
+    object-fit: contain;
     top: 0;
     left: 0;
     transform: none;
@@ -6703,9 +6851,37 @@ html :last-child {
   font-size: 1.3rem;
 }
 
-.hero .proportional-container.show-image {
+#hero .show-image {
   background-image: url("../img/hero-image-1.png");
   background-size: cover;
+  background-position: center;
+}
+
+#hero .show-image [wf-box]::before {
+  display: none;
+  content: "";
+}
+
+#our-research .show-image {
+  background-image: url("../img/research-image-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#our-research .show-image [wf-box]::before {
+  display: none;
+  content: "";
+}
+
+#participant-involvement .show-image {
+  background-image: url("../img/ppi-image-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#participant-involvement .show-image [wf-box]::before {
+  display: none;
+  content: "";
 }
 
 /*
@@ -6770,7 +6946,7 @@ html :last-child {
   padding: 0 .5625em;
 }
 
-@media screen and (max-width: 55em) {
+@media screen and (max-width: 61em) {
   .primary-banner > :last-child {
     width: 100%;
   }

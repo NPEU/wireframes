@@ -27,6 +27,16 @@ $proportions: (
         left: 0;
         bottom: 0;
         right: 0;
+        
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+             -ms-flex-align: center;
+                align-items: center;
     }
 
     /* Make the image fill the width and be vertically centered: */
@@ -49,6 +59,17 @@ $proportions: (
         }
     }
 
+    /* If `object-fit` is supported, use that and override vertical centering: */
+    @supports (object-fit:contain) {
+        .proportional-container__image-contain {
+            height: 100%;
+            object-fit: contain;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+    
     
 @each $ratio, $percent in $proportions {
   .proportional-container--#{$ratio}::before {
