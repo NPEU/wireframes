@@ -6,9 +6,9 @@ title: NPEU Home
 <div wf-area="light+medium-padding+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
-            <h2>
+            <h1>
                 CTU Introduction
-            </h2>
+            </h1>
 
             <p>
                 The NPEU Clinical Trials Unit (NPEU CTU) is a fully registered <a href="#">UKCRC Clinical Trials Unit</a> and typically runs a number of large multi-centre Randomised Controlled Trials, both nationally and internationally. The on-going <a href="#">programme of trials</a> evaluates a broad range of interventions for women and babies in the perinatal health services.
@@ -37,7 +37,7 @@ title: NPEU Home
                 <div class="proportional-container  proportional-container--3-1  proportional-container--4-3--wide">
                     <div class="proportional-container__content">
                         <a href="#" class="c-badge" style="height: 100%;">
-                            <img src="/img/affiliate-logos/nihr-logo.svg" class="proportional-container__image-contain" style="height: 100%;" onerror="this.src='/img/affiliate-logos/nihr-logo.png'; this.onerror=null;" alt="National Institute for Health Research (NIHR)" width="257" height="141">
+                            <img src="/img/affiliate-logos/nihr-logo.svg" class="proportional-container__image-contain" style="height: 100%;" onerror="this.src='/img/affiliate-logos/nihr-logo.png'; this.onerror=null;" alt="National Institute for Health Research (NIHR)" width="485" height="75">
                         </a>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ title: NPEU Home
     </section>
 </div>
 
-<div class="medium-padding">
+<div  wf-area="outline">
     <div class="c-featurette  c-featurette  t-featurette--dark">
         <div class="text-content  c-featurette__body  c-featurette__body--80">
 
@@ -178,7 +178,7 @@ title: NPEU Home
             <div class="l-col-to-row--flush-edge-gutters">
 
 
-                <div class="c-card  c-card--themed-content  u-space-below" data-component="recent-news">
+                <div class="c-card  c-card--themed-content  u-space--below" data-component="recent-news">
                     <div class="c-card__main">
                         <div class="c-card__body">
                             <h2 class="c-card__title">Next most recent headline</h2>

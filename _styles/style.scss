@@ -229,6 +229,7 @@ $section-menu--background-color: #fff;
 
 
 
+@import "utility-patterns/_space.scss";
 @import "utility-patterns/_text-align.scss";
 @import "utility-patterns/_text-groups.scss";
 
@@ -238,6 +239,8 @@ $section-menu--background-color: #fff;
 $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 @import "layout-patterns/_col-to-row.scss";
 
+
+@import "layout-patterns/_content-area.scss";
 
 @import "layout-patterns/_proportional-container.scss";
 

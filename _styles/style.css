@@ -2247,8 +2247,7 @@ p.subtitle {
   margin-bottom: 2.4rem;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-    Fall-Back Icons v1.0.0
+/*------------------------------------------------------------------------------------------------*    Fall-Back Icons v1.0.0
     
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
@@ -3591,8 +3590,7 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -3675,8 +3673,7 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Clarification for self:
     Since this pattern is intented for use on logos, and since logos are an integral part of
     branding, this pattern is not ONLY intended as a CSS fallback.
@@ -3756,7 +3753,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   /* [1] */
 }
 
@@ -3976,10 +3973,8 @@ body {
   border-width: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-\*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-    Import Fall-Back vars:
+/*------------------------------------------------------------------------------------------------*\*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*    Import Fall-Back vars:
 
     Slightly hacky way of allowing the main UI colour of this pattern to be:
      - base-ui colour (if set)
@@ -4035,36 +4030,6 @@ body {
     https://www.sitepoint.com/responsive-css-patterns-without-media-queries/
 
 */
-.ff-width-100--10--25 {
-  max-width: 100%;
-  width: calc((10em - 100%) * 1000);
-  min-width: 25%;
-}
-
-.ff-width-100--10--33-333 {
-  max-width: 100%;
-  width: calc((10em - 100%) * 1000);
-  min-width: 33.333%;
-}
-
-.ff-width-100--10--50 {
-  max-width: 100%;
-  width: calc((10em - 100%) * 1000);
-  min-width: 50%;
-}
-
-.ff-width-100--10--66-666 {
-  max-width: 100%;
-  width: calc((10em - 100%) * 1000);
-  min-width: 66.666%;
-}
-
-.ff-width-100--10--75 {
-  max-width: 100%;
-  width: calc((10em - 100%) * 1000);
-  min-width: 75%;
-}
-
 .ff-width-100--20--25 {
   max-width: 100%;
   width: calc((20em - 100%) * 1000);
@@ -6044,6 +6009,29 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
     
     @To Do: allow for responsive variations.
 */
+.u-space--left {
+  margin-left: 2.4rem;
+}
+
+.u-space--right {
+  margin-right: 2.4rem;
+}
+
+.u-space--top,
+.u-space--above {
+  margin-top: 2.4rem;
+}
+
+.u-space--bottom,
+.u-space--below {
+  margin-bottom: 2.4rem;
+}
+
+/*
+    Text alignment.
+    
+    @To Do: allow for responsive variations.
+*/
 .u-text-align--left {
   text-align: left;
 }
@@ -6197,6 +6185,56 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+}
+
+/*
+
+*/
+/*
+@mixin content-area-size ($width, $breakpoint) {
+
+    .content-area
+}
+*/
+.l-content-area.l-content-area {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.l-content-area .l-content-area__main {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 60em) {
+  .l-content-area {
+    /* Position all children: */
+    /* Pull out: */
+  }
+  .l-content-area.l-content-area-has-pull-outs .l-content-area__main {
+    /* For Block formatting context (contain float): */
+    display: table;
+    display: flow-root;
+    max-width: calc(42rem + 14rem);
+  }
+  .l-content-area.l-content-area--has-pull-outs .l-content-area__main > * {
+    width: 66.666%;
+    float: right;
+    padding: 0 2rem;
+  }
+  .l-content-area.l-content-area--has-pull-outs .l-content-area__main > .l-content-area__pull-out {
+    width: 33.333%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .proportional-container {
@@ -6832,10 +6870,6 @@ html :last-child {
 
 .medium-padding {
   padding: 2.4rem;
-}
-
-.u-space-below {
-  margin-bottom: 2.4rem;
 }
 
 .u-list--plain {

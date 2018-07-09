@@ -106,6 +106,7 @@ title: NPEU Home
         </div>
     </div>
 </div>
+
 <div wf-area="light+medium-padding+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
@@ -193,7 +194,7 @@ title: NPEU Home
             <div class="l-col-to-row--flush-edge-gutters">
 
 
-                <div class="c-card  c-card--themed-content  u-space-below" data-component="recent-news">
+                <div class="c-card  c-card--themed-content  u-space--below" data-component="recent-news">
                     <div class="c-card__main">
                         <div class="c-card__body">
                             <h2 class="c-card__title">Next most recent headline</h2>

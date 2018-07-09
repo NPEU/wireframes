@@ -1,0 +1,25 @@
+/*
+    Text alignment.
+    
+    @To Do: allow for responsive variations.
+*/
+
+$space-namespace: u- !default;
+
+.#{$space-namespace}space--left {
+    margin-left: $sz-m;
+}
+
+.#{$space-namespace}space--right {
+    margin-right: $sz-m;
+}
+
+.#{$space-namespace}space--top,
+.#{$space-namespace}space--above {
+    margin-top: $sz-m;
+}
+
+.#{$space-namespace}space--bottom,
+.#{$space-namespace}space--below {
+    margin-bottom: $sz-m;
+}
