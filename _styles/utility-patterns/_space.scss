@@ -7,19 +7,80 @@
 $space-namespace: u- !default;
 
 .#{$space-namespace}space--left {
-    margin-left: $sz-m;
+    margin-left: $sz-m !important;
 }
 
 .#{$space-namespace}space--right {
-    margin-right: $sz-m;
+    margin-right: $sz-m !important;
 }
 
 .#{$space-namespace}space--top,
 .#{$space-namespace}space--above {
-    margin-top: $sz-m;
+    margin-top: $sz-m !important;
 }
 
 .#{$space-namespace}space--bottom,
 .#{$space-namespace}space--below {
-    margin-bottom: $sz-m;
+    margin-bottom: $sz-m !important;
+}
+
+
+
+.#{$space-namespace}padding--left--xs {
+    padding-left: $sz-xs !important;
+}
+
+.#{$space-namespace}padding--right--xs {
+    padding-right: $sz-xs !important;
+}
+
+.#{$space-namespace}padding--top--xs,
+.#{$space-namespace}padding--above--xs {
+    padding-top: $sz-xs !important;
+}
+
+.#{$space-namespace}padding--bottom--xs,
+.#{$space-namespace}padding--below--xs {
+    padding-bottom: $sz-xs !important;
+}
+
+
+
+
+.#{$space-namespace}padding--left--s {
+    padding-left: $sz-s !important;
+}
+
+.#{$space-namespace}padding--right--s {
+    padding-right: $sz-s !important;
+}
+
+.#{$space-namespace}padding--top--s,
+.#{$space-namespace}padding--above--s {
+    padding-top: $sz-s !important;
+}
+
+.#{$space-namespace}padding--bottom--s,
+.#{$space-namespace}padding--below--s {
+    padding-bottom: $sz-s !important;
+}
+
+
+
+.#{$space-namespace}padding--left {
+    padding-left: $sz-m !important;
+}
+
+.#{$space-namespace}padding--right {
+    padding-right: $sz-m !important;
+}
+
+.#{$space-namespace}padding--top,
+.#{$space-namespace}padding--above {
+    padding-top: $sz-m !important;
+}
+
+.#{$space-namespace}padding--bottom,
+.#{$space-namespace}padding--below {
+    padding-bottom: $sz-m !important;
 }

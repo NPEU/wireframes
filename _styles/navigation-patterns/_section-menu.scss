@@ -66,7 +66,8 @@ $section-menu-title--font-size: 3rem !default;
 
 // Section menu text links:
 
-$section-menu--link-padding: ($section-menu-spacing-unit / 4) 0 !default;
+$section-menu--link-padding: ($section-menu-spacing-unit / 4) !default;
+$section-menu--link-margin: 0 -#{$section-menu-spacing-unit / 4} !default;
 $section-menu--link-color: false !default;
 $section-menu--link-color--alt: false !default;
 $section-menu--link-has-border-bottom: false !default;
@@ -200,7 +201,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
             }
 
             @if $section-menu--separator-width != false {
-                .#{$section-menu-namespace}section-menu .#{$section-menu-namespace}section-menu__item:not(:last-child) {
+                .#{$section-menu-namespace}section-menu .#{$section-menu-namespace}section-menu__item:not(:last-child) .#{$section-menu-namespace}section-menu__link {
                     border-bottom-color:  $card--border-color;
                     border-bottom-style:  $card--border-style;
                     border-bottom-width:  $card--border-width;
@@ -208,14 +209,19 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
             }
             
             // @TODO - make this configurable
+            .#{$section-menu-namespace}section-menu .#{$section-menu-namespace}section-menu__item--active .#{$section-menu-namespace}section-menu__link {
+                background: lighten($section-menu--link-color--alt, 10%);
+            }
+            
+            // @TODO - make this configurable
             .#{$section-menu-namespace}section-menu .#{$section-menu-namespace}section-menu__item--active span {
-                text-decoration: underline;
+                border-bottom: 2px dashed;
             }
 
                 .#{$section-menu-namespace}section-menu .#{$section-menu-namespace}section-menu__link {
                     padding: $section-menu--link-padding;
-                    margin: 0;
-
+                    margin: $section-menu--link-margin;
+  
                     border: 0;
 
                     display: block;

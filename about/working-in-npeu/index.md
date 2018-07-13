@@ -4,7 +4,7 @@ title: NPEU Home
 ---
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 
-    <div class="l-content-area__main">
+    <div class="l-content-area__main  u-padding--top  u-padding--bottom">
         <div>
             <h1>
                 Working in the NPEU
@@ -73,16 +73,40 @@ title: NPEU Home
         <div class="l-content-area__pull-out">
             <div wf-area="white+outline" class="">
                 <div class="n-section-menu">
-                    <h3 class="n-section-menu__title">Section Menu</h3>
+                    <h3 class="n-section-menu__title">About Us</h3>
                     
                     <ul class="n-section-menu__list">
-                        <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></a></li>
-                        <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Vivamus vitae elit vel mauris aliquam commodo a ut lorem</span></a></li>
-                        <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Maecenas velit leo, dictum a consectetur accumsan, ornare in tortor</span></a></li>
-                        <li class="n-section-menu__item  n-section-menu__item--active"><a href="#main" class="n-section-menu__link"><span>Praesent in hendrerit lectus</span></a></li>
-                        <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Maecenas consequat imperdiet massa egestas commodo</span></a></li>
-                        <li class="n-section-menu__item"><a href="#" class="n-section-menu__link"><span>Sed facilisis, risus sed accumsan tristique, nisi velit porttitor nibh, nec bibendum ex sapien eu lorem</span></a></li>
+                        <li class="n-section-menu__item"><a href="/about/athena-swan" class="n-section-menu__link"><span>Athena SWAN</span></a></li>
+                        <li class="n-section-menu__item"><a href="/about/jobs" class="n-section-menu__link"><span>Jobs</span></a></li>
+                        <li class="n-section-menu__item"><a href="/about/postgrad" class="n-section-menu__link"><span>Postgraduate Studies</span></a></li>
+                        <li class="n-section-menu__item"><a href="/about/privacy-notice" class="n-section-menu__link"><span>Privacy Notice</span></a></li>
+                        <li class="n-section-menu__item"><a href="/about/seminars" class="n-section-menu__link"><span>Seminars</span></a></li>
+                        <li class="n-section-menu__item  n-section-menu__item--active"><a href="#main" class="n-section-menu__link"><span>Working in the NPEU</span></a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="l-content-area__pull-out  u-space--above">
+            <div wf-area="white+outline" class="">
+                <div class="c-card">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">NPEU People</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="/about/working-in-npeu" class="cta">People&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

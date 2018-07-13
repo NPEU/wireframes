@@ -8,31 +8,37 @@
 $text-group-namespace: u- !default;
 
 .#{$text-align-namespace}text-group {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
 
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
 
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -webkit-flex-wrap: wrap !important;
+        -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+}
+
+.#{$text-align-namespace}text-group--push-apart {
+    -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .#{$text-align-namespace}text-group > * {
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    -webkit-flex: 0 1 auto !important;
+        -ms-flex: 0 1 auto !important;
+            flex: 0 1 auto !important;
 }
 
 // Preserve white space when not-wrapped:
 .#{$text-align-namespace}text-group > :not(:last-child) {
-    padding-right: 0.2em;
+    padding-right: 0.2em !important;
 }
 
 // Allow large space between distinct groups:
 .#{$text-align-namespace}text-group--wide-space > :not(:last-child) {
-    padding-right: 1em;
+    padding-right: 1em !important;
 }

@@ -16,6 +16,7 @@ $event-spacing-unit: 2rem !default;
 
 $event--text-color: #333 !default;
 $event--background-color: $event--base-color !default;
+$event--background-color--alt: darken($event--base-color, 15%) !default;
 
 $event--border-or-outline: 'outline' !default;
 $event--border-width:  1px !default;
@@ -166,6 +167,11 @@ $event-button--border-color: darken($event--base-color, 20%) !default;
         */
         overflow: hidden;
     }
+    
+    .#{$event-namespace}event.#{$event-namespace}event--cancelled {
+        background: $event--background-color--alt;
+    }
+    
 
         .#{$event-namespace}event > * {
             -webkit-flex: 0 1 auto;

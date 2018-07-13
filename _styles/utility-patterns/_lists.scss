@@ -1,0 +1,48 @@
+/*
+    Text alignment.
+
+    @To Do: allow for responsive variations.
+*/
+
+$lists-namespace: u- !default;
+
+.#{$lists-namespace}list--plain,
+.#{$lists-namespace}list--plain--m {
+    list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.#{$lists-namespace}list--plain--xs {
+    > li {
+        padding: $sz-xs 0;
+    }
+}
+
+.#{$lists-namespace}list--plain--s {
+    > li {
+        padding: $sz-s 0;
+    }
+}
+
+.#{$lists-namespace}list--plain--m {
+    > li {
+        padding: $sz-m 0;
+    }
+}
+
+.#{$lists-namespace}list--plain--l {
+    > li {
+        padding: $sz-l 0;
+    }
+}
+
+.#{$lists-namespace}list--plain--xl {
+    > li {
+        padding: $sz-xl 0;
+    }
+}

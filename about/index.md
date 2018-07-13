@@ -69,10 +69,10 @@ title: NPEU Home
 
             <div class="l-col-to-row--flush-edge-gutters">
             <div class="l-col-to-row  l-col-to-row--gutter--medium">
-            
+
                 <div class="l-col-to-row__item  ff-width-100--30--50">
-                
-                
+
+
                     <div class="c-card">
                         <div class="c-card__image">
                             <div wf-box>
@@ -92,13 +92,13 @@ title: NPEU Home
                                 </p>
                             </div>
                         </div>
-                    </div>               
-                
+                    </div>
+
 
                 </div>
                 <div class="l-col-to-row__item  ff-width-100--30--50">
-                
-                
+
+
                     <div class="c-card">
                         <div class="c-card__image">
                             <div wf-box>
@@ -118,23 +118,23 @@ title: NPEU Home
                                 </p>
                             </div>
                         </div>
-                    </div>               
-                
+                    </div>
+
 
                 </div>
-                
+
             </div>
             </div>
-            
+
         </div>
         <div class="l-col-to-row__item  ff-width-100--50--50">
-        
+
             <div class="l-col-to-row--flush-edge-gutters">
             <div class="l-col-to-row  l-col-to-row--gutter--medium">
-        
+
                 <div class="l-col-to-row__item  ff-width-100--30--50">
-                
-                
+
+
                     <div class="c-card">
                         <div class="c-card__image">
                             <div wf-box>
@@ -154,13 +154,13 @@ title: NPEU Home
                                 </p>
                             </div>
                         </div>
-                    </div>               
-                
+                    </div>
+
 
                 </div>
                 <div class="l-col-to-row__item  ff-width-100--30--50">
-                
-                
+
+
                     <div class="c-card">
                         <div class="c-card__image">
                             <div wf-box>
@@ -180,19 +180,19 @@ title: NPEU Home
                                 </p>
                             </div>
                         </div>
-                    </div>               
-                
+                    </div>
+
 
                 </div>
-            
+
             </div>
             </div>
-        
+
         </div>
 
     </div>
 
-    
+
 </div>
 
 <div  wf-area="outline">
@@ -218,11 +218,11 @@ title: NPEU Home
     <section class="l-col-to-row  l-col-to-row--gutter--medium">
 
         <div class="l-col-to-row__item  ff-width-100--50--33-333">
-        
+
             <h2>NPEU seminars</h2>
-            <p>
+            <p><b>
                 Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus. Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque.
-            </p>
+            <b></p>
             <p>
                 Unless stated otherwise, seminars will be held at:<br>
                 <b>Richard Doll Lecture Theatre<br>
@@ -231,13 +231,13 @@ title: NPEU Home
                 Old Road Campus<br>
                 OX3 7LF</b>
             </p>
-        
+
         </div>
         <div class="l-col-to-row__item  ff-width-100--50--66-666">
-            
+
             <h3>Next seminar date:</h3>
             <div wf-area="light+medium-padding">
-            
+
                 <div class="c-event">
                     <h4 class="c-event__title">Event Title</h4>
                     <p class="c-event__speaker">
@@ -254,10 +254,10 @@ title: NPEU Home
                 <p class="u-space--above  u-text-align--right">
                     <a href="/seminars" class="cta">View all seminars&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                 </p>
-            
+
             </div>
         </div>
-    
+
     </section>
     </div>
 

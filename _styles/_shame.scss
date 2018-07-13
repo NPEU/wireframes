@@ -137,14 +137,7 @@ html :last-child {
 
 
 
-.u-list--plain {
-    list-style: none;
 
-    > li {
-        margin: 0;
-        padding: 0.4rem 0;
-    }
-}
 
 .u-text-small {
     font-size: 1.3rem;
@@ -339,4 +332,28 @@ html :last-child {
 
 .nav-bar__search button {
     margin: 0;
+}
+
+
+
+.alpha-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+}
+
+.alpha-list > li {
+    padding: 1.2rem 1em;
+    -webkit-flex: 1 0 15em;
+        -ms-flex: 1 0 15em;
+            flex: 1 0 15em;
+}
+
+
+.alpha-list h3 {
+    border-bottom: 1px solid;
 }

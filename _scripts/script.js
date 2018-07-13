@@ -95,6 +95,22 @@ var cookie_html                   =
                 });
             }
             
+            var filter_box = document.querySelector('#filter_box.js-hide');
+            // Add filter_box toggle.
+            if (filter_box) {
+                var filter_box_trigger = document.querySelector('#filter_box .js-trigger');
+                filter_box_trigger.addEventListener('click', function(){
+                    //filter_box.style.display = 'none';
+                    
+                    var next = filter_box.nextElementSibling;
+                    var t = next.innerHTML;
+
+                    filter_box.previousElementSibling.insertAdjacentHTML('beforeend', t);
+                    filter_box.parentNode.removeChild(next);
+                    filter_box.parentNode.removeChild(filter_box);
+                });
+            }
+            
             var research_img = document.querySelector('#our-research .js-toggle-image');
             // Add class toggle.
             if (research_img) {
