@@ -6208,7 +6208,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
 }
 
 .l-content-area .l-content-area__main {
-  max-width: 42rem;
+  max-width: 42em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -6222,7 +6222,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
     /* For Block formatting context (contain float): */
     display: table;
     display: flow-root;
-    max-width: calc(42rem + 14rem);
+    max-width: calc(42em + 14em);
   }
   .l-content-area.l-content-area--has-pull-outs .l-content-area__main > * {
     width: 66.666%;

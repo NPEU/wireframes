@@ -17,7 +17,7 @@ title: NPEU Home
             The NPEU is a multi-disciplinary research unit which was established at the University of Oxford in 1978.
         </p>
         <p>
-            <a href="#" class="cta">About the NPEU <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+            <a href="/about" class="cta">About the NPEU <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
         </p>
     </div>
 
