@@ -148,6 +148,17 @@
 |-------------------------------------------------------------------------------------------------*/
 /* Global focus style: */
 /*
+$anchor-focus-text-color: false;
+@if $anchor-focus-background-color != false {
+    @if color_light_or_dark($anchor-focus-background-color) == 'light' {
+        $anchor-focus-text-color: darken($anchor-text-color, 50%);
+    } @else {
+        $anchor-focus-text-color: lighten($anchor-text-color, 70%);
+    }
+}
+@debug $anchor-focus-text-color;
+*/
+/*
 //$button-focus-outline-width: $ui-focus-outline-width !default;
 $button-focus-outline-width: false !default;
 $button-focus-outline-style: $ui-focus-outline-style !default;
@@ -326,9 +337,9 @@ body {
     3. Remove the tapping delay from clickable elements .
 */
 a[href] {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
   padding-bottom: 0;
-  border-bottom: 3px double;
+  border-bottom: 2px solid;
   color: #0077AD;
   background-color: transparent;
   /* 1 */
@@ -339,16 +350,36 @@ a[href] {
   /* 3 (IE10) */
   touch-action: manipulation;
   /* 3 */
-  outline: none;
+  /*
+    @if $anchor-focus-outline-width != false {
+        outline: none;
+
+        &:focus {
+            outline-width: $anchor-focus-outline-width;
+            outline-style: $anchor-focus-outline-style;
+            outline-color: $anchor-focus-outline-color;
+            outline-offset: $anchor-focus-outline-offset;
+        }
+    }
+
+    @if $anchor-focus-background-color != false {
+        outline: none;
+
+        &:focus {
+            color: $anchor-focus-text-color;
+            background-color: $anchor-focus-background-color;
+        }
+    }*/
 }
 
 a[href]:hover, a[href]:active {
-  border-bottom: 3px solid;
+  border-bottom: 2px dashed;
+  color: #00547a;
 }
 
 a[href]:focus {
-  color: white;
-  background-color: #0077AD;
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
 }
 
 a[href][rel="external"]::after {
@@ -478,9 +509,13 @@ button {
     }*/
 }
 
-button:hover, button:active, button:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+button:hover, button:active {
+  background-color: #00547a;
+}
+
+button:focus {
   outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
 }
 
 _:-o-prefocus, :root button {
@@ -646,19 +681,19 @@ hgroup {
 
 h1 {
   margin-bottom: 2.4rem;
-  font-size: 3.25em;
-  line-height: 6rem;
+  font-size: 2.625em;
+  line-height: 4.8rem;
 }
 
 h2 {
   margin-bottom: 2.4rem;
-  font-size: 2.5em;
-  line-height: 4.8rem;
+  font-size: 2.25em;
+  line-height: 3.6rem;
 }
 
 h3 {
   margin-bottom: 2.4rem;
-  font-size: 1.875em;
+  font-size: 1.75em;
   line-height: 3.6rem;
 }
 
@@ -730,7 +765,7 @@ img {
     Special treatment for images inside links.
 */
 a img {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
   border-width: inherit;
   border-style: inherit;
 }
@@ -755,7 +790,7 @@ input {
   padding-left: 0.6rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #00547a;
+  border-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   color: #333;
   background-color: #fff;
@@ -791,7 +826,7 @@ input:not([type]):focus,
 [type="time"]:focus,
 [type="url"]:focus,
 [type="week"]:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
   outline: 0;
 }
 
@@ -801,7 +836,7 @@ input:not([type]):focus,
     */
 [type="checkbox"]:focus,
 [type="radio"]:focus {
-  box-shadow: 0 0 0 2px #47c6ff;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
   outline: 0;
 }
 
@@ -907,15 +942,19 @@ _::-webkit-full-page-media, _:future, :root [type="radio"]:focus {
     }*/
 }
 
-[type="button"]:hover, [type="button"]:active, [type="button"]:focus,
+[type="button"]:hover, [type="button"]:active,
 [type="reset"]:hover,
 [type="reset"]:active,
-[type="reset"]:focus,
 [type="submit"]:hover,
-[type="submit"]:active,
+[type="submit"]:active {
+  background-color: #00547a;
+}
+
+[type="button"]:focus,
+[type="reset"]:focus,
 [type="submit"]:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
   outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
 }
 
 /*
@@ -1273,7 +1312,7 @@ select {
   margin: 0.3rem 0;
   border-width: 1px;
   border-style: solid;
-  border-color: #00547a;
+  border-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   color: #333;
   background-color: #fff;
@@ -1323,7 +1362,7 @@ select:not([multiple]) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.95 10" fill="%23444"><polygon points="1.41 4.67 2.48 3.18 3.54 4.67 1.41 4.67"/><polygon points="3.54 5.33 2.48 6.82 1.41 5.33 3.54 5.33"/></svg>');
   /* 2 */
   background-repeat: no-repeat;
-  background-position: 95% center;
+  background-position: right 0.3em bottom 0;
   /* 3 */
   -moz-appearance: none;
   /* 4 */
@@ -1359,7 +1398,7 @@ _:-moz-tree-row(hover), select:not([multiple]) {
 }
 
 select:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
   outline: 0;
 }
 
@@ -1573,7 +1612,7 @@ textarea {
   padding-right: 0.6rem;
   border-width: 1px;
   border-radius: 3px;
-  border-color: #00547a;
+  border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
   color: #333;
   background-color: #fff;
@@ -1591,7 +1630,7 @@ textarea {
 }
 
 textarea:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
   outline: 0;
 }
 
@@ -1892,12 +1931,16 @@ a[href].cta {
     }*/
 }
 
-a[href].button:hover, a[href].button:active, a[href].button:focus,
+a[href].button:hover, a[href].button:active,
 a[href].cta:hover,
-a[href].cta:active,
+a[href].cta:active {
+  background-color: white;
+}
+
+a[href].button:focus,
 a[href].cta:focus {
-  box-shadow: 0 0 0 2px #b3b3b3 inset;
   outline: 0;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
 a[href].button:hover, a[href].button:active, a[href].button:focus,
@@ -1954,9 +1997,13 @@ a[href].cta:focus {
     }*/
 }
 
-.button[data-text][aria-hidden="true"]:hover, .button[data-text][aria-hidden="true"]:active, .button[data-text][aria-hidden="true"]:focus {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+.button[data-text][aria-hidden="true"]:hover, .button[data-text][aria-hidden="true"]:active {
+  background-color: #00547a;
+}
+
+.button[data-text][aria-hidden="true"]:focus {
   outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 119, 173, 0.5);
 }
 
 .button[data-text][aria-hidden="true"]::before {
@@ -2070,10 +2117,10 @@ p.subtitle {
 
 /*
     IE9
-    
-    1. Make sure there are no spaces between elements in the markup as the as the whitespace won't 
+
+    1. Make sure there are no spaces between elements in the markup as the as the whitespace won't
        collapse.
-       
+
     2. Hide button.
 */
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
@@ -2277,7 +2324,7 @@ p.subtitle {
 }
 
 [type="file"]:focus::-ms-value {
-  box-shadow: 0 0 0 2px #47c6ff inset;
+  box-shadow: true;
   outline: 0;
 }
 
@@ -2294,7 +2341,7 @@ p.subtitle {
   /* 1 */
   border-width: 0 0 0 1px;
   border-style: solid;
-  border-color: #00547a;
+  border-color: rgba(0, 0, 0, 0.2);
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   color: #fff;
@@ -2336,7 +2383,7 @@ p.subtitle {
   padding-left: 0.6rem;
   border-width: 0 1px 0 0;
   border-style: solid;
-  border-color: #00547a;
+  border-color: rgba(0, 0, 0, 0.2);
   border-radius: 0;
   color: #fff;
   background-color: #0077AD;
@@ -2503,11 +2550,11 @@ _:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root select[size="
     border-radius: 50%;
   }
   input[type="radio"]:checked {
-    background-image: -moz-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
     /* FF3.6-15 */
-    background-image: -webkit-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background-image: radial-gradient(ellipse at center, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
+    background-image: radial-gradient(ellipse at center, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
   input[type="checkbox"]:checked::after {
@@ -2555,8 +2602,7 @@ _:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root select[size="
   -webkit-appearance: radio;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-    Fall-Back Icons v1.0.0
+/*------------------------------------------------------------------------------------------------*    Fall-Back Icons v1.0.0
     
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
@@ -3899,8 +3945,7 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -3983,8 +4028,7 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-
+/*------------------------------------------------------------------------------------------------*
     Clarification for self:
     Since this pattern is intented for use on logos, and since logos are an integral part of
     branding, this pattern is not ONLY intended as a CSS fallback.
@@ -4064,7 +4108,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   /* [1] */
 }
 
@@ -4284,10 +4328,8 @@ body {
   border-width: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*\
-\*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*\
-    Import Fall-Back vars:
+/*------------------------------------------------------------------------------------------------*\*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*    Import Fall-Back vars:
 
     Slightly hacky way of allowing the main UI colour of this pattern to be:
      - base-ui colour (if set)

@@ -1,6 +1,6 @@
 ---
 layout: landing--npeu-home
-title: NPEU Home
+title: Postgraduate Studies
 ---
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 

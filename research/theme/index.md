@@ -1,6 +1,6 @@
 ---
 layout: landing--npeu-home
-title: NPEU Home
+title: Antenatal care
 ---
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 
@@ -44,7 +44,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -197,7 +197,7 @@ title: NPEU Home
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_applicant_no=&p_refresh_search=Y&p_company=10&p_display_in_irish=N&p_recruitment_id=133932&p_internal_external=E&p_display_apply_ind=Y&p_process_type=&p_form_profile_detail=" class="cta">More info&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 ---
 layout: landing--npeu-home
-title: NPEU Home
+title: About us
 ---
 
 <div wf-area="light+medium-padding+outline">

@@ -1,6 +1,6 @@
 ---
 layout: landing--npeu-home
-title: NPEU Home
+title: Careers at the NPEU
 ---
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 

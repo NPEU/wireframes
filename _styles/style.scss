@@ -14,6 +14,7 @@ $fallback--root-font-size: 10px;
 $fallback--base-ui-color: #0077AD;
 $fallback--breakpoint--enhanced: 61em;
 
+
 //$body-padding: 0;
 
 //$namespace: '.ugc ';
@@ -25,6 +26,12 @@ $fallback--breakpoint--enhanced: 61em;
 
 $max-main-line-length: 0;
 $measure: 64rem;
+
+$h1-font-size: 42px / $fallback--base-font-size * 1em !default;
+$h1-height:  $fallback--base-rem-space-unit * 2 !default;
+$h2-font-size: 36px / $fallback--base-font-size * 1em !default;
+$h2-height:  $fallback--base-rem-space-unit * 1.5 !default;
+$h3-font-size: 28px / $fallback--base-font-size * 1em !default;
 
 $experimental_checkradios: true;
 @import '../bower_components/Fall-Back-Start-CSS/dist/scss/_start.scss';
