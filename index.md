@@ -107,7 +107,7 @@ title: NPEU Home
     </div>
 </div>
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
             <h2>
@@ -131,7 +131,7 @@ title: NPEU Home
         </div>
     </section>
 </div>
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
         <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>

@@ -19,13 +19,13 @@ title: Antenatal care
                 <form class="space-bottom">
                     <div>Published or last updated:</div>
                     <div>
-                        <input id="rad1" type="radio" name="rad1"> <label for="rad1" class="u-padding--left--xs">All dates</label>
+                        <input id="rad1a" type="radio" name="rad1" checked> <label for="rad1a" class="u-padding--left--xs">All dates</label>
                     </div>
                     <div>
-                        <input id="rad2" type="radio" name="rad2"> <label for="rad2" class="u-padding--left--xs">12 months</label>
+                        <input id="rad1b" type="radio" name="rad1"> <label for="rad1b" class="u-padding--left--xs">12 months</label>
                     </div>
                     <div>
-                        <input id="rad3" type="radio" name="rad3"> <label for="rad3" class="u-padding--left--xs">2+ years</label>
+                        <input id="rad1c" type="radio" name="rad1"> <label for="rad1c" class="u-padding--left--xs">2+ years</label>
                     </div>
                 </form>
             </div>

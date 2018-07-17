@@ -30,7 +30,7 @@ title: NPEU Seminars
             
             <h2>NPEU Seminar Series Michaelmas</h2>
             
-            <ul class="u-list--plain--s">
+            <ul class="u-list--plain  u-list--plain--s">
                 <li>
 
 

@@ -34,8 +34,8 @@ title: NPEU Wireframe Patterns
             </div>
         </div>
         <div class="c-card__main">
+            <h2 class="c-card__title">Card Title</h2>
             <div class="c-card__body">
-                <h2 class="c-card__title">Card Title</h2>
                 <p>
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                 </p> 
@@ -52,8 +52,8 @@ title: NPEU Wireframe Patterns
 <div class="medium-padding">
     <div class="c-card">
         <div class="c-card__main">
-            <div class="c-card__body">
-                <h2 class="c-card__title">Card Title</h2>
+            <h2 class="c-card__title">Card Title</h2>
+            <div class="c-card__body"> 
                 <p>
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                 </p> 
@@ -75,8 +75,8 @@ title: NPEU Wireframe Patterns
             </div>
         </div>
         <div class="c-card__main">
+            <h2 class="c-card__title">Card Title</h2>
             <div class="c-card__body">
-                <h2 class="c-card__title">Card Title</h2>
                 <p>
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                 </p> 
@@ -98,8 +98,8 @@ title: NPEU Wireframe Patterns
             </div>
         </div>
         <div class="c-card__main">
+            <h2 class="c-card__title">Card Title</h2>
             <div class="c-card__body">
-                <h2 class="c-card__title">Card Title</h2>
                 <p>
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                 </p> 
@@ -119,9 +119,7 @@ title: NPEU Wireframe Patterns
 <div class="medium-padding">
     <div class="c-card  c-card--themed-content">
         <div class="c-card__main">
-            <div class="c-card__body">
-                <h2 class="c-card__title">Card Title</h2>
-            </div>
+            <h2 class="c-card__title">Card Title</h2>
             <div class="c-card__footer">
                 <p class="c-card__info  u-text-group  u-text-group--wide-space">
                     <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>

@@ -1,18 +1,22 @@
 ---
 layout: landing--npeu-home
-title: Inequalities in Infant Mortality work programme - barriers to the early initiation of antenatal care by BME women
+title: Factors associated with progression from near-miss maternal morbidity to fatality
 ---
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 
     <div class="l-content-area__main  u-padding--top  u-padding--bottom">
         <div class="l-content-area__pull-out  u-space--below">
-            <div wf-box="Project logo">
+            <div wf-box="Project logo" class="u-space--below">
+                <div class="proportional-container  proportional-container--3-1"></div>
+            </div>
+
+            <div wf-box="PRU logo">
                 <div class="proportional-container  proportional-container--3-1"></div>
             </div>
         </div>
         <div>
             <h1>
-                Inequalities in Infant Mortality work programme - barriers to the early initiation of antenatal care by BME women
+                Factors associated with progression from near-miss maternal morbidity to fatality
             </h1>
             
             <p>
@@ -20,60 +24,35 @@ title: Inequalities in Infant Mortality work programme - barriers to the early i
             </p>
 
             <p>
-                This study followed-on from an earlier systematic review of the effectiveness of interventions to increase the early initiation of antenatal care by disadvantaged and vulnerable women,conducted as part of the Inequalities in Infant Mortality project.
+                The UK led the world in the development of confidential enquiries into maternal deaths. Since the introduction of these confidential enquiries, maternal mortality has decreased 10-fold. Data from UKOSS studies have been used to provide contextual information about underlying maternal morbidity to complement the detailed examination of mortality, but formal comparison between the information concerning women who suffered near-miss maternal morbidity and those who died from the same conditions has not been undertaken. The aim of this analysis was to compare women with severe maternal morbidity, identified through UKOSS, with women who died from the same conditions, identified from the UK Confidential Enquiries into Maternal Deaths between 2003 and 2008. Women were included if they had eclampsia, antenatal pulmonary embolism, amniotic fluid embolism, acute fatty liver of pregnancy or antenatal stroke.
             </p>
-            <p>
-                The aims of this mixed-methods review were:
-            </p>
-            <ul>
-                <li>to identify and describe the barriers to and facilitators of early initiation of antenatal care in socially disadvantaged and vulnerable women in the UK; and</li>
-                <li>to explore the extent to which interventions identified in a related effectiveness review address these.</li>
-            </ul>
-            <p>
-                The study involved a synthesis of the relevant UK qualitative literature to identify the barriers to and facilitators of early initiation of antenatal care in socially disadvantaged and vulnerable women; and a cross-study synthesis to identify the extent to which the interventions identified in the earlier NPEU effectiveness review address barriers and facilitators relevant to disadvantaged and vulnerable women in the UK.
-            </p>
-            <p>
-                The main focus of the review was on Black and Minority Ethnic (BME) women.
-            </p>
+            
             <h2>Key findings</h2>
             <p>
                 The findings suggest that:
             </p>
             <ul>
-                <li>
-                There is a need to actively promote the existence, purpose and benefit of continuous antenatal care in a culturally appropriate way to the populations most at risk of late booking.</li>
-                <li>
-                The complexity of the system does not facilitate early presentation for continuous antenatal care, especially by BME women who are unfamiliar with such a system and women with limited English.
-                Healthcare staff in contact with pregnant BME women, particularly recent migrants and women who do not have English as their first language, need to be more aware of the need to proactively provide information to women in a way that women can understand.</li>
-                <li
-                >BME women, who lack English as their first language or are recent migrants, may not fully or adequately understand information and advice provided during GP or other consultations and may be reluctant or unable to seek information that they need.
-                The involvement of lay or professional advocates, or the adoption of an advocacy role by existing staff, might improve the quality and effectiveness of communication.</li>
-                <li>
-                There is a need for GP and maternity services to consider how best to accommodate BME women's cultural preferences for female healthcare staff and to be aware that women may lack the confidence an assertiveness to request such services if they are not actively offered.</li>
-                <li>
-                Women's experiences suggest a lack of cultural sensitivity/competence on the part of service providers</li>
-                <li>
-                Women who are asylum seekers, and in some cases refugees, face additional barriers, some of which might be better addressed through national initiatives and policies.</li>
-                <li>
-                Many of the 'promising' approaches identified would require further development and testing before they could be implemented and/or evaluated in the NHS.</li>
+                <li>The women who died were older (age 35+ years aOR 2.36, 95%CI 1.22-4.56), more likely to be of black ethnicity (aOR 2.38, 95%CI1.15-4.92), and unemployed, routine or manual occupation (aOR 2.19, 95%CI1.03-4.68). We also observed an association with obesity (BMI ≥ 30kg/m2aOR 2.73, 95%CI 1.15-6.46).</li>
+                <li>Women from vulnerable populations in the UK thus remain at increased risk of maternal death in the presence of severe maternal morbidities.</li>
+                <li>It is not clear whether the increased risk of death was related to difficulties in access to maternal care through physical (location) or cultural factors.</li>
+                <li>There is a place for more in depth studies to determine exactly why the presence of these factors makes women more likely to die, but it is evident that there is a place for public health action to reverse the rising trends in maternal age at childbirth and clinical action to mitigate its effects, and to reduce the burden of obesity in pregnancy.</li>
+                <li>In addition, development and evaluation of services to mitigate the risk of dying associated with being of black Caribbean or African ethnicity and being unemployed or from routine or manual socioeconomic groups is essential.</li>
             </ul>
 
             <h2>Publications</h2>
             <h3>Journal Articles</h3>
             <ul class="spaced-list">
-                <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK458548/">Leyland AH, Ouedraogo S, Nam J, Bond L, Briggs AH, Gray R, Wood R, Dundas R. Evaluation of Health in Pregnancy grants in Scotland: a natural experiment using routine data. Public Health Research. 2017(5.6).</a></li>
-            </ul>
-            <h3>Reports</h3>
-            <ul class="spaced-list">
-                <li><a href="https://www.npeu.ox.ac.uk/downloads/files/infant-mortality/Infant-Mortality---DIVA-final-report-Oct-2012.pdf">Hollowell J, Oakley L, Vigurs C, Barnett-Page E, Kavanagh J, Oliver S. Increasing the early initiation of antenatal care by Black and Minority Ethnic women in the United Kingdom: a systematic review and mixed methods synthesis of women’s views and the literature on intervention effectiveness. Oxford: NPEU2012.</a></li>
+                <li><a href="http://dx.doi.org/10.1371%2Fjournal.pone.0029077">Kayem G, Kurinczuk J, Lewis G, Golightly S, Brocklehurst P, Knight M. Risk Factors for Progression from Severe Maternal Morbidity to Death: A National Cohort Study. PLoS One. 2011;6(12):e29077</a></li>
+                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/25057407">Shah A, Mohamed-Ahmed O, McClymont C, Knight M. Conditions triggering local incident reviews in UK hospital maternity units: A national survey. JRSM Open. 2014;5(7):2054270414528898.</a></li>
+                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/25573167">Nair M, Kurinczuk JJ, Brocklehurst P, Sellers S, Lewis G, Knight M. Factors associated with maternal death from direct pregnancy complications: a UK national case–control study. BJOG. 2015;122(5):653-62.</a></li>
             </ul>
             <h2>NPEU Contact</h2>
             <p>
-                <a href="/people/jennifer-hollowell-634">Jennifer Hollowell</a><br><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk">jennifer.hollowell@npeu.ox.ac.uk</a>
+                <a href="/people/marian-knight-629">Marian Knight</a><br><a href="mailto:marian.knight@npeu.ox.ac.uk">marian.knight@npeu.ox.ac.uk</a>
             </p>
             <h2>Chief Investigators</h2>
             <p>
-                <a href="/people/jennifer-hollowell-634">Jennifer Hollowell</a><br><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk">jennifer.hollowell@npeu.ox.ac.uk</a>
+                <a href="/people/marian-knight-629">Marian Knight</a><br><a href="mailto:marian.knight@npeu.ox.ac.uk">marian.knight@npeu.ox.ac.uk</a>
             </p>
 
         </div>

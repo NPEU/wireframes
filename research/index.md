@@ -151,20 +151,20 @@ title: Research
                     <li>
                         <h3>M</h3>
                         <ul class="u-list--plain  u-list--plain--xs">
-                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/theme">Maternal morbidity and mortality</a> <span>(7)</span></li>
+                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/pru-theme">Maternal morbidity and mortality</a> <span>(7)</span></li>
                         </ul>
                     </li>
                     <li>
                         <h3>P</h3>
                         <ul class="u-list--plain  u-list--plain--xs">
-                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/theme">Pregnancy loss and perinatal mortality</a> <span>(4)</span></li>
-                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/theme">Perinatal mental health and disabilities</a> <span>(3)</span></li>
+                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/pru-theme">Pregnancy loss and perinatal mortality</a> <span>(4)</span></li>
+                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/pru-theme">Perinatal mental health and disabilities</a> <span>(3)</span></li>
                         </ul>
                     </li>
                     <li>
                         <h3>T</h3>
                         <ul class="u-list--plain  u-list--plain--xs">
-                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/theme">The healthy mother and child</a> <span>(14 project)</span></li>
+                            <li class="u-text-group  u-text-group--push-apart"><a href="/research/pru-theme">The healthy mother and child</a> <span>(14 project)</span></li>
                         </ul>
                     </li>
                 </ul>

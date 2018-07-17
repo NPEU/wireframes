@@ -3,7 +3,7 @@ layout: landing--npeu-home
 title: About us
 ---
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
             <h1>

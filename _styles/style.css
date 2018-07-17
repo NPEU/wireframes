@@ -2550,11 +2550,11 @@ _:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root select[size="
     border-radius: 50%;
   }
   input[type="radio"]:checked {
-    background-image: -moz-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
+    background-image: -moz-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6-15 */
-    background-image: -webkit-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
+    background-image: -webkit-radial-gradient(center, ellipse cover, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background-image: radial-gradient(ellipse at center, #333333 0%, #333333 35%, transparent 35%, transparent 100%);
+    background-image: radial-gradient(ellipse at center, #333333 0%, #333333 35%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
   input[type="checkbox"]:checked::after {
@@ -2602,7 +2602,8 @@ _:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root select[size="
   -webkit-appearance: radio;
 }
 
-/*------------------------------------------------------------------------------------------------*    Fall-Back Icons v1.0.0
+/*------------------------------------------------------------------------------------------------*\
+    Fall-Back Icons v1.0.0
     
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
@@ -3945,7 +3946,8 @@ _:-o-prefocus, body:last-child .dropdown .dropdown__button {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------*
+/*------------------------------------------------------------------------------------------------*\
+
     Designed for use with the basic [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
     IE 9+, FF 8+, Opera 12, [Chrome 29+, Android ~4.4+]
     Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+
@@ -4028,7 +4030,8 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*
+/*------------------------------------------------------------------------------------------------*\
+
     Clarification for self:
     Since this pattern is intented for use on logos, and since logos are an integral part of
     branding, this pattern is not ONLY intended as a CSS fallback.
@@ -4108,7 +4111,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   /* [1] */
 }
 
@@ -4328,8 +4331,10 @@ body {
   border-width: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*\*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*    Import Fall-Back vars:
+/*------------------------------------------------------------------------------------------------*\
+\*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*\
+    Import Fall-Back vars:
 
     Slightly hacky way of allowing the main UI colour of this pattern to be:
      - base-ui colour (if set)
@@ -5143,6 +5148,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 .c-card .c-card__title {
   font-size: 3rem;
   line-height: 3rem;
+  width: 100%;
 }
 
 .c-card.c-card--stub .c-card__title {
@@ -5174,7 +5180,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 2.4rem;
+  padding-top: 1.2rem;
   width: 100%;
 }
 
@@ -5212,6 +5218,22 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   bottom: 0;
   left: -1rem;
   background-color: #999;
+}
+
+/*
+
+
+*/
+.contact-list dt {
+  display: none;
+}
+
+.contact-list dd {
+  display: block;
+}
+
+.contact-list .name {
+  font-weight: bold;
 }
 
 /*
@@ -6735,6 +6757,24 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
     
     @To Do: allow for responsive variations.
 */
+.u-space--left--s {
+  margin-left: 1.2rem !important;
+}
+
+.u-space--right--s {
+  margin-right: 1.2rem !important;
+}
+
+.u-space--top--s,
+.u-space--above--s {
+  margin-top: 1.2rem !important;
+}
+
+.u-space--bottom--s,
+.u-space--below--s {
+  margin-bottom: 1.2rem !important;
+}
+
 .u-space--left {
   margin-left: 2.4rem !important;
 }

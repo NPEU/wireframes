@@ -255,6 +255,7 @@ $card-info--font-size: 1.4rem;
                 .#{$card-namespace}card .#{$card-namespace}card__title {
                     font-size:   $card-title--font-size;
                     line-height: $card-title--line-height;
+                    width: 100%;
                 }
                 
                 .#{$card-namespace}card.#{$card-namespace}card--stub .#{$card-namespace}card__title {
@@ -290,7 +291,7 @@ $card-info--font-size: 1.4rem;
                 margin-right: $card-body--margin-right;
                 margin-top: 0;
                 margin-bottom: 0;
-                padding-top: $card-body--padding;
+                padding-top: $card-body--padding / 2;
                 width: 100%;
             }
 

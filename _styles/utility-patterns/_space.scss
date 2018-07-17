@@ -6,6 +6,25 @@
 
 $space-namespace: u- !default;
 
+.#{$space-namespace}space--left--s {
+    margin-left: $sz-s !important;
+}
+
+.#{$space-namespace}space--right--s {
+    margin-right: $sz-s !important;
+}
+
+.#{$space-namespace}space--top--s,
+.#{$space-namespace}space--above--s {
+    margin-top: $sz-s !important;
+}
+
+.#{$space-namespace}space--bottom--s,
+.#{$space-namespace}space--below--s {
+    margin-bottom: $sz-s !important;
+}
+
+
 .#{$space-namespace}space--left {
     margin-left: $sz-m !important;
 }

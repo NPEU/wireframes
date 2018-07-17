@@ -1,20 +1,20 @@
 ---
 layout: landing--npeu-home
-title: NPEU Home
+title: CTU
 ---
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
             <h1>
-                CTU Introduction
+                CTU
             </h1>
 
             <p>
                 The NPEU Clinical Trials Unit (NPEU CTU) is a fully registered <a href="#">UKCRC Clinical Trials Unit</a> and typically runs a number of large multi-centre Randomised Controlled Trials, both nationally and internationally. The on-going <a href="#">programme of trials</a> evaluates a broad range of interventions for women and babies in the perinatal health services.
             </p>
             <p>
-                <a href="/trials" class="cta">Trials Portfolio <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                <a href="/ctu/trials" class="cta">Trials Portfolio <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
         </div>
         <div class="feature-image  c-brochure__image  js-toggle-image">
@@ -46,7 +46,7 @@ title: NPEU Home
     </div>
 </div>
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
         <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>
@@ -90,7 +90,7 @@ title: NPEU Home
     </div>
 </div>
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
             <h3>
@@ -115,7 +115,7 @@ title: NPEU Home
     </section>
 </div>
 
-<div wf-area="light+medium-padding+outline">
+<div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
         <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>
