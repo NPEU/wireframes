@@ -72,7 +72,7 @@ $proportions: (
     
     
 @each $ratio, $percent in $proportions {
-  .proportional-container--#{$ratio}::before {
+    .proportional-container--#{$ratio}::before {
         padding-top: $percent;
     }
 }

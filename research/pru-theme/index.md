@@ -31,6 +31,19 @@ title: Maternal morbidity and mortality
             </div>
         </div>
         
+        <div class="u-text-group  u-text-group--push-apart">
+            <p>Showing 10 projects</p>
+            <form>
+                <label>Sort by:</label>
+                <select>
+                    <option>Alphabetical: A-Z</option>
+                    <option>Alphabetical: Z-A</option>
+                    <option>Last update: Newest</option>
+                    <option>Last update: Oldest</option>
+                </select>
+            </form>
+        </div>
+        
         <div class="u-padding--bottom">         
             <ul class="u-list--plain  u-list--plain--s">
                 <li>

@@ -7,7 +7,7 @@
 
 $text-group-namespace: u- !default;
 
-.#{$text-align-namespace}text-group {
+.#{$text-group-namespace}text-group {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -19,26 +19,32 @@ $text-group-namespace: u- !default;
     -webkit-flex-wrap: wrap !important;
         -ms-flex-wrap: wrap !important;
             flex-wrap: wrap !important;
+            
+    -webkit-align-items: center;
+         -ms-flex-align: center;
+            align-items: center;
 }
 
-.#{$text-align-namespace}text-group--push-apart {
+.#{$text-group-namespace}text-group--push-apart {
     -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
             justify-content: space-between;
 }
 
-.#{$text-align-namespace}text-group > * {
+.#{$text-group-namespace}text-group > * {
+    margin: 0;
+
     -webkit-flex: 0 1 auto !important;
         -ms-flex: 0 1 auto !important;
             flex: 0 1 auto !important;
 }
 
 // Preserve white space when not-wrapped:
-.#{$text-align-namespace}text-group > :not(:last-child) {
+.#{$text-group-namespace}text-group > :not(:last-child) {
     padding-right: 0.2em !important;
 }
 
 // Allow large space between distinct groups:
-.#{$text-align-namespace}text-group--wide-space > :not(:last-child) {
+.#{$text-group-namespace}text-group--wide-space > :not(:last-child) {
     padding-right: 1em !important;
 }

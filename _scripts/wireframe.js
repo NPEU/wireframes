@@ -78,6 +78,14 @@
                     toggleClass(this, 'show-image');
                 });
             }
+            
+            var team_img = document.querySelector('#npeu-team .js-toggle-image');
+            // Add class toggle.
+            if (team_img) {
+                team_img.addEventListener('click', function(){
+                    toggleClass(this, 'show-image');
+                });
+            }
         }
 	}
 

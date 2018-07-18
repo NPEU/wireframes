@@ -45,7 +45,7 @@ title: NPEU Seminars
                             <p class="c-event__datetime">
                                 August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                             </p>
-                            <span class="c-event__action">+ Add to Calendar</span>
+                            <span class="c-event__action"><a href="https://www.npeu.ox.ac.uk/services/ics.php?event=..." class="cta">+ Add to Calendar <svg display="none" class="icon  feather"><use xlink:href="#icon-calendar"></use></svg></a></span>
                         </div>
 
                 </li>
@@ -62,7 +62,6 @@ title: NPEU Seminars
                         <p class="c-event__datetime">
                             August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                         </p>
-                        <span class="c-event__action">+ Add to Calendar</span>
                     </div>
 
                 </li>
@@ -79,7 +78,7 @@ title: NPEU Seminars
                             <p class="c-event__datetime">
                                 August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                             </p>
-                            <span class="c-event__action">+ Add to Calendar</span>
+                            <span class="c-event__action"><a href="https://www.npeu.ox.ac.uk/services/ics.php?event=..." class="cta">+ Add to Calendar <svg display="none" class="icon  feather"><use xlink:href="#icon-calendar"></use></svg></a></span>
                         </div>
 
                 </li>
@@ -96,7 +95,7 @@ title: NPEU Seminars
                             <p class="c-event__datetime">
                                 August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                             </p>
-                            <span class="c-event__action">+ Add to Calendar</span>
+                            <span class="c-event__action"><a href="https://www.npeu.ox.ac.uk/services/ics.php?event=..." class="cta">+ Add to Calendar <svg display="none" class="icon  feather"><use xlink:href="#icon-calendar"></use></svg></a></span>
                         </div>
 
                 </li>
@@ -113,7 +112,7 @@ title: NPEU Seminars
                             <p class="c-event__datetime">
                                 August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                             </p>
-                            <span class="c-event__action">+ Add to Calendar</span>
+                            <span class="c-event__action"><a href="https://www.npeu.ox.ac.uk/services/ics.php?event=..." class="cta">+ Add to Calendar <svg display="none" class="icon  feather"><use xlink:href="#icon-calendar"></use></svg></a></span>
                         </div>
 
                 </li>

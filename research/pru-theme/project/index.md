@@ -40,6 +40,7 @@ title: Factors associated with progression from near-miss maternal morbidity to 
             </ul>
 
             <h2>Publications</h2>
+            
             <h3>Journal Articles</h3>
             <ul class="spaced-list">
                 <li><a href="http://dx.doi.org/10.1371%2Fjournal.pone.0029077">Kayem G, Kurinczuk J, Lewis G, Golightly S, Brocklehurst P, Knight M. Risk Factors for Progression from Severe Maternal Morbidity to Death: A National Cohort Study. PLoS One. 2011;6(12):e29077</a></li>
@@ -47,13 +48,20 @@ title: Factors associated with progression from near-miss maternal morbidity to 
                 <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/25573167">Nair M, Kurinczuk JJ, Brocklehurst P, Sellers S, Lewis G, Knight M. Factors associated with maternal death from direct pregnancy complications: a UK national case–control study. BJOG. 2015;122(5):653-62.</a></li>
             </ul>
             <h2>NPEU Contact</h2>
-            <p>
-                <a href="/people/marian-knight-629">Marian Knight</a><br><a href="mailto:marian.knight@npeu.ox.ac.uk">marian.knight@npeu.ox.ac.uk</a>
-            </p>
-            <h2>Chief Investigators</h2>
-            <p>
-                <a href="/people/marian-knight-629">Marian Knight</a><br><a href="mailto:marian.knight@npeu.ox.ac.uk">marian.knight@npeu.ox.ac.uk</a>
-            </p>
+            <dl class="contact-list" itemscope="itemscope" itemtype="http://schema.org/Person">
+                <dt>Name</dt>
+                <dd class="name"><svg display="none" class="icon  feather"><use xlink:href="#icon-person"></use></svg><a href="https://www.npeu.ox.ac.uk/people/marian-knight-629"><span itemprop="honorificPrefix">Prof</span> <span itemprop="name">Marian Knight</span></a></dd>
+                <dt>Email</dt>
+                <dd itemprop="email" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-email"></use></svg><a href="mailto:marian.knight@npeu.ox.ac.uk" itemprop="email">marian.knight@npeu.ox.ac.uk</a></dd>
+            </dl>
+            
+            <h2>Chief Investigators</h2>            
+            <dl class="contact-list" itemscope="itemscope" itemtype="http://schema.org/Person">
+                <dt>Name</dt>
+                <dd class="name"><svg display="none" class="icon  feather"><use xlink:href="#icon-person"></use></svg><a href="https://www.npeu.ox.ac.uk/people/marian-knight-629"><span itemprop="honorificPrefix">Prof</span> <span itemprop="name">Marian Knight</span></a></dd>
+                <dt>Email</dt>
+                <dd itemprop="email" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-email"></use></svg><a href="mailto:marian.knight@npeu.ox.ac.uk" itemprop="email">marian.knight@npeu.ox.ac.uk</a></dd>
+            </dl>
 
         </div>
 

@@ -21,6 +21,7 @@
 |-------------------------------------------------------------------------------------------------*/
 /*! Start CSS. See SCSS file for documentation. */
 /*
+
     Start CSS is designed for use with the basic
     [CSS Mustard Cut](https://github.com/Fall-Back/CSS-Mustard-Cut)
 
@@ -338,7 +339,7 @@ body {
 */
 a[href] {
   margin-bottom: -2px;
-  padding-bottom: 0;
+  padding-bottom: 2px;
   border-bottom: 2px solid;
   color: #0077AD;
   background-color: transparent;
@@ -4683,6 +4684,7 @@ body {
 }
 
 .gallery-grid .gallery-grid__item {
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -5101,6 +5103,7 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
 }
 
 .c-card .c-card__main {
+  position: relative;
   color: #333;
   background: #eee;
   margin-left: 0;
@@ -5136,7 +5139,6 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  position: relative;
   width: 100%;
 }
 
@@ -5149,6 +5151,26 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   font-size: 3rem;
   line-height: 3rem;
   width: 100%;
+}
+
+.c-card .c-card__title a {
+  all: initial;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  /*&:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: #ddd;
+                        }*/
 }
 
 .c-card.c-card--stub .c-card__title {
@@ -5205,18 +5227,18 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   padding-left: 2.4rem;
 }
 
-.c-card--themed-content .c-card__body > * {
+.c-card--themed-content .c-card__main > * {
   padding-left: 1rem;
 }
 
 .c-card--themed-content .c-card__body::before {
   display: block;
   content: "";
-  width: 0.5rem;
+  width: 0.75rem;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -1rem;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
   background-color: #999;
 }
 
@@ -5228,12 +5250,13 @@ $card-button--border-color: darken($card--base-color, 20%) !default;
   display: none;
 }
 
-.contact-list dd {
-  display: block;
-}
-
 .contact-list .name {
   font-weight: bold;
+}
+
+.contact-list .icon {
+  margin-left: -1.75em;
+  margin-right: 0.5em;
 }
 
 /*
@@ -6716,6 +6739,20 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   }
 }
 
+.proportional-container--1-1_4::before {
+  padding-top: 140%;
+}
+
+/*
+    Groups.
+
+    Attempts to improve where text wraps.
+
+*/
+.u-fill-height {
+  height: 100%;
+}
+
 /*
     Text alignment.
 
@@ -6854,14 +6891,23 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
 */
 .u-text-align--left {
   text-align: left !important;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .u-text-align--center {
   text-align: center !important;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .u-text-align--right {
   text-align: right !important;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 /*
@@ -6880,6 +6926,9 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   -webkit-flex-wrap: wrap !important;
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .u-text-group--push-apart {
@@ -6889,6 +6938,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
 }
 
 .u-text-group > * {
+  margin: 0;
   -webkit-flex: 0 1 auto !important;
   -ms-flex: 0 1 auto !important;
   flex: 0 1 auto !important;
@@ -6900,6 +6950,29 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
 
 .u-text-group--wide-space > :not(:last-child) {
   padding-right: 1em !important;
+}
+
+/*
+    Groups.
+
+    Attempts to improve where text wraps.
+
+*/
+.u-word-wrap,
+.u-word-wrap--inside * {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -7473,6 +7546,17 @@ html :last-child {
 }
 
 #participant-involvement .show-image [wf-box]::before {
+  display: none;
+  content: "";
+}
+
+#npeu-team .show-image {
+  background-image: url("../img/npeu_team.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#npeu-team .show-image [wf-box]::before {
   display: none;
   content: "";
 }

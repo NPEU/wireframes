@@ -6,9 +6,9 @@ title: PRU-MHC
 <div wf-area="light+outline">
     <section class="c-brochure" id="our-research">
         <div class="text-content  c-brochure__body">
-            <h2>
+            <h1>
                 PRU-MHC
-            </h2>
+            </h1>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla turpis, tincidunt in congue eget, convallis sagittis sem. Duis fermentum ligula quis massa porta fringilla. Fusce ac est fermentum, tincidunt ante ut, lobortis nibh. Vestibulum placerat vel felis id ultrices. Etiam aliquet luctus accumsan. Vestibulum id ipsum felis.
@@ -178,30 +178,136 @@ title: PRU-MHC
             <h3>
                 Contact us
             </h3>
-            <div>
+            <div class="u-space--below">
                 <img src="/img/Placeholder_map.jpg" alt="" class="">
             </div>
 
             <dl class="contact-list" itemscope="itemscope" itemtype="http://schema.org/Person">
                 <dt>Name</dt>
-                <dd class="name"><span class="icon  icon-person"></span><a href="https://www.npeu.ox.ac.uk/people/jenny-kurinczuk-659"><span itemprop="honorificPrefix">Prof</span> <span itemprop="name">Jenny Kurinczuk</span></a></dd>
+                <dd class="name"><svg display="none" class="icon  feather"><use xlink:href="#icon-person"></use></svg><a href="https://www.npeu.ox.ac.uk/people/jenny-kurinczuk-659"><span itemprop="honorificPrefix">Prof</span> <span itemprop="name">Jenny Kurinczuk</span></a></dd>
                 <dt>Organisation</dt>
-                <dd itemprop="name" class=""><span class="icon  icon-building"></span>Policy Research Unit in Maternal Health &amp; Care (PRU-MHC)</dd>
+                <dd itemprop="name" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-building"></use></svg>Policy Research Unit in Maternal Health &amp; Care (PRU-MHC)</dd>
                 <dt>Address</dt>
-                <dd itemprop="streetAddress" itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">National Perinatal Epidemiology Unit (NPEU)<br>
-                Nuffield Department of Population Health<br>
-                University of Oxford<br>
-                Old Road Campus</span><br>
-                <span itemprop="addressLocality">Oxford</span><br>
-                <span itemprop="postalCode">OX3 7LF</span></dd>
+                <dd itemprop="streetAddress" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="addressLocality">National Perinatal Epidemiology Unit (NPEU)<br>
+                    Nuffield Department of Population Health<br>
+                    University of Oxford<br>
+                    Old Road Campus</span><br>
+                    <span itemprop="addressLocality">Oxford</span><br>
+                    <span itemprop="postalCode">OX3 7LF</span>
+                </dd>
                 <dt>Email</dt>
-                <dd itemprop="email" class=""><span class="icon  icon-email"></span><a href="mailto:jenny.kurinczuk@npeu.ox.ac.uk" itemprop="email">jenny.kurinczuk@npeu.ox.ac.uk</a></dd>
+                <dd itemprop="email" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-email"></use></svg><a href="mailto:jenny.kurinczuk@npeu.ox.ac.uk" itemprop="email">jenny.kurinczuk@npeu.ox.ac.uk</a></dd>
                 <dt>Telephone</dt>
-                <dd itemprop="telephone" class=""><span class="icon  icon-phone"></span>01865 289719</dd>
+                <dd itemprop="telephone" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-phone"></use></svg>01865 289719</dd>
                 <dt>Fax</dt>
-                <dd itemprop="faxNumber" class=""><span class="icon  icon-fax"></span>01865 289701</dd>
+                <dd itemprop="faxNumber" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-fax"></use></svg>01865 289701</dd>
             </dl>
             
         </div>
+    </section>
+</div>
+
+<div wf-area="white+medium-padding+outline">
+    <section id="latest-news">
+        <heading class="u-text-group  u-text-group--push-apart  u-space--below">
+            <h2>PRU-MHC News</h2>
+            <p><a href="#" class="cta">View all news <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a></p>
+        </heading>
+
+        <div class="l-col-to-row--flush-edge-gutters">
+        <div class="l-col-to-row  l-col-to-row--gutter--medium">
+            <div class="l-col-to-row__item  ff-width-100--40--50">
+
+                <div class="c-card  c-card--themed-content" data-component="featured-news">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">Most recent news headline</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                <span class="u-text-group"><span>Published in: </span><span>Category name</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="l-col-to-row__item  ff-width-100--40--50">
+            <div class="l-col-to-row--flush-edge-gutters">
+
+
+                <div class="c-card  c-card--themed-content  u-space--below" data-component="recent-news">
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">Next most recent headline</h2>
+                        </div>
+                        <div class="c-card__footer">
+                            <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                <span class="u-text-group"><span>Published in: </span><span>Quite a long category name to test wrapping</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="l-col-to-row  l-col-to-row--gutter--medium">
+                    <div class="l-col-to-row__item  ff-width-100--30--50">
+
+                        <div class="c-card  c-card--themed-content" data-component="older-news">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">This headline is grabbing everyone's attention</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Quite a long category name to test wrapping</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-col-to-row__item  ff-width-100--30--50">
+
+                        <div class="c-card  c-card--themed-content" data-component="older-news">
+                            <div class="c-card__main">
+                                <div class="c-card__body">
+                                    <h2 class="c-card__title">Final headline here</h2>
+                                </div>
+                                <div class="c-card__footer">
+                                    <p class="c-card__info  u-text-group  u-text-group--wide-space">
+                                        <span class="u-text-group"><span>Published on: </span><span>18 June 2018 10:11</span></span>
+                                        <span class="u-text-group"><span>Published in: </span><span>Category name</span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </div>
+        </div>
+
+
     </section>
 </div>

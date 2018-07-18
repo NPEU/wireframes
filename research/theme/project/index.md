@@ -65,17 +65,22 @@ title: Inequalities in Infant Mortality work programme - barriers to the early i
             </ul>
             <h3>Reports</h3>
             <ul class="spaced-list">
-                <li><a href="https://www.npeu.ox.ac.uk/downloads/files/infant-mortality/Infant-Mortality---DIVA-final-report-Oct-2012.pdf">Hollowell J, Oakley L, Vigurs C, Barnett-Page E, Kavanagh J, Oliver S. Increasing the early initiation of antenatal care by Black and Minority Ethnic women in the United Kingdom: a systematic review and mixed methods synthesis of women’s views and the literature on intervention effectiveness. Oxford: NPEU2012.</a></li>
+                <li><a href="https://www.npeu.ox.ac.uk/downloads/files/infant-mortality/Infant-Mortality---DIVA-final-report-Oct-2012.pdf"><svg display="none" class="icon  feather"><use xlink:href="#icon-file"></use></svg> Hollowell J, Oakley L, Vigurs C, Barnett-Page E, Kavanagh J, Oliver S. Increasing the early initiation of antenatal care by Black and Minority Ethnic women in the United Kingdom: a systematic review and mixed methods synthesis of women’s views and the literature on intervention effectiveness. Oxford: NPEU2012.</a></li>
             </ul>
             <h2>NPEU Contact</h2>
-            <p>
-                <a href="/people/jennifer-hollowell-634">Jennifer Hollowell</a><br><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk">jennifer.hollowell@npeu.ox.ac.uk</a>
-            </p>
+            <dl class="contact-list" itemscope="itemscope" itemtype="http://schema.org/Person">
+                <dt>Name</dt>
+                <dd class="name"><svg display="none" class="icon  feather"><use xlink:href="#icon-person"></use></svg><a href="https://www.npeu.ox.ac.uk/people/jennifer-hollowell-634"><span itemprop="name">Jennifer Hollowell</span></a></dd>
+                <dt>Email</dt>
+                <dd itemprop="email" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-email"></use></svg><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk" itemprop="email">jennifer.hollowell@npeu.ox.ac.uk</a></dd>
+            </dl>
             <h2>Chief Investigators</h2>
-            <p>
-                <a href="/people/jennifer-hollowell-634">Jennifer Hollowell</a><br><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk">jennifer.hollowell@npeu.ox.ac.uk</a>
-            </p>
-
+            <dl class="contact-list" itemscope="itemscope" itemtype="http://schema.org/Person">
+                <dt>Name</dt>
+                <dd class="name"><svg display="none" class="icon  feather"><use xlink:href="#icon-person"></use></svg><a href="https://www.npeu.ox.ac.uk/people/jennifer-hollowell-634"><span itemprop="name">Jennifer Hollowell</span></a></dd>
+                <dt>Email</dt>
+                <dd itemprop="email" class=""><svg display="none" class="icon  feather"><use xlink:href="#icon-email"></use></svg><a href="mailto:jennifer.hollowell@npeu.ox.ac.uk" itemprop="email">jennifer.hollowell@npeu.ox.ac.uk</a></dd>
+            </dl>
         </div>
 
         <div class="l-content-area__pull-out">

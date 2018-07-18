@@ -168,6 +168,7 @@ $fallback-svg--link-bg-color-alt: #fff;
 @import "../bower_components/NPEU-layout-patterns/dev/scss/_scl--n-up.scss";
 
 
+
 $gallery-grid-spacing-unit: $fallback--base-rem-space-unit;
 @import "../bower_components/NPEU-layout-patterns/dev/scss/_gallery-grid.scss";
 
@@ -249,6 +250,7 @@ $section-menu--background-color: #fff;
 
 
 
+
 $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 @import "layout-patterns/_col-to-row.scss";
 
@@ -257,16 +259,21 @@ $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 
 @import "layout-patterns/_proportional-container.scss";
 
+.proportional-container--1-1_4::before {
+    padding-top: 140%;
+}
+
 //$panel--padding: $fallback--base-rem-space-unit;
 //@import "patterns/_panel.scss";
 
 
 
-
+@import "utility-patterns/_fill-height.scss";
 @import "utility-patterns/_lists.scss";
 @import "utility-patterns/_space.scss";
 @import "utility-patterns/_text-align.scss";
 @import "utility-patterns/_text-groups.scss";
+@import "utility-patterns/_word-wrap.scss";
 
 /* ---------------------------------------------------------------------------------------------- */
 

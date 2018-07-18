@@ -104,7 +104,7 @@ title: CTU
                 Any information sent to the NPEU CTU will be treated as strictly confidential.
             </p>
             <p>
-                <a href="#" class="cta">Application for NPEU CTU Support</a>
+                <a href="#" class="cta"><svg display="none" class="icon  feather"><use xlink:href="#icon-file"></use></svg> Application for NPEU CTU Support</a>
             </p>
         </div>
         <div class="feature-image  c-brochure__image  js-toggle-image">
@@ -142,7 +142,10 @@ title: CTU
 
 <div wf-area="white+medium-padding+outline">
     <section id="latest-news">
-        <h2>Trials News</h2>
+        <heading class="u-text-group  u-text-group--push-apart  u-space--below">
+            <h2>Trials News</h2>
+            <p><a href="#" class="cta">View all news <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a></p>
+        </heading>
 
         <div class="l-col-to-row--flush-edge-gutters">
         <div class="l-col-to-row  l-col-to-row--gutter--medium">

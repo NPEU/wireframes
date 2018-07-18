@@ -222,7 +222,7 @@ title: About us
             <h2>NPEU seminars</h2>
             <p><b>
                 Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus. Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque.
-            <b></p>
+            </b></p>
             <p>
                 Unless stated otherwise, seminars will be held at:<br>
                 <b>Richard Doll Lecture Theatre<br>
@@ -249,10 +249,10 @@ title: About us
                     <p class="c-event__datetime">
                         August: Wednesday 1<sup>st</sup>, 11:30 &ndash; 12:30
                     </p>
-                    <span class="c-event__action">+ Add to Calendar</span>
+                    <span class="c-event__action"><a href="https://www.npeu.ox.ac.uk/services/ics.php?event=..." class="cta">+ Add to Calendar <svg display="none" class="icon  feather"><use xlink:href="#icon-calendar"></use></svg></a></span>
                 </div>
                 <p class="u-space--above  u-text-align--right">
-                    <a href="/seminars" class="cta">View all seminars&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                    <a href="/about/seminars" class="cta">View all seminars&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                 </p>
 
             </div>
