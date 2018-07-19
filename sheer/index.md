@@ -14,7 +14,7 @@ title: SHEER
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae elit vel mauris aliquam commodo a ut lorem. Maecenas velit leo, dictum a consectetur accumsan, ornare in tortor. Praesent in hendrerit lectus. Maecenas consequat imperdiet massa egestas commodo. Sed facilisis, risus sed accumsan tristique, nisi velit porttitor nibh, nec bibendum ex sapien eu lorem.
             </p>
             <p>
-                <a href="/ctu" class="cta">View research <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                <a href="/research" class="cta">View research <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
         </div>
         <div class="feature-image  c-brochure__image  js-toggle-image">

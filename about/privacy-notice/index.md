@@ -89,7 +89,7 @@ title: Privacy Notice
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="/about/working-in-npeu" class="cta">People&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/people" class="cta">People&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>

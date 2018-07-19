@@ -251,4 +251,108 @@ title: NPEU Wireframe Layout Patterns
     </div>
 </div>
 
+<hr>
+<hr>
+
+<h2 class="small-padding">Content Area</h2>
+
+<div class="l-content-area  l-content-area--has-pull-outs">
+
+    <div class="l-content-area__main">
+    
+        <div class="l-content-area__pull-out  u-space--below">
+            <div wf-area="white+outline+medium-padding">
+                <h2>Side bar - top section</h2>
+                
+                 <p>
+                    Suspendisse pellentesque, elit et laoreet gravida, nunc arcu eleifend sem.
+                </p>
+            </div>
+        </div>  
+    
+        <div class="u-space--below">
+        
+            <h1>
+                Main - top section
+            </h1>
+        
+            <p>
+                <b>Be careful: if there is a mid section, and this section is much longer than the mid section (and top section if there is one) or the bottom section will have a large gap above it where it snaps to the top edge of the main bottom section.</b>
+            </p>
+            <p>
+                This should be evident to a small degree here. I haven't found a better way, yet.
+            </p>
+
+            <p>
+                Suspendisse pellentesque, elit et laoreet gravida, nunc arcu eleifend sem, luctus pellentesque diam lorem quis justo. Curabitur id ex id tellus viverra cursus. In faucibus et nunc ut egestas. Suspendisse accumsan mi id maximus gravida. Donec vitae nunc ex. Quisque gravida ultricies sapien viverra tristique. Ut vitae libero viverra, faucibus dolor semper, dignissim lectus.
+            </p>
+            
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
+            </p>
+
+            <p>
+                Maecenas vehicula, felis a tincidunt ultrices, ante velit aliquet lectus, sed sollicitudin libero tellus at elit. Fusce eget quam et tortor gravida hendrerit. In urna libero, vulputate sit amet mauris eget, efficitur luctus tortor.
+            </p>
+
+        </div>
+        <div class="l-content-area__pull-out  u-space--below">
+            <div wf-area="white+outline+medium-padding">
+                <h2>Side bar - mid section</h2>
+                
+                 <p>
+                    Suspendisse pellentesque, elit et laoreet gravida, nunc arcu eleifend sem, luctus pellentesque diam lorem quis justo.
+                </p>
+            </div>
+        </div>    
+            
+        <div class="u-space--below">   
+            <h2>Main - bottom section</h2>
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
+            </p>
+
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
+            </p>
+
+            <p>
+                Maecenas vehicula, felis a tincidunt ultrices, ante velit aliquet lectus, sed sollicitudin libero tellus at elit. Fusce eget quam et tortor gravida hendrerit. In urna libero, vulputate sit amet mauris eget, efficitur luctus tortor.
+            </p>
+           
+        </div>
+        <div class="l-content-area__pull-out  u-space--below">
+            <div wf-area="white+outline+medium-padding">
+                <h2>Side bar - bottom section</h2>
+                    <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
+                </p>
+
+                <p>
+                    Maecenas vehicula, felis a tincidunt ultrices, ante velit aliquet lectus, sed sollicitudin libero tellus at elit. Fusce eget quam et tortor gravida hendrerit. In urna libero, vulputate sit amet mauris eget, efficitur luctus tortor.
+                </p>
+               
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<hr>
+<hr>
+
+<h2 class="small-padding">Proportional Container</h2>
+
+<div class="proportional-container  proportional-container--4-3  proportional-container--3-1--wide">
+    <div class="proportional-container__content" wf-area="light+outline">
+        <a href="/about/athena-swan">
+            <img src="/img/affiliate-logos/athena-swan-silver-award.svg" class="proportional-container__image-contain" style="height: 100%;" onerror="this.src='/img/affiliate-logos/athena-swan-silver-award.png'; this.onerror=null;" alt="ECU Gender Charter Athena Swan Silver Award" width="257" height="141">
+        </a>
+    </div>
+</div>
+
+
+<hr>
+<hr>
+
 <h2 class="small-padding">--- END ---</h2>

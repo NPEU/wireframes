@@ -46,3 +46,53 @@ $lists-namespace: u- !default;
         padding: $sz-xl 0;
     }
 }
+
+
+
+
+.#{$lists-namespace}list--inline {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            
+    list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.#{$lists-namespace}list--inline--xs {
+    > li {
+        margin: $sz-xs;
+    }
+}
+
+.#{$lists-namespace}list--inline--s {
+    > li {
+        margin: $sz-s;
+    }
+}
+
+.#{$lists-namespace}list--inline--m {
+    > li {
+        margin: $sz-m;
+    }
+}
+
+.#{$lists-namespace}list--inline--l {
+    > li {
+        margin: $sz-l;
+    }
+}
+
+.#{$lists-namespace}list--inline--xl {
+    > li {
+        margin: $sz-xl;
+    }
+}
