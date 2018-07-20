@@ -4793,6 +4793,7 @@ body {
   }
 }
 
+/* --| Component Patterns |---------------------------------------------------------------------- */
 /*
 
 */
@@ -5930,6 +5931,43 @@ $tool-form--link-border-bottom--hover: false !default;*/
   margin-right: 1rem;
 }
 
+/* --| Navigation Patterns |--------------------------------------------------------------------- */
+/*
+
+*/
+.n-breadcrumbs {
+  /*
+            .n-breadcrumbs__link {
+                
+            }
+            */
+}
+
+.n-breadcrumbs.n-breadcrumbs {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+}
+
+.n-breadcrumbs .n-breadcrumbs__title,
+.n-breadcrumbs .n-breadcrumbs__item {
+  margin: 0;
+  padding: 0;
+}
+
+.n-breadcrumbs .n-breadcrumbs__item:not(:first-of-type)::before {
+  content: " /";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /*
     The `height: 100%;` in the `.pagination` class below allows the pagination to fill it's container (if inside,
     say, a list-grid). However, it doesn't work in Safari OSX/iOS.
@@ -6485,6 +6523,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
             background-color: #999;
         }
 */
+/* --| Layout Patterns |------------------------------------------------------------------------- */
 /*
     Col to Row
     (Single column to single row)
@@ -6747,6 +6786,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   padding-top: 140%;
 }
 
+/* --| Utility Patterns |------------------------------------------------------------------------ */
 /*
     Groups.
 
@@ -7015,6 +7055,7 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
 }
 
 /* ---------------------------------------------------------------------------------------------- */
+/* --| THEMES |---------------------------------------------------------------------------------- */
 /*@include panel-theme(
 		(
 			name			 : white,
@@ -7072,7 +7113,8 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   background-color: #0077AD;
 }
 
-/* --| WIREFRAME--------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* --| WIREFRAME |------------------------------------------------------------------------------- */
 html.wireframe {
   filter: grayscale(1);
 }
@@ -7230,6 +7272,18 @@ html.wireframe {
         width: 100%;
     }
 }*/
+.wireframe [wf-area*=xs-padding] {
+  padding: 0.6rem;
+  /*padding-left: $sz-s;
+    padding-right: $sz-s;
+    padding-top: $sz-s;
+
+    &:after {
+        margin-top: $sz-s;
+    }
+    */
+}
+
 .wireframe [wf-area*=small-padding] {
   padding: 1.2rem;
   /*padding-left: $sz-s;

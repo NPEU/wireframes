@@ -130,7 +130,7 @@ title: Journal Articles
             <a href="#a_year_1978">1978</a>
         </li>
     </ul>
-    <div id="articles-list">
+    <div id="articles-list" class="u-word-wrap--inside">
         <section id="a_year_2018">
             <h2>2018</h2>
             <ul class="spaced-list">

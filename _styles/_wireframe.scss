@@ -190,6 +190,18 @@ html.wireframe {
     }
 }*/
 
+.wireframe [wf-area*=xs-padding] {
+    padding: $sz-xs;
+    /*padding-left: $sz-s;
+    padding-right: $sz-s;
+    padding-top: $sz-s;
+
+    &:after {
+        margin-top: $sz-s;
+    }
+    */
+}
+
 .wireframe [wf-area*=small-padding] {
     padding: $sz-s;
     /*padding-left: $sz-s;

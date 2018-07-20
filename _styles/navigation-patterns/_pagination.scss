@@ -35,7 +35,7 @@ $pagination--separator-color:  darken($pagination--background-color, 10%) !defau
 
 
 
-// Section menu body:
+// Pagination body:
 /*
 $pagination-body--text-color: $pagination--text-color !default;
 $pagination-body--background-color: $pagination--background-color !default;
@@ -62,11 +62,11 @@ $pagination-body--margin-bottom: 0 !default;
 //$pagination-body--pull-over: 0 !default;
 
 
-// Section menu title:
+// Pagination title:
 $pagination-title--font-size: 3rem !default;
 
 
-// Section menu text links:
+// Pagination text links:
 
 $pagination--link-padding: ($pagination-spacing-unit / 4) ($pagination-spacing-unit / 2) !default;
 $pagination--link-color: false !default;
@@ -87,7 +87,7 @@ $pagination--link-border-bottom--alt: false !default;
     $pagination--link-border-bottom--alt: 2px solid lighten($pagination--link-color--alt, 30%) !default;
 }
 
-// Section menu buttons:
+// Pagination buttons:
 /*
 $pagination-button--text-color: #fff !default;
 $pagination-button--background-color: $pagination--base-color !default;

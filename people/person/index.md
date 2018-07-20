@@ -52,7 +52,7 @@ title: Person
                 </p>
             </section>
 
-            <section id="profile_publications">
+            <section id="profile_publications"  class="u-word-wrap--inside">
                 <h2>Publications</h2>
                 <section>
                     <h3>2018</h3>
