@@ -4759,13 +4759,13 @@ body {
     display: grid;
   }
   .gallery-grid.gallery-grid--basis-20 {
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(10em + 10%), 1fr));
   }
   .gallery-grid.gallery-grid--basis-15 {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(7.5em + 7.5%), 1fr));
   }
   .gallery-grid.gallery-grid--basis-10 {
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(5em + 5%), 1fr));
   }
   .gallery-grid.gallery-grid--gutter--small {
     margin: 0;
@@ -5755,7 +5755,7 @@ $glimpse--link-border-bottom--hover: false !default;*/
 
 }
 */
-@media only screen and (min-width: 47em) {
+@media only screen and (min-width: 52em) {
   .hero .hero-message {
     position: absolute;
     margin: 0;
@@ -5781,7 +5781,7 @@ $glimpse--link-border-bottom--hover: false !default;*/
     }
 
 }*/
-@media only screen and (min-width: 47em) {
+@media only screen and (min-width: 52em) {
   #hero [wf-box]::before {
     padding-left: 30%;
   }
@@ -6909,6 +6909,10 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   margin-bottom: 2.4rem !important;
 }
 
+.u-space--none {
+  margin: 0 !important;
+}
+
 .u-padding--left--xs {
   padding-left: 0.6rem !important;
 }
@@ -6927,11 +6931,13 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   padding-bottom: 0.6rem !important;
 }
 
-.u-padding--left--s {
+.u-padding--left--s,
+.u-padding--sides--s {
   padding-left: 1.2rem !important;
 }
 
-.u-padding--right--s {
+.u-padding--right--s,
+.u-padding--sides--s {
   padding-right: 1.2rem !important;
 }
 
@@ -6945,11 +6951,13 @@ $section-menu-button--border-color: darken($section-menu--base-color, 20%) !defa
   padding-bottom: 1.2rem !important;
 }
 
-.u-padding--left {
+.u-padding--left,
+.u-padding--sides {
   padding-left: 2.4rem !important;
 }
 
-.u-padding--right {
+.u-padding--right,
+.u-padding--sides {
   padding-right: 2.4rem !important;
 }
 
@@ -7611,7 +7619,6 @@ html :last-child {
 }
 
 #hero .show-image {
-  background-image: url("../img/hero-image-1.png");
   background-size: cover;
   background-position: center;
 }
@@ -7619,6 +7626,22 @@ html :last-child {
 #hero .show-image [wf-box]::before {
   display: none;
   content: "";
+}
+
+#hero .show-image.show-image-1 {
+  background-image: url("../img/hero-image-1.png");
+}
+
+#hero .show-image.show-image-2 {
+  background-image: url("../img/hero-image-2.png");
+}
+
+#hero .show-image.show-image-3 {
+  background-image: url("../img/hero-image-3.png");
+}
+
+#hero .show-image.show-image-4 {
+  background-image: url("../img/hero-image-4.png");
 }
 
 #our-research .show-image {
@@ -7655,7 +7678,7 @@ html :last-child {
 }
 
 /*
-@media only screen and (min-width:47em) {
+@media only screen and (min-width:52em) {
 
     .wireframe .hero [wf-box]::before
     {

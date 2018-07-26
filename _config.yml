@@ -15,19 +15,19 @@ plugins:
 kramdown:
   auto_ids:       true
 
-  
-  
+
+
 exclude: [
     "_archive",
-    "bower.json", 
+    "bower.json",
     "bower_components",
     "Gemfile",
     "Gemfile.lock",
-    "Gruntfile.js",
+    "gulpfile.js",
     "_favicon.js",
-    "local-grunt.bat",
+    "local-gulp.bat",
     "local-jekyll.bat",
-    "node_modules", 
+    "node_modules",
     "package.json",
     "README.md"
 ]
@@ -37,3 +37,12 @@ breadcrumbs:
   root:
     hide: false  # show breadcrumbs on root/home page
     image: false # Show image or title text
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      main_logo: "logo-npeu.html"

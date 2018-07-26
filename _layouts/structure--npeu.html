@@ -36,18 +36,8 @@ layout: structure
             <div class="primary-banner  u-space-belowX" id="primary-banner">
                 <div class="scl--pushed-apart--first  layerX  layer--above-overlayX">
 
-                    <div class="svg  svg--fixed-height  svg--fixed-height--banner-logo">
-                        <a href="/" class="svg__link">
-                            <object type="image/svg+xml" data="/img/unit-logos/npeu-logo.svg" height="100" class="svg__image" aria-hidden="true" tabindex="-1">
-                                <svg display="none">
-                                    <image src="imgunit-/logos/npeu-logo.png" height="100" class="svg__fallback-image" alt="NPEU home"></image>
-                                </svg>
-                                <span class="svg__fallback-text-alpha" data-content="NPEU home"></span>
-                            </object>
-                            <div><i class="svg__fallback-text-beta">NPEU home</i></div>
-                        </a>
-                    </div>
-
+                    {% include {{ page.main_logo }} %}
+                    
                 </div>
                 <div>
                     <button class="search-control">

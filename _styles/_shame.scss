@@ -6,6 +6,7 @@ html, body {
 }
 
 .page-wrap {
+    //max-width: 160rem;
     max-width: 113rem;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
@@ -145,8 +146,6 @@ html :last-child {
 
 
 #hero .show-image {
-    //background-image: url('../img/Bigstock_167982824 - flip.jpg');
-    background-image: url('../img/hero-image-1.png');
     background-size: cover;
     background-position: center;
 
@@ -154,6 +153,22 @@ html :last-child {
         display: none;
         content: "";
     }
+}
+
+#hero .show-image.show-image-1 {
+    background-image: url('../img/hero-image-1.png');
+}
+
+#hero .show-image.show-image-2 {
+    background-image: url('../img/hero-image-2.png');
+}
+
+#hero .show-image.show-image-3 {
+    background-image: url('../img/hero-image-3.png');
+}
+
+#hero .show-image.show-image-4 {
+    background-image: url('../img/hero-image-4.png');
 }
 
 

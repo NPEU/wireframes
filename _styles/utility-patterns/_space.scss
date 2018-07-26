@@ -45,6 +45,12 @@ $space-namespace: u- !default;
 
 
 
+.#{$space-namespace}space--none {
+    margin: 0 !important;
+}
+
+
+
 .#{$space-namespace}padding--left--xs {
     padding-left: $sz-xs !important;
 }
@@ -66,11 +72,13 @@ $space-namespace: u- !default;
 
 
 
-.#{$space-namespace}padding--left--s {
+.#{$space-namespace}padding--left--s,
+.#{$space-namespace}padding--sides--s {
     padding-left: $sz-s !important;
 }
 
-.#{$space-namespace}padding--right--s {
+.#{$space-namespace}padding--right--s,
+.#{$space-namespace}padding--sides--s {
     padding-right: $sz-s !important;
 }
 
@@ -86,11 +94,13 @@ $space-namespace: u- !default;
 
 
 
-.#{$space-namespace}padding--left {
+.#{$space-namespace}padding--left,
+.#{$space-namespace}padding--sides {
     padding-left: $sz-m !important;
 }
 
-.#{$space-namespace}padding--right {
+.#{$space-namespace}padding--right,
+.#{$space-namespace}padding--sides {
     padding-right: $sz-m !important;
 }
 

@@ -6,7 +6,7 @@ title: NPEU Home
 
     <div wf-box="Static or rotating images" class="hero-image">
 
-        <div class="proportional-container  proportional-container--16-9  js-toggle-image"></div>
+        <div class="proportional-container  proportional-container--3-1  js-toggle-image  show-image-1"></div>
 
     </div>
 
@@ -23,7 +23,10 @@ title: NPEU Home
 
 </div>
 
-<div wf-area="white+outline">
+<section wf-area="white+outline" class="u-space--none">
+    <h2 class="u-space--none  u-padding--sides  u-padding--top">
+        Areas of Research
+    </h2>
 
     <div class="l-col-to-row  l-col-to-row--gutter--medium">
         <div class="l-col-to-row__item  ff-width-100--40--33-333">
@@ -44,7 +47,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="#" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/ctu" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -70,7 +73,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="#" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/pru-mhc" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -96,7 +99,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="#" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/sheer" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -105,32 +108,34 @@ title: NPEU Home
 
         </div>
     </div>
-</div>
 
-<div wf-area="light+outline">
-    <section class="c-brochure" id="our-research">
-        <div class="text-content  c-brochure__body">
-            <h2>
-                Our research
-            </h2>
 
-            <p>
-                Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue. Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus.
-            </p>
-            <p>
-                Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
-            </p>
-            <p>
-                <a href="#" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-            </p>
-        </div>
-        <div class="feature-image  c-brochure__image  js-toggle-image">
-            <div wf-box>
-                <div class="proportional-container  proportional-container--4-3"></div>
+    <div wf-area="light+outline">
+        <div class="c-brochure" id="our-research">
+            <div class="text-content  c-brochure__body">
+                <h3>
+                    Our research
+                </h3>
+                <p>
+                    Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue. Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus.
+                </p>
+                <p>
+                    Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
+                </p>
+                <p>
+                    <a href="/about" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                </p>
+            </div>
+            <div class="feature-image  c-brochure__image  js-toggle-image">
+                <div wf-box>
+                    <div class="proportional-container  proportional-container--4-3"></div>
+                </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+
 <div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
         <div class="feature-image  c-brochure__image  js-toggle-image">
@@ -140,7 +145,7 @@ title: NPEU Home
         </div>
         <div class="text-content  c-brochure__body">
             <h2>
-                Participant involvement
+                Public involvement
             </h2>
 
             <p>
@@ -150,7 +155,7 @@ title: NPEU Home
                 Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
             </p>
             <p>
-                <a href="#" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                <a href="/public-involvement" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
         </div>
     </section>
@@ -162,7 +167,7 @@ title: NPEU Home
             <h2>Latest News</h2>
             <p><a href="/news" class="cta">View all news <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a></p>
         </heading>
-        
+
         <div class="l-col-to-row--flush-edge-gutters">
         <div class="l-col-to-row  l-col-to-row--gutter--medium">
             <div class="l-col-to-row__item  ff-width-100--40--50">
