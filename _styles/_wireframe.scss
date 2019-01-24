@@ -191,53 +191,70 @@ html.wireframe {
 }*/
 
 .wireframe [wf-area*=xs-padding] {
-    padding: $sz-xs;
-    /*padding-left: $sz-s;
-    padding-right: $sz-s;
-    padding-top: $sz-s;
+    //padding: $sz-xs;
+    
+    padding-left: $sz-xs;
+    padding-right: $sz-xs;
+    padding-top: $sz-xs;
 
-    &:after {
-        margin-top: $sz-s;
+     &::after {
+        content: "";
+        display: block;
+        margin-top: $sz-xs;
+        margin-bottom: -1px;
+        height: 1px;
     }
-    */
+    
 }
 
 .wireframe [wf-area*=small-padding] {
-    padding: $sz-s;
-    /*padding-left: $sz-s;
+    //padding: $sz-s;
+    
+    padding-left: $sz-s;
     padding-right: $sz-s;
     padding-top: $sz-s;
 
-    &:after {
+     &::after {
+        content: "";
+        display: block;
         margin-top: $sz-s;
+        margin-bottom: -1px;
+        height: 1px;
     }
-    */
+    
 }
 
 .wireframe [wf-area*=medium-padding] {
-    padding: $sz-m;
+    //padding: $sz-m;
     
-    /*padding-left: $sz-m;
+    padding-left: $sz-m;
     padding-right: $sz-m;
     padding-top: $sz-m;
 
-    &:after {
+     &::after {
+        content: "";
+        display: block;
         margin-top: $sz-m;
-    }*/
+        margin-bottom: -1px;
+        height: 1px;
+    }
 }
 
 
 .wireframe [wf-area*=large-padding] {
-    padding: $sz-l;   
+    //padding: $sz-l;   
     
-    /*padding-left: $sz-l;
+    padding-left: $sz-l;
     padding-right: $sz-l;
     padding-top: $sz-l;
 
-    &:after {
+    &::after {
+        content: "";
+        display: block;
         margin-top: $sz-l;
+        margin-bottom: -1px;
+        height: 1px;
     }
-    */
 }
 
 

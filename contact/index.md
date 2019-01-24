@@ -51,7 +51,7 @@ title: Contact us
                     <h2 class="c-card__title">Careers</h2>
                     <div class="c-card__body">
                         <p>
-                            For jobs, please visit the <a href="/jobs">NPEU Jobs Page</a>, sending all correspondence to: <a href="mailto:personnel@npeu.ox.ac.uk">personnel@npeu.ox.ac.uk</a>
+                            For jobs, please visit the <a href="/about/jobs">NPEU Jobs Page</a>, sending all correspondence to: <a href="mailto:personnel@npeu.ox.ac.uk">personnel@npeu.ox.ac.uk</a>
                         </p>
                     </div>
                 </div>

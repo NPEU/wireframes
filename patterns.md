@@ -215,6 +215,22 @@ title: NPEU Wireframe Patterns
     </section>
 </div>
 
+<h2 class="small-padding">Featurette (Dark - e.g. Notice)</h2>
+
+<div class="medium-padding">
+    <section class="c-featurette  c-featurette  t-featurette--dark  u-text-align--center">
+        <div class="text-content  c-featurette__body  c-featurette__body--fill">
+            <h2>
+                Featurette Title
+            </h2>
+
+            <p>
+                <a href="#">Read the notice</a>
+            </p>
+        </div>
+    </section>
+</div>
+
 
 <h2 class="small-padding">Event</h2>
 

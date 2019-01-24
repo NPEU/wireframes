@@ -60,6 +60,32 @@ var cookie_html                   =
         }
     }
 
+    var reserachSearch = {
+        run: function() {
+            //console.log(window.location);
+            if (/research\/projects\/?\?rs=/.test(window.location.href)) {
+                //console.log('Matched');
+                document.getElementById('filter_box').insertAdjacentHTML('afterend', '<p>Showing results for <b>"' + window.location.search.replace('?rs=', '') + '"</b>.</p>');
+            }
+        }
+    }
+
+    ready(reserachSearch.run);
+})();
+/*
+
+
+
+*/
+(function() {
+    var ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
     var toggleClass = function (el, className) {
         if (el.classList) {
           el.classList.toggle(className);

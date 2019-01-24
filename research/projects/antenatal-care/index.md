@@ -13,7 +13,7 @@ title: Antenatal care
         </div>
          
         <div class="l-content-area__pull-out  js-hide  u-space--below" id="filter_box">
-            <div wf-area="white+outline+medium-padding" class="">
+            <div wf-area="white+outline+medium-padding" class="u-space--below">
                 <h3 class="n-section-menu__title  js-trigger">Filter projects</h3>
                 
                 <form class="space-bottom">
@@ -28,6 +28,27 @@ title: Antenatal care
                         <input id="rad1c" type="radio" name="rad1"> <label for="rad1c" class="u-padding--left--xs">2+ years</label>
                     </div>
                 </form>
+            </div>
+            
+            <div wf-area="white+outline+medium-padding" class="">
+                <h3 class="n-section-menu__title  js-trigger">Search for projects across all themes</h3>
+                
+                <form action="/research/projects" id="research-search-form" class="" method="GET">                    
+                    <div>
+                        <div class="composite  composite--block">
+                            <input type="search" id="research-search" name="rs" placeholder="Seach">
+                            <button class="composite--block__collapse" type="submit">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20">
+                                        <path fill="#fff" d="M12.917 11.667h-0.662l-0.229-0.229c0.817-0.946 1.308-2.175 1.308-3.521 0-2.992-2.425-5.417-5.417-5.417s-5.417 2.425-5.417 5.417 2.425 5.417 5.417 5.417c1.346 0 2.575-0.492 3.521-1.304l0.229 0.229v0.658l4.167 4.158 1.242-1.242-4.158-4.167zM7.917 11.667c-2.071 0-3.75-1.679-3.75-3.75s1.679-3.75 3.75-3.75 3.75 1.679 3.75 3.75-1.679 3.75-3.75 3.75z"></path>
+                                        <text y="-10">Search</text>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
             </div>
         </div>
         
@@ -57,7 +78,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/bme-barriers-antenatal-care-211" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -74,7 +95,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -91,7 +112,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -108,7 +129,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -125,7 +146,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -142,7 +163,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -159,7 +180,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -176,7 +197,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -193,7 +214,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -210,7 +231,7 @@ title: Antenatal care
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/research/theme/project" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/research/#" class="cta">View this project&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>

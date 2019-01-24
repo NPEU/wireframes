@@ -16,6 +16,17 @@ title: CTU
             <p>
                 <a href="/ctu/trials" class="cta">Trials Portfolio <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
+            <div class="c-featurette  c-featurette  t-featurette--dark  u-text-align--center">
+                <div class="text-content  c-featurette__body  c-featurette__body--fill">
+                    <h2>
+                        Privacy Notice
+                    </h2>
+
+                    <p>
+                        <a href="/ctu/privacy-notice">Read the CTU privacy notice</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="feature-image  c-brochure__image  js-toggle-image">
             <div wf-box>
@@ -118,27 +129,83 @@ title: CTU
 <div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
         <div class="feature-image  c-brochure__image  js-toggle-image">
-            <div wf-box>
+            <div wf-box="Video">
                 <div class="proportional-container  proportional-container--4-3"></div>
             </div>
         </div>
         <div class="text-content  c-brochure__body">
             <h3>
-                Funding
+                Working with a CTU to develop an application
             </h3>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla turpis, tincidunt in congue eget, convallis sagittis sem. Duis fermentum ligula quis massa porta fringilla. Fusce ac est fermentum, tincidunt ante ut, lobortis nibh. Vestibulum placerat vel felis id ultrices. Etiam aliquet luctus accumsan. Vestibulum id ipsum felis. In quis metus id justo fringilla consectetur non vitae nulla.
             </p>
+        </div>
+    </section>
+</div>
+
+<div wf-area="light+outline">
+    <section class="c-brochure" id="our-research">
+        <div class="text-content  c-brochure__body">
+            <h3>
+                Areas of Research
+            </h3>
+            <h4>Disease Research Experience</h4>
+            <ul>
+                <li>Medicines for Children</li>
+                <li>Reproduction &amp; Childbirth</li>
+            </ul>
+            <h4>Methodological Research Experience</h4>
+            <ul>
+                <li>Economic Evaluation</li>
+                <li>Outcomes Measures (including patient reported outcomes)</li>
+                <li>Qualitative Research</li>
+                <li>Recruitment &amp; Retention Issues</li>
+                <li>Statistical Methods</li>
+                <li>Trial Design</li>
+            </ul>
+            <h4>Study Type Experience</h4>
+            <ul>
+                <li>Epidemiology</li>
+                <li>Experimental Medicine</li>
+                <li>Feasibility</li>
+                <li>Paediatrics</li>
+                <li>Phase II Clinical Trials of Investigational Medicinal Products</li>
+                <li>Phase III Clinical Trials of Investigational Medicinal Products</li>
+                <li>Surgery</li>
+            </ul>
+        </div>
+        <div class="feature-image  c-brochure__image  js-toggle-image">
+            <div wf-box>
+                <div class="proportional-container  proportional-container--4-3"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div wf-area="light+outline">
+    <section class="c-brochure" id="participant-involvement">
+        <div class="feature-image  c-brochure__image  js-toggle-image">
+            <div wf-box="Team Photo">
+                <div class="proportional-container  proportional-container--4-3"></div>
+            </div>
+        </div>
+        <div class="text-content  c-brochure__body">
+            <h3>
+                Core Trials Team
+            </h3>
+
             <p>
-                Nam eleifend leo nec cursus ultricies. Integer pulvinar posuere nisl at mollis. In eu sapien sit amet nibh lacinia egestas id nec mauris. Duis vestibulum erat eget ex viverra, in scelerisque arcu laoreet. Nam elementum mattis ullamcorper. Nullam et dictum erat. Integer ut lacinia tellus. Phasellus non aliquet tellus. 
+                The core trials team comprises the Director - NPEU Clinical Trials Unit, Senior Trials Manager, Head of Trials Programming, Senior Medical Statistician (1), Quality Assurance Managers (1 (maternity leave), 2), Core Trials Support Coordinator and Assistant Trials Manager.
             </p>
             <p>
-                <a href="#" class="cta">Contact us <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                The team works across all aspects of the trials portfolio to provide senior capacity and leadership to support the individual trials-based staff. The team also works closely with other specialists within the NPEU, who contribute expertise in midwifery, obstetrics, neonatology, epidemiology, social sciences, economic evaluation, paediatric follow-up, statistics, trial administration, computer programming and data management, to ensure that perinatal trials undertaken by the NPEU CTU or in collaboration with external clinicians are of the highest quality and clinical relevance.
             </p>
         </div>
     </section>
 </div>
+
 
 <div wf-area="white+medium-padding+outline">
     <section id="latest-news">

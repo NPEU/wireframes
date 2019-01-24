@@ -108,6 +108,5 @@ title: Inequalities in Infant Mortality work programme - barriers to the early i
             </div>
         </div>
     </div>
-    </div>
 
 </div>

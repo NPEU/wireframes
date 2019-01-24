@@ -213,7 +213,6 @@ $glimpse-spacing-unit: $fallback--base-rem-space-unit;
 @import "component-patterns/_glimpse.scss";
 
 
-//@import "_full-width.scss";
 @import "component-patterns/_hero.scss";
 
 @media only screen and (min-width:#{$hero-breakpoint}) {
@@ -272,7 +271,7 @@ $col-to-row-spacing-unit: $fallback--base-rem-space-unit;
 
 /* --| Utility Patterns |------------------------------------------------------------------------ */
 
-
+//@import "utility-patterns/_full-width.scss";
 @import "utility-patterns/_fill-height.scss";
 @import "utility-patterns/_lists.scss";
 @import "utility-patterns/_space.scss";

@@ -34,6 +34,24 @@ title: PRU-MHC
         </div>
         <div class="text-content  c-brochure__body">
             <h3>
+                PRU-MHC research themes:
+            </h3>
+
+            <ol>
+                <li>Maternal morbidity and mortality</li>
+                <li>Perinatal mental health and disabilities</li>
+                <li>Pregnancy loss and perinatal mortality </li>
+                <li>The healthy mother and child</li>
+            </ol>
+
+        </div>
+    </section>
+</div>
+
+<div wf-area="light+outline">
+    <section class="c-brochure" id="participant-involvement">
+        <div class="text-content  c-brochure__body">
+            <h3>
                 PRU-MHC aims:
             </h3>
 
@@ -45,6 +63,12 @@ title: PRU-MHC
                 <li>Quisque scelerisque massa lectus, et lobortis mauris egestas et. Sed sit amet arcu malesuada, gravida tellus et, sodales sapien. Proin ullamcorper eget mi eget consequat.</li>
             </ul>
 
+        </div>
+        
+        <div class="feature-image  c-brochure__image  js-toggle-image">
+            <div wf-box>
+                <div class="proportional-container  proportional-container--4-3"></div>
+            </div>
         </div>
     </section>
 </div>

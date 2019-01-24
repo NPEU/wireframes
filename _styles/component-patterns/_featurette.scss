@@ -104,7 +104,8 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
             $theme-class: unquote('.')#{$theme-namespace}#{$name};
         }
 
-        .#{$featurette-namespace}featurette#{$theme-class} {
+        .#{$featurette-namespace}featurette#{$theme-class},
+        .#{$featurette-namespace}featurette#{$theme-class} a {
             background-color: $background-color;
             color: $text-color;
         }
@@ -216,6 +217,11 @@ $featurette-button--border-color: darken($featurette--base-color, 20%) !default;
             
             .#{$featurette-namespace}featurette__body--90 {
                 max-width: 90%;
+            }
+            
+            .#{$featurette-namespace}featurette__body--fill {
+                max-width: none;
+                width: 100%;
             }
         }
 
