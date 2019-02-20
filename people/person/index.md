@@ -6,10 +6,10 @@ title: Person
 
     <div class="l-content-area__main  u-padding--top  u-padding--bottom">
         <div class="u-space--below">
-            <heading class="u-text-group  u-text-group--push-apart  u-space--below">
+            <header class="u-text-group  u-text-group--push-apart  u-space--below">
                 <h1>Person</h1>
                 <p><a href="/people" class="cta"><svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-left"></use></svg> Back to People</a></p>
-            </heading>
+            </header>
 
             <p><b>
                 Full position and title

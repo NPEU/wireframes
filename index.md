@@ -163,10 +163,10 @@ title: NPEU Home
 
 <div wf-area="white+medium-padding+outline">
     <section id="latest-news">
-        <heading class="u-text-group  u-text-group--push-apart  u-space--below">
+        <header class="u-text-group  u-text-group--push-apart  u-space--below">
             <h2>Latest News</h2>
             <p><a href="/news" class="cta">View all news <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a></p>
-        </heading>
+        </header>
 
         <div class="l-col-to-row--flush-edge-gutters">
         <div class="l-col-to-row  l-col-to-row--gutter--medium">
