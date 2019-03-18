@@ -15,6 +15,7 @@ title: NPEU Home
         <h1 wf-heading="large">Welcome to the NPEU</h1>
         <p>
             The NPEU is a multi-disciplinary research unit which was established at the University of Oxford in 1978.
+            {% comment %}Conducting robust research to improve care for mothers, babies and families since 1978.{% endcomment %}
         </p>
         <p>
             <a href="/about" class="cta">About the NPEU <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
