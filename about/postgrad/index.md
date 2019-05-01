@@ -10,37 +10,41 @@ title: Postgraduate Studies
                 Postgraduate Studies
             </h1>
         
-            <p>
-                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur. Nam gravida nisi sit amet orci sagittis, et scelerisque ipsum dignissim.</b>
-            </p>
-
-            <p>
-                Suspendisse pellentesque, elit et laoreet gravida, nunc arcu eleifend sem, luctus pellentesque diam lorem quis justo. Curabitur id ex id tellus viverra cursus. In faucibus et nunc ut egestas. Suspendisse accumsan mi id maximus gravida. Donec vitae nunc ex. Quisque gravida ultricies sapien viverra tristique. Ut vitae libero viverra, faucibus dolor semper, dignissim lectus.
-            </p>
-
-            <div class="ff-width-100--40--50  u-space--right  u-space--below" style="float: left;">
+        
+            <div class="ff-width-100--30--50  u-space--left  u-space--below" style="float: right;">
                 <div wf-box>
                     <div class="proportional-container  proportional-container--4-3"></div>
                 </div>
             </div>
             
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
-            </p>
+            <p>The NPEU is a multi-disciplinary unit with experienced senior staff who undertake supervision for postgraduate students and public health trainees. It offers a stimulating and dynamic environment in which to conduct doctoral studies in perinatal health. The NPEU is part of the <a href="http://www.ndph.ox.ac.uk/" rel="external">Nuffield Department of Population Health</a> and the Medical Sciences Division both of which offer extensive training opportunities to postgraduate students.</p>
 
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
-            </p>
+            <h2>DPhil students</h2>
 
-            <p>
-                Maecenas vehicula, felis a tincidunt ultrices, ante velit aliquet lectus, sed sollicitudin libero tellus at elit. Fusce eget quam et tortor gravida hendrerit. In urna libero, vulputate sit amet mauris eget, efficitur luctus tortor.
-            </p>
+            <p>Examples of current and recent DPhil projects in the NPEU include:</p>
 
-            <h3>Subheading</h3>
+            <ul>
+                <li>A study looking at inequalities in breastfeeding in the United Kingdom - socio-economic, culture or support?</li>
+                <li>Improving the prevention and outcomes of severe complications of pregnancy through international comparative and collaborative studies.</li>
+                <li>Improving outcomes in paediatric surgery through the development and implementation of core outcome sets (funded by NIHR)</li>
+                <li>Short and longer-term outcomes for women and their children according to intended mode of delivery after previous caesarean section (funded by NIHR)</li>
+                <li>The effect of mode of delivery at birth on child health</li>
+                <li>An investigation into the impact of congenital anomalies on infant and child death rates – why children die?</li>
+                <li>Improving maternity services in Sudan through context-specific, evidence-based enhancement of the current maternal mortality review processes.</li>
+            </ul>
 
-            <p>
-                Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue.
-            </p>
+            <p>Potential applicants can apply for an advertised DPhil project or develop their own DPhil idea with input from a potential supervisor. Details about both processes are available on the <a href="http://ndph.medsci.ox.ac.uk/study" rel="external">Nuffield Department of Population Health</a> website. The advertised projects vary each year, and typically would suit candidates with backgrounds in epidemiology, statistics or other health sciences and some may be of interest to doctors or midwives interested in academic research</p>
+
+            <p>The NPEU also holds, or has access to, a range of perinatal datasets, some of which may be suitable for a DPhil project. These include:</p>
+
+            <ul>
+                <li>UKOSS – the UK Obstetric Surveillance System – a national system to study rare disorders of pregnancy</li>
+                <li>National Maternity Survey – regular surveys of women’s experience of maternity care in 2006, 2010, 2014 and 2017.</li>
+                <li>Birthplace - a programme of research designed to compare outcomes of births planned at home, in different types of midwifery units, and in hospital units with obstetric services.</li>
+                <li>Millennium Cohort Study – a cohort of approximately 19,000 babies born in the UK in 2000-2002.</li>
+                <li>Randomised Controlled Trials – the Clinical Trials Unit has a large number of ongoing and completed trials.</li>
+            </ul>
+
 
             <div class="ff-width-100--40--50  u-space--left  u-space--below" style="float: right;" wf-area="dark+medium-padding+outline">
                 <blockquote>
@@ -50,25 +54,20 @@ title: Postgraduate Studies
 
             </div>
             
-            <p>
-                Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus. Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et.
-            </p>
+            <p>For an informal discussion about pursuing doctoral studies in the NPEU, please contact <a href="mailto: maria.quigley@npeu.ox.ac.uk">Maria Quigley</a> in the first instance</p>
 
-            <p>
-                Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque. Nulla dapibus egestas elit, vitae hendrerit libero laoreet eu. Quisque maximus dui vel metus lacinia aliquam sed eu purus.
-            </p>
+            <p>For more information about the University of Oxford application process for DPhil studies and for details of other study opportunities within the Nuffield Department of Population Health, please visit the <a href="http://ndph.medsci.ox.ac.uk/study" rel="external">Nuffield Department of Population Health</a> website.</p>
 
-            <p>
-                Integer libero odio, posuere quis vulputate ut, consectetur tincidunt nunc. Suspendisse dui neque, mollis ac risus non, iaculis viverra nibh.
-            </p>
+            <h2>Studentships</h2>
 
-            <p>
-                Quisque eget laoreet ex. Sed orci nisi, venenatis et bibendum at, condimentum eget erat. Duis pulvinar laoreet diam. Donec eget finibus arcu, et pellentesque leo. In at odio nec felis semper placerat. Cras malesuada vitae turpis volutpat facilisis. Cras eleifend euismod enim, vel ultricies ex posuere pharetra. Nullam ultricies pharetra nibh, vitae ultricies lorem faucibus eu.
-            </p>
+            <p>All funded studentships available in the Nuffield Department of Population Health are listed on the Department's <a href="http://ndph.medsci.ox.ac.uk/study" rel="external">'study with us' page</a>.</p>
 
-            <p>
-                Nulla quis scelerisque nisi. Vestibulum nec urna nibh. Curabitur eget nunc a lorem tempus malesuada ut quis velit. In interdum tellus eu tortor tristique ullamcorper. Cras ut dolor eget velit eleifend laoreet. Proin id nisl velit. Mauris fringilla rutrum placerat. Nullam ultricies mollis turpis, in facilisis sem pellentesque efficitur.
-            </p>
+            <p>Occasionally funded studentships are available through grants to the NPEU, and these can be found on the <a href="https://www.npeu.ox.ac.uk/jobs">NPEU jobs page</a>.</p>
+
+            <h2>Public Health Trainees</h2>
+
+            <p>The NPEU is an accredited training location for public health trainees. All placements will have to be approved by the trainee’s Training Programme Director but informal enquiries can be made to <a href="mailto: marian.knight@npeu.ox.ac.uk">Marian Knight</a> in the first instance.</p>
+
         </div>
         <div class="l-content-area__pull-out">
             <div wf-area="white+outline" class="">

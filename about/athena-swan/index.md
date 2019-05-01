@@ -9,66 +9,46 @@ title: Athena SWAN
             <h1>
                 Athena SWAN
             </h1>
-        
-            <p>
-                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur. Nam gravida nisi sit amet orci sagittis, et scelerisque ipsum dignissim.</b>
-            </p>
+            
+            <p>The <a href="http://www.athenaswan.org.uk" rel="external">Athena SWAN Charter for Women in Science</a> recognises commitment to advancing women’s careers in science, technology, engineering, maths and medicine (STEMM).</p>
 
-            <p>
-                Suspendisse pellentesque, elit et laoreet gravida, nunc arcu eleifend sem, luctus pellentesque diam lorem quis justo. Curabitur id ex id tellus viverra cursus. In faucibus et nunc ut egestas. Suspendisse accumsan mi id maximus gravida. Donec vitae nunc ex. Quisque gravida ultricies sapien viverra tristique. Ut vitae libero viverra, faucibus dolor semper, dignissim lectus.
-            </p>
-
-            <div class="ff-width-100--40--50  u-space--right  u-space--below" style="float: left;">
-                <div wf-box>
-                    <div class="proportional-container  proportional-container--4-3"></div>
-                </div>
+            <div class="ff-width-100--40--50  u-space--roght  u-space--below" style="float: left; text-align: center;">
+                <img src="/img/affiliate-logos/athena-swan-silver-award.svg" onerror="this.src='/img/affiliate-logos/athena-swan-silver-award.png'; this.onerror=null;" alt="ECU Gender Charter Athena Swan Silver Award" width="257" height="141">
             </div>
             
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
-            </p>
 
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna.
-            </p>
+            <p>Athena SWAN awards celebrate good practice in the recruitment, retention and promotion of women in higher education institutions, and their individual departments. The University of Oxford has a <a href="http://www.admin.ox.ac.uk/eop/gender/athenaswan" rel="external">Bronze University award</a>. In September 2013, the NPEU received a Silver Departmental Award.</p>
 
-            <p>
-                Maecenas vehicula, felis a tincidunt ultrices, ante velit aliquet lectus, sed sollicitudin libero tellus at elit. Fusce eget quam et tortor gravida hendrerit. In urna libero, vulputate sit amet mauris eget, efficitur luctus tortor.
-            </p>
+            <p>The NPEU is a vibrant, multi-disciplinary research environment with an inclusive and supportive atmosphere for all staff and students that exemplifies the overarching principles of the Athena SWAN charter. For information about some of the well-established practices which aim to support staff, please see <a href="/working-in-npeu">Working in the NPEU</a>.</p>
 
-            <h3>Subheading</h3>
+            <div class="ff-width-100--40--50  u-space--left  u-space--below" style="float: right;">
+                <img alt="Word cloud with prominant words: Friendly and Supportive" src="/img/athena-swan-word-cloud.jpg">
+            </div>
 
-            <p>
-                Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue.
-            </p>
+            <p>Athena SWAN activities in the NPEU are led by the self-assessment team. The team was formed in November 2012 and the current members are listed alphabetically below:</p>
 
-            <div class="ff-width-100--40--50  u-space--left  u-space--below" style="float: right;" wf-area="dark+medium-padding+outline">
+            <ul id="staffLinks">
+                <li><a href="https://www.npeu.ox.ac.uk/people/andy-king-613">Andy King</a></li>
+                <li><a href="https://www.npeu.ox.ac.uk/people/andy-kirk-602">Andy Kirk</a></li>
+                <li><a href="https://www.npeu.ox.ac.uk/people/marian-knight-629">Marian Knight</a></li>
+                <li><a href="https://www.npeu.ox.ac.uk/people/maria-quigley-648">Maria Quigley</a> (Chair of team)</li>
+                <li><a href="https://www.npeu.ox.ac.uk/people/oliver-rivero-arias-774">Oliver Rivero-Arias</a></li>
+                <li><a href="https://www.npeu.ox.ac.uk/people/rachel-rowe-603">Rachel Rowe</a></li>
+            </ul>
+
+            <p>In addition, there are working groups on Career Progression and Flexible Working (chaired by <a href="https://www.npeu.ox.ac.uk/people/rachel-rowe-603">Rachel Rowe</a>).</p>
+
+            
+            <div class="ff-width-100--40--50  u-space--right  u-space--below" style="float: left;" wf-area="dark+medium-padding+outline">
                 <blockquote>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet."
                 </blockquote>
                 <cite>&mdash; Full name, Position</cite>
-
             </div>
             
-            <p>
-                Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus. Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et.
-            </p>
+            <p>Progress on activities related to Athena SWAN is communicated to Unit members through regular updates at Unit meetings and via email communication. Unit members are encouraged to be involved in the process, for example, by volunteering to be a member of the self-assessment team or one of the working groups, by participating in the staff surveys and by providing suggestions and feedback at any time. If you would like to find out more or discuss new ideas, please contact <a href="https://www.npeu.ox.ac.uk/people/maria-quigley-648">Maria Quigley</a> or one of the team members listed above.</p>
 
-            <p>
-                Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque. Nulla dapibus egestas elit, vitae hendrerit libero laoreet eu. Quisque maximus dui vel metus lacinia aliquam sed eu purus.
-            </p>
-
-            <p>
-                Integer libero odio, posuere quis vulputate ut, consectetur tincidunt nunc. Suspendisse dui neque, mollis ac risus non, iaculis viverra nibh.
-            </p>
-
-            <p>
-                Quisque eget laoreet ex. Sed orci nisi, venenatis et bibendum at, condimentum eget erat. Duis pulvinar laoreet diam. Donec eget finibus arcu, et pellentesque leo. In at odio nec felis semper placerat. Cras malesuada vitae turpis volutpat facilisis. Cras eleifend euismod enim, vel ultricies ex posuere pharetra. Nullam ultricies pharetra nibh, vitae ultricies lorem faucibus eu.
-            </p>
-
-            <p>
-                Nulla quis scelerisque nisi. Vestibulum nec urna nibh. Curabitur eget nunc a lorem tempus malesuada ut quis velit. In interdum tellus eu tortor tristique ullamcorper. Cras ut dolor eget velit eleifend laoreet. Proin id nisl velit. Mauris fringilla rutrum placerat. Nullam ultricies mollis turpis, in facilisis sem pellentesque efficitur.
-            </p>
+            
         </div>
         <div class="l-content-area__pull-out">
             <div wf-area="white+outline" class="">

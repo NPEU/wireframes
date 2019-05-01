@@ -48,7 +48,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="/ctu" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/research/ctu" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="/pru-mhc" class="cta">PRU-MHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/research/pru-mhc" class="cta">PRU-MNHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ title: NPEU Home
                         </div>
                         <div class="c-card__footer">
                             <p>
-                                <a href="/sheer" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                <a href="/research/sheer" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                             </p>
                         </div>
                     </div>
@@ -110,40 +110,11 @@ title: NPEU Home
         </div>
     </div>
 
-
-    <div wf-area="light+outline">
-        <div class="c-brochure" id="our-research">
-            <div class="text-content  c-brochure__body">
-                <h3>
-                    Our research
-                </h3>
-                <p>
-                    Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue. Duis dapibus, eros sit amet condimentum venenatis, nisi enim sollicitudin eros, ut semper lorem purus eget tellus.
-                </p>
-                <p>
-                    Vivamus aliquet turpis at magna finibus mollis. Vivamus pretium augue neque, ac ornare felis eleifend et. Pellentesque convallis, ex eget egestas fringilla, diam ex vulputate diam, eu condimentum nisi sapien in neque.
-                </p>
-                <p>
-                    <a href="/about" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-                </p>
-            </div>
-            <div class="feature-image  c-brochure__image  js-toggle-image">
-                <div wf-box>
-                    <div class="proportional-container  proportional-container--4-3"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 
 <div wf-area="light+outline">
     <section class="c-brochure" id="participant-involvement">
-        <div class="feature-image  c-brochure__image  js-toggle-image">
-            <div wf-box>
-                <div class="proportional-container  proportional-container--4-3"></div>
-            </div>
-        </div>
         <div class="text-content  c-brochure__body">
             <h2>
                 Public involvement
@@ -158,6 +129,11 @@ title: NPEU Home
             <p>
                 <a href="/public-involvement" class="cta">Find out more <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
+        </div>
+        <div class="feature-image  c-brochure__image  js-toggle-image">
+            <div wf-box>
+                <div class="proportional-container  proportional-container--4-3"></div>
+            </div>
         </div>
     </section>
 </div>

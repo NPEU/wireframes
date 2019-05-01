@@ -34,32 +34,6 @@ title: About us
     </section>
 </div>
 
-<div wf-area="white+medium-padding+outline">
-    <div class="c-featurette  c-featurette">
-        <section class="text-content  c-featurette__body  c-featurette__body--80">
-            <h2>
-                Athena SWAN Silver Award
-            </h2>
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim congue, non molestie arcu aliquam. Vestibulum sagittis feugiat vulputate. Sed pharetra aliquam diam, eu euismod quam ullamcorper in. Sed a tempor tellus. Suspendisse in tellus hendrerit, aliquam ipsum nec, faucibus neque. Fusce a neque urna. Fusce faucibus massa eget laoreet posuere.
-            </p>
-            <p>
-                <a href="/about/athena-swan" class="cta">Read more about Athena SWAN <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
-            </p>
-        </section>
-        <div class="feature-image  c-featurette__image">
-            <div>
-                <div class="proportional-container  proportional-container--3-1  proportional-container--4-3--wide">
-                    <div class="proportional-container__content">
-                        <a href="/about/athena-swan" class="c-badge" style="height: 100%;">
-                            <img src="/img/affiliate-logos/athena-swan-silver-award.svg" class="proportional-container__image-contain" style="height: 100%;" onerror="this.src='/img/affiliate-logos/athena-swan-silver-award.png'; this.onerror=null;" alt="ECU Gender Charter Athena Swan Silver Award" width="257" height="141">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div wf-area="white+outline">
 
@@ -143,14 +117,14 @@ title: About us
                         </div>
                         <div class="c-card__main">
                             <div class="c-card__body">
-                                <h2 class="c-card__title">Privacy Notice</h2>
+                                <h2 class="c-card__title">People</h2>
                                 <p>
                                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
                                 </p>
                             </div>
                             <div class="c-card__footer">
                                 <p>
-                                    <a href="/about/privacy-notice" class="cta">Privacy Notice&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                                    <a href="/about/people" class="cta">People&nbsp;<svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
                                 </p>
                             </div>
                         </div>
@@ -193,6 +167,39 @@ title: About us
     </div>
 
 
+</div>
+
+<div wf-area="white+medium-padding+outline">
+    <div class="c-featurette  c-featurette">
+        <section class="text-content  c-featurette__body  c-featurette__body--70  u-space--none">
+            <h2>
+                Athena SWAN Silver Award
+            </h2>
+            <p>
+                The <a href="http://www.athenaswan.org.uk" rel="external">Athena SWAN Charter for Women in Science</a> recognises commitment to advancing women’s careers in science, technology, engineering, maths and medicine (STEMM).
+            </p>
+
+            <p>
+                Athena SWAN awards celebrate good practice in the recruitment, retention and promotion of women in higher education institutions, and their individual departments. The University of Oxford has a <a href="http://www.admin.ox.ac.uk/eop/gender/athenaswan" rel="external">Bronze University award</a>. In September 2013, the NPEU received a Silver Departmental Award.
+            </p>
+            
+            <p class="u-space--none">
+                <a href="/about/athena-swan" class="cta">Read more about Athena SWAN <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+            </p>
+
+        </section>
+        <div class="feature-image  c-featurette__image">
+            <div>
+                <div class="proportional-container  proportional-container--3-1  proportional-container--4-3--wide">
+                    <div class="proportional-container__content">
+                        <a href="/about/athena-swan" class="c-badge" style="height: 100%;">
+                            <img src="/img/affiliate-logos/athena-swan-silver-award.svg" class="proportional-container__image-contain" style="height: 100%;" onerror="this.src='/img/affiliate-logos/athena-swan-silver-award.png'; this.onerror=null;" alt="ECU Gender Charter Athena Swan Silver Award" width="257" height="141">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div  wf-area="outline">

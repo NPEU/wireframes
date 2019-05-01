@@ -17,9 +17,9 @@ title: PRU-MHC
                 <a href="/ctu" class="cta">View research <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
             </p>
         </div>
-        <div class="feature-image  c-brochure__image  js-toggle-image">
-            <div wf-box="Image or video">
-                <div class="proportional-container  proportional-container--4-3"></div>
+        <div class="feature-image  c-brochure__image">
+            <div>                
+                <img src="/img/Bigstock_54498602.jpg" alt="" class="proportional-container__image-cover" width="300">
             </div>
         </div>
     </section>
