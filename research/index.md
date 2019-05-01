@@ -28,23 +28,116 @@ title: Research
     /research/{project-alias}            [show project {project-alias} equiv /research?project={project-alias}]
     
 -->
+
+
+<section wf-area="white+outline-medium-padding" class="u-space--none">
+     <div class="u-space--below">
+        <h1>
+            Research
+        </h1>
+        <p><b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur. Nam gravida nisi sit amet orci sagittis, et scelerisque ipsum dignissim.
+        </b></p>
+        
+        <h2>NPEU research themes</h2>
+        
+        <p>
+            Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue.
+        </p>
+    </div>
+    
+    <h2 class="u-space--none  u-padding--sides  u-padding--top">
+        Areas of Research
+    </h2>
+
+    <div class="l-col-to-row  l-col-to-row--gutter--medium">
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
+
+
+                <div class="c-card  c-card--allow-wide">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">Trials</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="/research/ctu" class="cta">Trials <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
+
+
+                <div class="c-card  c-card--allow-wide">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">PRU-MHC</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="/research/pru-mhc" class="cta">PRU-MNHC <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+        <div class="l-col-to-row__item  ff-width-100--40--33-333">
+
+
+                <div class="c-card  c-card--allow-wide">
+                    <div class="c-card__image">
+                        <div wf-box>
+                            <div class="proportional-container  proportional-container--3-1"></div>
+                        </div>
+                    </div>
+                    <div class="c-card__main">
+                        <div class="c-card__body">
+                            <h2 class="c-card__title">SHEER</h2>
+                            <p>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tincidunt lorem sit amet enim.
+                            </p>
+                        </div>
+                        <div class="c-card__footer">
+                            <p>
+                                <a href="/research/sheer" class="cta">SHEER <svg display="none" class="icon  feather"><use xlink:href="#icon-chevron-right"></use></svg></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+</section>
+
 <div wf-area="white+outline" class="l-content-area  l-content-area--has-pull-outs">
 
     <div class="l-content-area__main  u-padding--top  u-padding--bottom">
-        <div class="u-space--below">
-            <h1>
-                Research
-            </h1>
-            <p><b>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt luctus rutrum. Vivamus commodo ornare laoreet. Quisque suscipit at massa in efficitur. Nam gravida nisi sit amet orci sagittis, et scelerisque ipsum dignissim.
-            </b></p>
-            
-            <h2>NPEU research themes</h2>
-            
-            <p>
-                Nunc eget diam lorem. Vestibulum eu luctus velit, imperdiet imperdiet nibh. Aliquam condimentum ut nunc non iaculis. Pellentesque vel tincidunt tortor. Praesent vel leo non neque molestie cursus. Morbi non rutrum leo, quis malesuada augue.
-            </p>
-        </div>
+    
+        <h2>Research Index</h2>
         
         <div class="l-content-area__pull-out  js-hide  u-space--below" id="filter_box">
             <div wf-area="white+outline+medium-padding" class="">
@@ -59,11 +152,6 @@ title: Research
                     </div>
                 </form>
                 
-            </div>
-        </div>
-        
-        <div class="l-content-area__pull-out  js-hide  u-space--below" id="filter_box">
-            <div wf-area="white+outline+medium-padding" class="">
                 <h3 class="n-section-menu__title  js-trigger">Search for projects across all themes</h3>
                 
                 <form action="/research/projects" id="research-search-form" class="" method="GET">                    
